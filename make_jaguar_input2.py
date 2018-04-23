@@ -3,7 +3,7 @@ from __future__ import print_function
 import schrodinger.application.jaguar.input as jagInput
 import schrodinger.job.jobcontrol as jc
 from sys import argv
-
+from os.path import splitext
 
 def mae_to_jaguar(mae_file):
     """Given a maestro inputfile, and a pKa atom (names or integer 1-based indices), make the jaguar input."""
@@ -13,10 +13,9 @@ def mae_to_jaguar(mae_file):
 
 if __name__ == "__main__":
     try:
-        # first argument is the molecule title
-        # a maestro input file titled molecule_title.mae
-        molecule_title = argv[1].strip()
-        mae_file = "{}.mae".format(molecule_title)
+        # a maestro input file titled molecule_title.maegz
+        mae_file = sys.argv[1].strip()
+        title = splitext(mae_file)[0]
         # Create the jaguar input file structure
         jag_input = mae_to_jaguar(mae_file)
         # The input is saved in the file "molecule_title.in"
