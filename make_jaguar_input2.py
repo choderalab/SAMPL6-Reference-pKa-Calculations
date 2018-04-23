@@ -14,7 +14,7 @@ def mae_to_jaguar(mae_file):
 if __name__ == "__main__":
     try:
         # a maestro input file titled molecule_title.maegz
-        mae_file = sys.argv[1].strip()
+        mae_file = argv[1].strip()
         title = splitext(mae_file)[0]
         # Create the jaguar input file structure
         jag_input = mae_to_jaguar(mae_file)
