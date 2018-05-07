@@ -30,6 +30,17 @@ SM21_micro025
 SM21_micro029
 SM21_micro030
 SM21_micro034
+SM23_micro005
+SM23_micro007
+SM23_micro011
+SM23_micro019
+SM23_micro024
+SM23_micro028
+SM23_micro034
+SM23_micro036
+SM23_micro040
+SM23_micro042
+SM23_micro046
 
 ## SM03
 
@@ -163,7 +174,33 @@ jag_SM23_micro039_SM23_micro007.log:Error: heavy atoms are different in input fi
 jag_SM23_micro042_SM23_micro024.log:Error: more than 1 heavy atom differs by 1 proton in:
 jag_SM23_micro042_SM23_micro025.log:Error: heavy atoms are different in input files:
 jag_SM23_micro043_SM23_micro024.log:Error: heavy atoms are different in input files:
-jag_SM23_micro044_SM23_micro041.log:  Error: in replying to 'JPROXYPORT lilac rustenburg "/data/chodera/schrodinger/schrodinger2017-4-advanced"' - dial tcp lilac:35321: i/o timeout
+jag_SM23_micro045_SM23_micro040.log:Error: heavy atoms are different in input files:
+jag_SM23_micro046_SM23_micro038.log:Error: heavy atoms are different in input files:
+jag_SM23_micro047_SM23_micro042.log:Error: heavy atoms are different in input files:
+jag_SM23_micro046_SM23_micro042.log:Error: more than 1 heavy atom differs by 1 proton in:
+jag_SM23_micro048_SM23_micro046.log:Error: heavy atoms are different in input files:
+
+
+
+Heavy atoms are different between some states.
+Regenerating mae files for 
+
+SM23_micro005
+SM23_micro007
+SM23_micro011
+SM23_micro019
+SM23_micro024
+SM23_micro028
+SM23_micro034
+SM23_micro036
+SM23_micro040
+SM23_micro042
+SM23_micro046
+
+using SM23_micro012 as template
+
+jag_SM23_micro044_SM23_micro041.log:  Error: in replying to 'JPROXYPORT lilac rustenburg 
+"/data/chodera/schrodinger/schrodinger2017-4-advanced"' - dial tcp lilac:35321: i/o timeout
 jag_SM23_micro044_SM23_micro041.log:  Error: in replying to 'JPROXYPORT lilac rustenburg "/data/chodera/schrodinger/schrodinger2017-4-advanced"' - dial tcp lilac:35321: i/o timeout
 jag_SM23_micro044_SM23_micro041.log:  Error: in replying to 'JPROXYPORT lilac rustenburg "/data/chodera/schrodinger/schrodinger2017-4-advanced"' - dial tcp lilac:35321: i/o timeout
 jag_SM23_micro044_SM23_micro041.log:  Error: in replying to 'JPROXYPORT lilac rustenburg "/data/chodera/schrodinger/schrodinger2017-4-advanced"' - dial tcp lilac:35321: i/o timeout
@@ -172,8 +209,6 @@ jag_SM23_micro044_SM23_micro041.log:  Error: in replying to 'JPROXYPORT lilac ru
 jag_SM23_micro044_SM23_micro041.log:  Error: in replying to 'JPROXYPORT lilac rustenburg "/data/chodera/schrodinger/schrodinger2017-4-advanced"' - dial tcp lilac:35321: i/o timeout
 jag_SM23_micro044_SM23_micro041.log:  Error: in replying to 'JPROXYPORT lilac rustenburg "/data/chodera/schrodinger/schrodinger2017-4-advanced"' - dial tcp lilac:35321: i/o timeout
 jag_SM23_micro045_SM23_micro039.log:  Error: in replying to 'JPROXYPORT lilac rustenburg "/data/chodera/schrodinger/schrodinger2017-4-advanced"' - dial tcp lilac:35321: i/o timeout
-jag_SM23_micro045_SM23_micro040.log:Error: heavy atoms are different in input files:
-jag_SM23_micro046_SM23_micro038.log:Error: heavy atoms are different in input files:
 jag_SM23_micro046_SM23_micro040.log:  Error: in replying to 'JPROXYPORT lilac rustenburg "/data/chodera/schrodinger/schrodinger2017-4-advanced"' - dial tcp lilac:35321: i/o timeout
 jag_SM23_micro046_SM23_micro040.log:  Error: in replying to 'JPROXYPORT lilac rustenburg "/data/chodera/schrodinger/schrodinger2017-4-advanced"' - dial tcp lilac:35321: i/o timeout
 jag_SM23_micro046_SM23_micro040.log:  Error: in replying to 'JPROXYPORT lilac rustenburg "/data/chodera/schrodinger/schrodinger2017-4-advanced"' - dial tcp lilac:35321: i/o timeout
@@ -182,7 +217,6 @@ jag_SM23_micro046_SM23_micro040.log:  Error: in replying to 'JPROXYPORT lilac ru
 jag_SM23_micro046_SM23_micro040.log:  Error: in replying to 'JPROXYPORT lilac rustenburg "/data/chodera/schrodinger/schrodinger2017-4-advanced"' - dial tcp lilac:35321: i/o timeout
 jag_SM23_micro046_SM23_micro040.log:  Error: in replying to 'JPROXYPORT lilac rustenburg "/data/chodera/schrodinger/schrodinger2017-4-advanced"' - dial tcp lilac:35321: i/o timeout
 jag_SM23_micro046_SM23_micro040.log:  Error: in replying to 'JPROXYPORT lilac rustenburg "/data/chodera/schrodinger/schrodinger2017-4-advanced"' - dial tcp lilac:35321: i/o timeout
-jag_SM23_micro046_SM23_micro042.log:Error: more than 1 heavy atom differs by 1 proton in:
 jag_SM23_micro047_SM23_micro041.log:  Error: in replying to 'JPROXYPORT lilac rustenburg "/data/chodera/schrodinger/schrodinger2017-4-advanced"' - dial tcp lilac:35321: i/o timeout
 jag_SM23_micro047_SM23_micro041.log:  Error: in replying to 'JPROXYPORT lilac rustenburg "/data/chodera/schrodinger/schrodinger2017-4-advanced"' - dial tcp lilac:35321: i/o timeout
 jag_SM23_micro047_SM23_micro041.log:  Error: in replying to 'JPROXYPORT lilac rustenburg "/data/chodera/schrodinger/schrodinger2017-4-advanced"' - dial tcp lilac:35321: i/o timeout
@@ -191,7 +225,6 @@ jag_SM23_micro047_SM23_micro041.log:  Error: in replying to 'JPROXYPORT lilac ru
 jag_SM23_micro047_SM23_micro041.log:  Error: in replying to 'JPROXYPORT lilac rustenburg "/data/chodera/schrodinger/schrodinger2017-4-advanced"' - dial tcp lilac:35321: i/o timeout
 jag_SM23_micro047_SM23_micro041.log:  Error: in replying to 'JPROXYPORT lilac rustenburg "/data/chodera/schrodinger/schrodinger2017-4-advanced"' - dial tcp lilac:35321: i/o timeout
 jag_SM23_micro047_SM23_micro041.log:  Error: in replying to 'JPROXYPORT lilac rustenburg "/data/chodera/schrodinger/schrodinger2017-4-advanced"' - dial tcp lilac:35321: i/o timeout
-jag_SM23_micro047_SM23_micro042.log:Error: heavy atoms are different in input files:
 jag_SM23_micro047_SM23_micro043.log:  Error: in replying to 'JPROXYPORT lilac rustenburg "/data/chodera/schrodinger/schrodinger2017-4-advanced"' - dial tcp lilac:35321: i/o timeout
 jag_SM23_micro047_SM23_micro043.log:  Error: in replying to 'JPROXYPORT lilac rustenburg "/data/chodera/schrodinger/schrodinger2017-4-advanced"' - dial tcp lilac:35321: i/o timeout
 jag_SM23_micro047_SM23_micro043.log:  Error: in replying to 'JPROXYPORT lilac rustenburg "/data/chodera/schrodinger/schrodinger2017-4-advanced"' - dial tcp lilac:35321: i/o timeout
@@ -218,7 +251,6 @@ jag_SM23_micro048_SM23_micro045.log:  Error: in replying to 'JPROXYPORT lilac ru
 jag_SM23_micro048_SM23_micro045.log:  Error: in replying to 'JPROXYPORT lilac rustenburg "/data/chodera/schrodinger/schrodinger2017-4-advanced"' - dial tcp lilac:35321: i/o timeout
 jag_SM23_micro048_SM23_micro045.log:  Error: in replying to 'JPROXYPORT lilac rustenburg "/data/chodera/schrodinger/schrodinger2017-4-advanced"' - dial tcp lilac:35321: i/o timeout
 jag_SM23_micro048_SM23_micro045.log:  Error: in replying to 'JPROXYPORT lilac rustenburg "/data/chodera/schrodinger/schrodinger2017-4-advanced"' - dial tcp lilac:35321: i/o timeout
-jag_SM23_micro048_SM23_micro046.log:Error: heavy atoms are different in input files:
 jag_SM23_micro048_SM23_micro047.log:  Error: in replying to 'JPROXYPORT lilac rustenburg "/data/chodera/schrodinger/schrodinger2017-4-advanced"' - dial tcp lilac:35321: i/o timeout
 jag_SM23_micro048_SM23_micro047.log:  Error: in replying to 'JPROXYPORT lilac rustenburg "/data/chodera/schrodinger/schrodinger2017-4-advanced"' - dial tcp lilac:35321: i/o timeout
 jag_SM23_micro048_SM23_micro047.log:  Error: in replying to 'JPROXYPORT lilac rustenburg "/data/chodera/schrodinger/schrodinger2017-4-advanced"' - dial tcp lilac:35321: i/o timeout
@@ -228,6 +260,8 @@ jag_SM23_micro048_SM23_micro047.log:  Error: in replying to 'JPROXYPORT lilac ru
 jag_SM23_micro048_SM23_micro047.log:  Error: in replying to 'JPROXYPORT lilac rustenburg "/data/chodera/schrodinger/schrodinger2017-4-advanced"' - dial tcp lilac:35321: i/o timeout
 jag_SM23_micro048_SM23_micro047.log:  Error: in replying to 'JPROXYPORT lilac rustenburg "/data/chodera/schrodinger/schrodinger2017-4-advanced"' - dial tcp lilac:35321: i/o timeout
 jag_SM23_micro048_SM23_micro047.log:  Error: in replying to 'JPROXYPORT lilac rustenburg "/data/chodera/schrodinger/schrodinger2017-4-advanced"' - dial tcp lilac:35321: i/o timeout
+
+Timeout rerunning.
 
 ## SM 24
 
