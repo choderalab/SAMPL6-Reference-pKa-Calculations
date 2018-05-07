@@ -19,7 +19,7 @@ if __name__ == "__main__":
         # Create the jaguar input file structure
         jag_input = mae_to_jaguar(mae_file)
         # The input is saved in the file "molecule_title.in"
-        output = "{}.in".format(molecule_title)
+        output = "{}.in".format(title)
         jag_input.saveAs(output)
 
     except IndexError:
