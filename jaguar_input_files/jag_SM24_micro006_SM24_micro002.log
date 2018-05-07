@@ -1,0 +1,1065 @@
+Command:    jaguar run pka.py -jobname jag_SM24_micro006_SM24_micro002 -PARALLEL 10 -n -csrch -prot SM24_micro006.in -deprot SM24_micro002.in
+Release:    2017-4
+Exec:       /data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar-v9.8/bin/Linux-x86_64
+Host:       lt09
+JobId:      lilac-0-5aecd513
+JobDir:     /lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro006_SM24_micro002
+Date:       Fri May  4 19:23:16 2018
+
+Contents of /lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro006_SM24_micro002:
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro006_SM24_micro002/lilac-0-5aecd513.hosts
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro006_SM24_micro002/lilac-0-5aecd513.recover
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro006_SM24_micro002/SM24_micro002.in
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro006_SM24_micro002/lilac-0-5aecd513.nodes
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro006_SM24_micro002/lilac-0-5aecd513.mpinodes
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro006_SM24_micro002/lilac-0-5aecd513
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro006_SM24_micro002/SM24_micro006.in
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro006_SM24_micro002/SM24_micro002.mae
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro006_SM24_micro002/jag_SM24_micro006_SM24_micro002.recover
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro006_SM24_micro002/jag_SM24_micro006_SM24_micro002.log
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro006_SM24_micro002/SM24_micro006.mae
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro006_SM24_micro002/lilac-0-5aecd513.jlog
+
+=====================
+ Jaguar pKa workflow
+=====================
+
+Analysing user-provided (prot, deprot) pair:
+(SM24_micro006.in, SM24_micro002.in)
+Found labile hydrogen 45 in SM24_micro006.in
+Found labile hydrogen at atom 26 in SM24_micro002.in
+Adding 'ipkat' keyword to input files.
+
+Identifying pKa functional group for pair:
+(SM24_micro006, SM24_micro002)
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar-v9.8/bin/Linux-x86_64/pka -i -j SM24_micro006.tmp.jres -n
+
+Taking protonated structures from:
+SM24_micro006.mae
+Taking deprotonated structures from:
+SM24_micro002.mae
+
+This molecule from 'SM24_micro006.mae' in water was recognized as:
+
+ # 	                  Shell                   
+---	------------------------------------------
+1: 	Protonation of sp2-like aliphatic nitrogen
+2: 	Protonation of generic atom               
+
+
+Executing conformational search...
+
+Executing 2 distributed subjobs:
+---------------------------------
+
+No more than 8 cpu(s) will be used per subjob.
+No more than 10 cpu(s) will be used simultaneously.
+
+Processing the following subjobs:
+(1) jaguar run csrch.py SM24_micro006.mae -jobname SM24_micro006 -max_conf 5 -erg_window 50.208 -acc_level 1 -TPP 5
+(2) jaguar run csrch.py SM24_micro002.mae -jobname SM24_micro002 -max_conf 5 -erg_window 50.208 -acc_level 1 -TPP 5
+
+Running subjobs on hosts:
+  lsf-cpu (Max: 2)
+Number of jobs:       2
+Max retries per job:  3
+Max allowed failures: unlimited
+Run with -LOCAL:      False
+Verbosity:            normal
+
+Starting JobDJ...
+
+Keep one job on driver host: False
+JobDJ columns:
+  C: Number of completed subjobs
+  A: Number of active subjobs (e.g., submitted, running)
+  W: Number of waiting/pending subjobs
+
+C A W | Activity  JobId  JobName  JobHost
+- - - | --------- -----------------------
+0 1 1 | launched  lt09-8-5aeceb75 SM24_micro006 lsf-cpu
+0 2 0 | launched  lt09-12-5aeceb89 SM24_micro002 lsf-cpu
+1 1 0 | finished  lt09-8-5aeceb75 SM24_micro006 lsf-cpu [lt16]
+2 0 0 | finished  lt09-12-5aeceb89 SM24_micro002 lsf-cpu [ls11]
+
+All jobs have completed.
+
+2 of 2 job(s) succeeded; 0 job(s) failed.
+
+Timer (distribute subjobs) : 7519.14 secs (2 hrs, 05 mins, 19 secs)
+
+Setting up QM workflow for (protonated, deprotonated) pair:
+(1) (SM24_micro006, SM24_micro002)
+
+Executing Jaguar quantum-mechanical subjobs...
+
+Executing 10 distributed subjobs:
+----------------------------------
+
+No more than 8 cpu(s) will be used per subjob.
+No more than 10 cpu(s) will be used simultaneously.
+
+Processing the following subjobs:
+(1) jaguar run pka_prot.bat -jobname SM24_micro006_conf_1 SM24_micro006_conf_1.in
+(2) jaguar run pka_prot.bat -jobname SM24_micro006_conf_2 SM24_micro006_conf_2.in
+(3) jaguar run pka_prot.bat -jobname SM24_micro006_conf_3 SM24_micro006_conf_3.in
+(4) jaguar run pka_prot.bat -jobname SM24_micro006_conf_4 SM24_micro006_conf_4.in
+(5) jaguar run pka_prot.bat -jobname SM24_micro006_conf_5 SM24_micro006_conf_5.in
+(6) jaguar run pka_deprot.bat -jobname SM24_micro002_conf_1 SM24_micro002_conf_1.in
+(7) jaguar run pka_deprot.bat -jobname SM24_micro002_conf_2 SM24_micro002_conf_2.in
+(8) jaguar run pka_deprot.bat -jobname SM24_micro002_conf_3 SM24_micro002_conf_3.in
+(9) jaguar run pka_deprot.bat -jobname SM24_micro002_conf_4 SM24_micro002_conf_4.in
+(10) jaguar run pka_deprot.bat -jobname SM24_micro002_conf_5 SM24_micro002_conf_5.in
+
+Running subjobs on hosts:
+  lsf-cpu (Max: 10)
+Number of jobs:       10
+Max retries per job:  3
+Max allowed failures: unlimited
+Run with -LOCAL:      False
+Verbosity:            normal
+
+Starting JobDJ...
+
+Keep one job on driver host: True
+JobDJ columns:
+  C: Number of completed subjobs
+  A: Number of active subjobs (e.g., submitted, running)
+  W: Number of waiting/pending subjobs
+
+ C  A  W | Activity  JobId  JobName  JobHost
+-- -- -- | --------- -----------------------
+ 0  1  9 | launched  lt09-0-5aed08cd SM24_micro006_conf_1 localhost [lt09]
+ 0  2  8 | launched  lt09-0-5aed08d1 SM24_micro006_conf_2 lsf-cpu
+ 0  3  7 | launched  lt09-0-5aed08d5 SM24_micro006_conf_3 lsf-cpu
+ 0  4  6 | launched  lt09-1-5aed08d8 SM24_micro006_conf_4 lsf-cpu
+ 0  5  5 | launched  lt09-0-5aed08dd SM24_micro006_conf_5 lsf-cpu
+ 0  6  4 | launched  lt09-0-5aed08e2 SM24_micro002_conf_1 lsf-cpu
+ 0  7  3 | launched  lt09-0-5aed08e7 SM24_micro002_conf_2 lsf-cpu
+ 0  8  2 | launched  lt09-0-5aed08ec SM24_micro002_conf_3 lsf-cpu
+ 0  9  1 | launched  lt09-1-5aed08f0 SM24_micro002_conf_4 lsf-cpu
+ 0 10  0 | launched  lt09-0-5aed08f5 SM24_micro002_conf_5 lsf-cpu
+ 1  9  0 | finished  lt09-0-5aed08cd SM24_micro006_conf_1 localhost [lt09]
+Subjob 'SM24_micro002_conf_5' died (fizzled) [jobid lt09-0-5aed08f5]
+ 1  8  1 | fizzled   lt09-0-5aed08f5 SM24_micro002_conf_5 lsf-cpu [lt22]
+ 1  9  0 | restarted lt09-0-5aed2bbc SM24_micro002_conf_5 localhost [lt09]
+Subjob 'SM24_micro006_conf_5' died (fizzled) [jobid lt09-0-5aed08dd]
+ 1  8  1 | fizzled   lt09-0-5aed08dd SM24_micro006_conf_5 lsf-cpu [lt21]
+WARNING: Job launch failed for 1/2 times.
+% jaguar run pka_prot.bat -jobname SM24_micro006_conf_5 SM24_micro006_conf_5.in -HOST lsf-cpu
+Output
+Launch failed: no JobId found.
+
+Command:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar run pka_prot.bat -jobname SM24_micro006_conf_5 SM24_micro006_conf_5.in -HOST lsf-cpu
+Output:
+Launching JAGUAR under jobcontrol.
+An error has occurred.  Information about the error has been written to 
+/home/rustenburg/.schrodinger/exceptions/error20180505-000722.txt 
+
+Please contact help@schrodinger.com for assistance. Include error20180505-000722.txt and a description of what you were doing when the error occurred.
+
+WARNING: Job launch failed for 2/2 times.
+% jaguar run pka_prot.bat -jobname SM24_micro006_conf_5 SM24_micro006_conf_5.in -HOST lsf-cpu
+Output
+Launch failed: no JobId found.
+
+Command:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar run pka_prot.bat -jobname SM24_micro006_conf_5 SM24_micro006_conf_5.in -HOST lsf-cpu
+Output:
+Launching JAGUAR under jobcontrol.
+An error has occurred.  Information about the error has been written to 
+/home/rustenburg/.schrodinger/exceptions/error20180505-001205.txt 
+
+Please contact help@schrodinger.com for assistance. Include error20180505-001205.txt and a description of what you were doing when the error occurred.
+
+WARNING: Job launch failed for 1/2 times.
+% jaguar run pka_prot.bat -jobname SM24_micro006_conf_5 SM24_micro006_conf_5.in -HOST lsf-cpu
+Output
+Launch failed: no JobId found.
+
+Command:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar run pka_prot.bat -jobname SM24_micro006_conf_5 SM24_micro006_conf_5.in -HOST lsf-cpu
+Output:
+Launching JAGUAR under jobcontrol.
+An error has occurred.  Information about the error has been written to 
+/home/rustenburg/.schrodinger/exceptions/error20180505-001649-1.txt 
+
+Please contact help@schrodinger.com for assistance. Include error20180505-001649-1.txt and a description of what you were doing when the error occurred.
+
+WARNING: Job launch failed for 2/2 times.
+% jaguar run pka_prot.bat -jobname SM24_micro006_conf_5 SM24_micro006_conf_5.in -HOST lsf-cpu
+Output
+Launch failed: no JobId found.
+
+Command:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar run pka_prot.bat -jobname SM24_micro006_conf_5 SM24_micro006_conf_5.in -HOST lsf-cpu
+Output:
+Launching JAGUAR under jobcontrol.
+An error has occurred.  Information about the error has been written to 
+/home/rustenburg/.schrodinger/exceptions/error20180505-002132-1.txt 
+
+Please contact help@schrodinger.com for assistance. Include error20180505-002132-1.txt and a description of what you were doing when the error occurred.
+
+Subjob 'SM24_micro006_conf_2' died (fizzled) [jobid lt09-0-5aed08d1]
+ 1  7  2 | fizzled   lt09-0-5aed08d1 SM24_micro006_conf_2 lsf-cpu [ls02]
+WARNING: Job launch failed for 1/2 times.
+% jaguar run pka_prot.bat -jobname SM24_micro006_conf_2 SM24_micro006_conf_2.in -HOST lsf-cpu
+Output
+Launch failed: no JobId found.
+
+Command:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar run pka_prot.bat -jobname SM24_micro006_conf_2 SM24_micro006_conf_2.in -HOST lsf-cpu
+Output:
+Launching JAGUAR under jobcontrol.
+An error has occurred.  Information about the error has been written to 
+/home/rustenburg/.schrodinger/exceptions/error20180505-002616-1.txt 
+
+Please contact help@schrodinger.com for assistance. Include error20180505-002616-1.txt and a description of what you were doing when the error occurred.
+
+WARNING: Job launch failed for 2/2 times.
+% jaguar run pka_prot.bat -jobname SM24_micro006_conf_2 SM24_micro006_conf_2.in -HOST lsf-cpu
+Output
+Launch failed: no JobId found.
+
+Command:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar run pka_prot.bat -jobname SM24_micro006_conf_2 SM24_micro006_conf_2.in -HOST lsf-cpu
+Output:
+Launching JAGUAR under jobcontrol.
+An error has occurred.  Information about the error has been written to 
+/home/rustenburg/.schrodinger/exceptions/error20180505-003101.txt 
+
+Please contact help@schrodinger.com for assistance. Include error20180505-003101.txt and a description of what you were doing when the error occurred.
+
+WARNING: Job launch failed for 1/2 times.
+% jaguar run pka_prot.bat -jobname SM24_micro006_conf_5 SM24_micro006_conf_5.in -HOST lsf-cpu
+Output
+Launch failed: no JobId found.
+
+Command:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar run pka_prot.bat -jobname SM24_micro006_conf_5 SM24_micro006_conf_5.in -HOST lsf-cpu
+Output:
+Launching JAGUAR under jobcontrol.
+An error has occurred.  Information about the error has been written to 
+/home/rustenburg/.schrodinger/exceptions/error20180505-003548.txt 
+
+Please contact help@schrodinger.com for assistance. Include error20180505-003548.txt and a description of what you were doing when the error occurred.
+
+WARNING: Job launch failed for 2/2 times.
+% jaguar run pka_prot.bat -jobname SM24_micro006_conf_5 SM24_micro006_conf_5.in -HOST lsf-cpu
+Output
+Launch failed: no JobId found.
+
+Command:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar run pka_prot.bat -jobname SM24_micro006_conf_5 SM24_micro006_conf_5.in -HOST lsf-cpu
+Output:
+Launching JAGUAR under jobcontrol.
+An error has occurred.  Information about the error has been written to 
+/home/rustenburg/.schrodinger/exceptions/error20180505-004030.txt 
+
+Please contact help@schrodinger.com for assistance. Include error20180505-004030.txt and a description of what you were doing when the error occurred.
+
+ 2  7  1 | fizzled   lt09-0-5aed08dd SM24_micro006_conf_5 lsf-cpu [lt21]
+ERROR: Subjob 'SM24_micro006_conf_5' has failed after 3 retries.
+
+Last 20 lines of 'SM24_micro006_conf_5.log':
+
+  ERROR: this job could not be launched.
+  
+  Launch host: lt09.hpc.private
+  Launch directory: /lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro006_SM24_micro002/jag_SM24_micro006_SM24_micro002.workdir
+  Launch time: 2018-05-05-00:35:52
+  Command line: /data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar run pka_prot.bat -jobname SM24_micro006_conf_5 SM24_micro006_conf_5.in -HOST lsf-cpu
+  
+  The following error message was returned:
+  Error: in replying to 'JPROXYPORT lilac rustenburg "/data/chodera/schrodinger/schrodinger2017-4-advanced"' - dial tcp lilac:35321: i/o timeout
+
+
+Last 20 lines of 'SM24_micro006_conf_5.recover':
+
+  
+
+Job control errors (from job record):
+  ERROR: could not recover job: remote command failed with exit code 127 [remote host: lilac, output: 'ssh_exchange_identification: Connection closed by remote host']
+Launch failed: no JobId found.
+
+Command:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar run pka_prot.bat -jobname SM24_micro006_conf_5 SM24_micro006_conf_5.in -HOST lsf-cpu
+Output:
+Launching JAGUAR under jobcontrol.
+An error has occurred.  Information about the error has been written to 
+/home/rustenburg/.schrodinger/exceptions/error20180505-004030.txt 
+
+Please contact help@schrodinger.com for assistance. Include error20180505-004030.txt and a description of what you were doing when the error occurred.
+
+Subjob 'SM24_micro006_conf_3' died (fizzled) [jobid lt09-0-5aed08d5]
+ 2  6  2 | fizzled   lt09-0-5aed08d5 SM24_micro006_conf_3 lsf-cpu [ls02]
+WARNING: Job launch failed for 1/2 times.
+% jaguar run pka_prot.bat -jobname SM24_micro006_conf_2 SM24_micro006_conf_2.in -HOST lsf-cpu
+Output
+Launch failed: no JobId found.
+
+Command:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar run pka_prot.bat -jobname SM24_micro006_conf_2 SM24_micro006_conf_2.in -HOST lsf-cpu
+Output:
+Launching JAGUAR under jobcontrol.
+An error has occurred.  Information about the error has been written to 
+/home/rustenburg/.schrodinger/exceptions/error20180505-004514.txt 
+
+Please contact help@schrodinger.com for assistance. Include error20180505-004514.txt and a description of what you were doing when the error occurred.
+
+WARNING: Job launch failed for 2/2 times.
+% jaguar run pka_prot.bat -jobname SM24_micro006_conf_2 SM24_micro006_conf_2.in -HOST lsf-cpu
+Output
+Launch failed: no JobId found.
+
+Command:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar run pka_prot.bat -jobname SM24_micro006_conf_2 SM24_micro006_conf_2.in -HOST lsf-cpu
+Output:
+Launching JAGUAR under jobcontrol.
+An error has occurred.  Information about the error has been written to 
+/home/rustenburg/.schrodinger/exceptions/error20180505-005000.txt 
+
+Please contact help@schrodinger.com for assistance. Include error20180505-005000.txt and a description of what you were doing when the error occurred.
+
+WARNING: Job launch failed for 1/2 times.
+% jaguar run pka_prot.bat -jobname SM24_micro006_conf_3 SM24_micro006_conf_3.in -HOST lsf-cpu
+Output
+Launch failed: no JobId found.
+
+Command:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar run pka_prot.bat -jobname SM24_micro006_conf_3 SM24_micro006_conf_3.in -HOST lsf-cpu
+Output:
+Launching JAGUAR under jobcontrol.
+An error has occurred.  Information about the error has been written to 
+/home/rustenburg/.schrodinger/exceptions/error20180505-005445.txt 
+
+Please contact help@schrodinger.com for assistance. Include error20180505-005445.txt and a description of what you were doing when the error occurred.
+
+WARNING: Job launch failed for 2/2 times.
+% jaguar run pka_prot.bat -jobname SM24_micro006_conf_3 SM24_micro006_conf_3.in -HOST lsf-cpu
+Output
+Launch failed: no JobId found.
+
+Command:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar run pka_prot.bat -jobname SM24_micro006_conf_3 SM24_micro006_conf_3.in -HOST lsf-cpu
+Output:
+Launching JAGUAR under jobcontrol.
+An error has occurred.  Information about the error has been written to 
+/home/rustenburg/.schrodinger/exceptions/error20180505-005928.txt 
+
+Please contact help@schrodinger.com for assistance. Include error20180505-005928.txt and a description of what you were doing when the error occurred.
+
+Subjob 'SM24_micro006_conf_4' died (fizzled) [jobid lt09-1-5aed08d8]
+ 2  5  3 | fizzled   lt09-1-5aed08d8 SM24_micro006_conf_4 lsf-cpu [lt21]
+WARNING: Job launch failed for 1/2 times.
+% jaguar run pka_prot.bat -jobname SM24_micro006_conf_2 SM24_micro006_conf_2.in -HOST lsf-cpu
+Output
+Launch failed: no JobId found.
+
+Command:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar run pka_prot.bat -jobname SM24_micro006_conf_2 SM24_micro006_conf_2.in -HOST lsf-cpu
+Output:
+Launching JAGUAR under jobcontrol.
+An error has occurred.  Information about the error has been written to 
+/home/rustenburg/.schrodinger/exceptions/error20180505-010411.txt 
+
+Please contact help@schrodinger.com for assistance. Include error20180505-010411.txt and a description of what you were doing when the error occurred.
+
+WARNING: Job launch failed for 2/2 times.
+% jaguar run pka_prot.bat -jobname SM24_micro006_conf_2 SM24_micro006_conf_2.in -HOST lsf-cpu
+Output
+Launch failed: no JobId found.
+
+Command:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar run pka_prot.bat -jobname SM24_micro006_conf_2 SM24_micro006_conf_2.in -HOST lsf-cpu
+Output:
+Launching JAGUAR under jobcontrol.
+An error has occurred.  Information about the error has been written to 
+/home/rustenburg/.schrodinger/exceptions/error20180505-010850.txt 
+
+Please contact help@schrodinger.com for assistance. Include error20180505-010850.txt and a description of what you were doing when the error occurred.
+
+WARNING: Job launch failed for 1/2 times.
+% jaguar run pka_prot.bat -jobname SM24_micro006_conf_3 SM24_micro006_conf_3.in -HOST lsf-cpu
+Output
+Launch failed: no JobId found.
+
+Command:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar run pka_prot.bat -jobname SM24_micro006_conf_3 SM24_micro006_conf_3.in -HOST lsf-cpu
+Output:
+Launching JAGUAR under jobcontrol.
+An error has occurred.  Information about the error has been written to 
+/home/rustenburg/.schrodinger/exceptions/error20180505-011327.txt 
+
+Please contact help@schrodinger.com for assistance. Include error20180505-011327.txt and a description of what you were doing when the error occurred.
+
+WARNING: Job launch failed for 2/2 times.
+% jaguar run pka_prot.bat -jobname SM24_micro006_conf_3 SM24_micro006_conf_3.in -HOST lsf-cpu
+Output
+Launch failed: no JobId found.
+
+Command:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar run pka_prot.bat -jobname SM24_micro006_conf_3 SM24_micro006_conf_3.in -HOST lsf-cpu
+Output:
+Launching JAGUAR under jobcontrol.
+An error has occurred.  Information about the error has been written to 
+/home/rustenburg/.schrodinger/exceptions/error20180505-011804-1.txt 
+
+Please contact help@schrodinger.com for assistance. Include error20180505-011804-1.txt and a description of what you were doing when the error occurred.
+
+WARNING: Job launch failed for 1/2 times.
+% jaguar run pka_prot.bat -jobname SM24_micro006_conf_4 SM24_micro006_conf_4.in -HOST lsf-cpu
+Output
+Launch failed: no JobId found.
+
+Command:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar run pka_prot.bat -jobname SM24_micro006_conf_4 SM24_micro006_conf_4.in -HOST lsf-cpu
+Output:
+Launching JAGUAR under jobcontrol.
+An error has occurred.  Information about the error has been written to 
+/home/rustenburg/.schrodinger/exceptions/error20180505-012243.txt 
+
+Please contact help@schrodinger.com for assistance. Include error20180505-012243.txt and a description of what you were doing when the error occurred.
+
+WARNING: Job launch failed for 2/2 times.
+% jaguar run pka_prot.bat -jobname SM24_micro006_conf_4 SM24_micro006_conf_4.in -HOST lsf-cpu
+Output
+Launch failed: no JobId found.
+
+Command:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar run pka_prot.bat -jobname SM24_micro006_conf_4 SM24_micro006_conf_4.in -HOST lsf-cpu
+Output:
+Launching JAGUAR under jobcontrol.
+An error has occurred.  Information about the error has been written to 
+/home/rustenburg/.schrodinger/exceptions/error20180505-012719-6.txt 
+
+Please contact help@schrodinger.com for assistance. Include error20180505-012719-6.txt and a description of what you were doing when the error occurred.
+
+ 3  5  2 | fizzled   lt09-0-5aed08d1 SM24_micro006_conf_2 lsf-cpu [ls02]
+ERROR: Subjob 'SM24_micro006_conf_2' has failed after 3 retries.
+
+Last 20 lines of 'SM24_micro006_conf_2.recover':
+
+  ERROR: this job could not be launched.
+  
+  Launch host: lt09.hpc.private
+  Launch directory: /lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro006_SM24_micro002/jag_SM24_micro006_SM24_micro002.workdir
+  Launch time: 2018-05-05-01:04:16
+  Command line: /data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar run pka_prot.bat -jobname SM24_micro006_conf_2 SM24_micro006_conf_2.in -HOST lsf-cpu
+  
+  The following error message was returned:
+  Error: in replying to 'JPROXYPORT lilac rustenburg "/data/chodera/schrodinger/schrodinger2017-4-advanced"' - dial tcp lilac:35321: i/o timeout
+
+
+Last 20 lines of 'SM24_micro006_conf_2.log':
+
+  
+
+Job control errors (from job record):
+  ERROR: could not recover job: remote command failed with exit code 127 [remote host: lilac, output: 'ssh_exchange_identification: Connection closed by remote host']
+Launch failed: no JobId found.
+
+Command:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar run pka_prot.bat -jobname SM24_micro006_conf_2 SM24_micro006_conf_2.in -HOST lsf-cpu
+Output:
+Launching JAGUAR under jobcontrol.
+An error has occurred.  Information about the error has been written to 
+/home/rustenburg/.schrodinger/exceptions/error20180505-010850.txt 
+
+Please contact help@schrodinger.com for assistance. Include error20180505-010850.txt and a description of what you were doing when the error occurred.
+
+Subjob 'SM24_micro002_conf_1' died (fizzled) [jobid lt09-0-5aed08e2]
+ 3  4  3 | fizzled   lt09-0-5aed08e2 SM24_micro002_conf_1 lsf-cpu [lt21]
+WARNING: Job launch failed for 1/2 times.
+% jaguar run pka_prot.bat -jobname SM24_micro006_conf_3 SM24_micro006_conf_3.in -HOST lsf-cpu
+Output
+Launch failed: no JobId found.
+
+Command:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar run pka_prot.bat -jobname SM24_micro006_conf_3 SM24_micro006_conf_3.in -HOST lsf-cpu
+Output:
+Launching JAGUAR under jobcontrol.
+An error has occurred.  Information about the error has been written to 
+/home/rustenburg/.schrodinger/exceptions/error20180505-013157-6.txt 
+
+Please contact help@schrodinger.com for assistance. Include error20180505-013157-6.txt and a description of what you were doing when the error occurred.
+
+WARNING: Job launch failed for 2/2 times.
+% jaguar run pka_prot.bat -jobname SM24_micro006_conf_3 SM24_micro006_conf_3.in -HOST lsf-cpu
+Output
+Launch failed: no JobId found.
+
+Command:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar run pka_prot.bat -jobname SM24_micro006_conf_3 SM24_micro006_conf_3.in -HOST lsf-cpu
+Output:
+Launching JAGUAR under jobcontrol.
+An error has occurred.  Information about the error has been written to 
+/home/rustenburg/.schrodinger/exceptions/error20180505-013634-7.txt 
+
+Please contact help@schrodinger.com for assistance. Include error20180505-013634-7.txt and a description of what you were doing when the error occurred.
+
+WARNING: Job launch failed for 1/2 times.
+% jaguar run pka_prot.bat -jobname SM24_micro006_conf_4 SM24_micro006_conf_4.in -HOST lsf-cpu
+Output
+Launch failed: no JobId found.
+
+Command:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar run pka_prot.bat -jobname SM24_micro006_conf_4 SM24_micro006_conf_4.in -HOST lsf-cpu
+Output:
+Launching JAGUAR under jobcontrol.
+An error has occurred.  Information about the error has been written to 
+/home/rustenburg/.schrodinger/exceptions/error20180505-014113.txt 
+
+Please contact help@schrodinger.com for assistance. Include error20180505-014113.txt and a description of what you were doing when the error occurred.
+
+WARNING: Job launch failed for 2/2 times.
+% jaguar run pka_prot.bat -jobname SM24_micro006_conf_4 SM24_micro006_conf_4.in -HOST lsf-cpu
+Output
+Launch failed: no JobId found.
+
+Command:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar run pka_prot.bat -jobname SM24_micro006_conf_4 SM24_micro006_conf_4.in -HOST lsf-cpu
+Output:
+Launching JAGUAR under jobcontrol.
+An error has occurred.  Information about the error has been written to 
+/home/rustenburg/.schrodinger/exceptions/error20180505-014552.txt 
+
+Please contact help@schrodinger.com for assistance. Include error20180505-014552.txt and a description of what you were doing when the error occurred.
+
+WARNING: Job launch failed for 1/2 times.
+% jaguar run pka_deprot.bat -jobname SM24_micro002_conf_1 SM24_micro002_conf_1.in -HOST lsf-cpu
+Output
+Launch failed: no JobId found.
+
+Command:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar run pka_deprot.bat -jobname SM24_micro002_conf_1 SM24_micro002_conf_1.in -HOST lsf-cpu
+Output:
+Launching JAGUAR under jobcontrol.
+An error has occurred.  Information about the error has been written to 
+/home/rustenburg/.schrodinger/exceptions/error20180505-015029.txt 
+
+Please contact help@schrodinger.com for assistance. Include error20180505-015029.txt and a description of what you were doing when the error occurred.
+
+WARNING: Job launch failed for 2/2 times.
+% jaguar run pka_deprot.bat -jobname SM24_micro002_conf_1 SM24_micro002_conf_1.in -HOST lsf-cpu
+Output
+Launch failed: no JobId found.
+
+Command:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar run pka_deprot.bat -jobname SM24_micro002_conf_1 SM24_micro002_conf_1.in -HOST lsf-cpu
+Output:
+Launching JAGUAR under jobcontrol.
+An error has occurred.  Information about the error has been written to 
+/home/rustenburg/.schrodinger/exceptions/error20180505-015506.txt 
+
+Please contact help@schrodinger.com for assistance. Include error20180505-015506.txt and a description of what you were doing when the error occurred.
+
+ 4  4  2 | fizzled   lt09-0-5aed08d5 SM24_micro006_conf_3 lsf-cpu [ls02]
+ERROR: Subjob 'SM24_micro006_conf_3' has failed after 3 retries.
+
+Last 20 lines of 'SM24_micro006_conf_3.log':
+
+  ERROR: this job could not be launched.
+  
+  Launch host: lt09.hpc.private
+  Launch directory: /lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro006_SM24_micro002/jag_SM24_micro006_SM24_micro002.workdir
+  Launch time: 2018-05-05-01:32:02
+  Command line: /data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar run pka_prot.bat -jobname SM24_micro006_conf_3 SM24_micro006_conf_3.in -HOST lsf-cpu
+  
+  The following error message was returned:
+  Error: in replying to 'JPROXYPORT lilac rustenburg "/data/chodera/schrodinger/schrodinger2017-4-advanced"' - dial tcp lilac:35321: i/o timeout
+
+
+Last 20 lines of 'SM24_micro006_conf_3.recover':
+
+  
+
+Job control errors (from job record):
+  ERROR: could not recover job: remote command failed with exit code 127 [remote host: lilac, output: 'ssh_exchange_identification: Connection closed by remote host']
+Launch failed: no JobId found.
+
+Command:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar run pka_prot.bat -jobname SM24_micro006_conf_3 SM24_micro006_conf_3.in -HOST lsf-cpu
+Output:
+Launching JAGUAR under jobcontrol.
+An error has occurred.  Information about the error has been written to 
+/home/rustenburg/.schrodinger/exceptions/error20180505-013634-7.txt 
+
+Please contact help@schrodinger.com for assistance. Include error20180505-013634-7.txt and a description of what you were doing when the error occurred.
+
+Subjob 'SM24_micro002_conf_2' died (fizzled) [jobid lt09-0-5aed08e7]
+ 4  3  3 | fizzled   lt09-0-5aed08e7 SM24_micro002_conf_2 lsf-cpu [lt22]
+WARNING: Job launch failed for 1/2 times.
+% jaguar run pka_prot.bat -jobname SM24_micro006_conf_4 SM24_micro006_conf_4.in -HOST lsf-cpu
+Output
+Launch failed: no JobId found.
+
+Command:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar run pka_prot.bat -jobname SM24_micro006_conf_4 SM24_micro006_conf_4.in -HOST lsf-cpu
+Output:
+Launching JAGUAR under jobcontrol.
+An error has occurred.  Information about the error has been written to 
+/home/rustenburg/.schrodinger/exceptions/error20180505-015944.txt 
+
+Please contact help@schrodinger.com for assistance. Include error20180505-015944.txt and a description of what you were doing when the error occurred.
+
+WARNING: Job launch failed for 2/2 times.
+% jaguar run pka_prot.bat -jobname SM24_micro006_conf_4 SM24_micro006_conf_4.in -HOST lsf-cpu
+Output
+Launch failed: no JobId found.
+
+Command:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar run pka_prot.bat -jobname SM24_micro006_conf_4 SM24_micro006_conf_4.in -HOST lsf-cpu
+Output:
+Launching JAGUAR under jobcontrol.
+An error has occurred.  Information about the error has been written to 
+/home/rustenburg/.schrodinger/exceptions/error20180505-020423.txt 
+
+Please contact help@schrodinger.com for assistance. Include error20180505-020423.txt and a description of what you were doing when the error occurred.
+
+WARNING: Job launch failed for 1/2 times.
+% jaguar run pka_deprot.bat -jobname SM24_micro002_conf_1 SM24_micro002_conf_1.in -HOST lsf-cpu
+Output
+Launch failed: no JobId found.
+
+Command:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar run pka_deprot.bat -jobname SM24_micro002_conf_1 SM24_micro002_conf_1.in -HOST lsf-cpu
+Output:
+Launching JAGUAR under jobcontrol.
+An error has occurred.  Information about the error has been written to 
+/home/rustenburg/.schrodinger/exceptions/error20180505-020900.txt 
+
+Please contact help@schrodinger.com for assistance. Include error20180505-020900.txt and a description of what you were doing when the error occurred.
+
+WARNING: Job launch failed for 2/2 times.
+% jaguar run pka_deprot.bat -jobname SM24_micro002_conf_1 SM24_micro002_conf_1.in -HOST lsf-cpu
+Output
+Launch failed: no JobId found.
+
+Command:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar run pka_deprot.bat -jobname SM24_micro002_conf_1 SM24_micro002_conf_1.in -HOST lsf-cpu
+Output:
+Launching JAGUAR under jobcontrol.
+An error has occurred.  Information about the error has been written to 
+/home/rustenburg/.schrodinger/exceptions/error20180505-021339.txt 
+
+Please contact help@schrodinger.com for assistance. Include error20180505-021339.txt and a description of what you were doing when the error occurred.
+
+WARNING: Job launch failed for 1/2 times.
+% jaguar run pka_deprot.bat -jobname SM24_micro002_conf_2 SM24_micro002_conf_2.in -HOST lsf-cpu
+Output
+Launch failed: no JobId found.
+
+Command:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar run pka_deprot.bat -jobname SM24_micro002_conf_2 SM24_micro002_conf_2.in -HOST lsf-cpu
+Output:
+Launching JAGUAR under jobcontrol.
+An error has occurred.  Information about the error has been written to 
+/home/rustenburg/.schrodinger/exceptions/error20180505-021818.txt 
+
+Please contact help@schrodinger.com for assistance. Include error20180505-021818.txt and a description of what you were doing when the error occurred.
+
+WARNING: Job launch failed for 2/2 times.
+% jaguar run pka_deprot.bat -jobname SM24_micro002_conf_2 SM24_micro002_conf_2.in -HOST lsf-cpu
+Output
+Launch failed: no JobId found.
+
+Command:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar run pka_deprot.bat -jobname SM24_micro002_conf_2 SM24_micro002_conf_2.in -HOST lsf-cpu
+Output:
+Launching JAGUAR under jobcontrol.
+An error has occurred.  Information about the error has been written to 
+/home/rustenburg/.schrodinger/exceptions/error20180505-022258-1.txt 
+
+Please contact help@schrodinger.com for assistance. Include error20180505-022258-1.txt and a description of what you were doing when the error occurred.
+
+ 5  3  2 | fizzled   lt09-1-5aed08d8 SM24_micro006_conf_4 lsf-cpu [lt21]
+ERROR: Subjob 'SM24_micro006_conf_4' has failed after 3 retries.
+
+Last 20 lines of 'SM24_micro006_conf_4.recover':
+
+  ERROR: this job could not be launched.
+  
+  Launch host: lt09.hpc.private
+  Launch directory: /lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro006_SM24_micro002/jag_SM24_micro006_SM24_micro002.workdir
+  Launch time: 2018-05-05-01:59:50
+  Command line: /data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar run pka_prot.bat -jobname SM24_micro006_conf_4 SM24_micro006_conf_4.in -HOST lsf-cpu
+  
+  The following error message was returned:
+  Error: in replying to 'JPROXYPORT lilac rustenburg "/data/chodera/schrodinger/schrodinger2017-4-advanced"' - dial tcp lilac:35321: i/o timeout
+
+
+Last 20 lines of 'SM24_micro006_conf_4.log':
+
+  
+
+Job control errors (from job record):
+  ERROR: could not recover job: remote command failed with exit code 127 [remote host: lilac, output: 'ssh_exchange_identification: Connection closed by remote host']
+Launch failed: no JobId found.
+
+Command:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar run pka_prot.bat -jobname SM24_micro006_conf_4 SM24_micro006_conf_4.in -HOST lsf-cpu
+Output:
+Launching JAGUAR under jobcontrol.
+An error has occurred.  Information about the error has been written to 
+/home/rustenburg/.schrodinger/exceptions/error20180505-020423.txt 
+
+Please contact help@schrodinger.com for assistance. Include error20180505-020423.txt and a description of what you were doing when the error occurred.
+
+Subjob 'SM24_micro002_conf_3' died (fizzled) [jobid lt09-0-5aed08ec]
+ 5  2  3 | fizzled   lt09-0-5aed08ec SM24_micro002_conf_3 lsf-cpu [lt22]
+WARNING: Job launch failed for 1/2 times.
+% jaguar run pka_deprot.bat -jobname SM24_micro002_conf_1 SM24_micro002_conf_1.in -HOST lsf-cpu
+Output
+Launch failed: no JobId found.
+
+Command:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar run pka_deprot.bat -jobname SM24_micro002_conf_1 SM24_micro002_conf_1.in -HOST lsf-cpu
+Output:
+Launching JAGUAR under jobcontrol.
+An error has occurred.  Information about the error has been written to 
+/home/rustenburg/.schrodinger/exceptions/error20180505-022737.txt 
+
+Please contact help@schrodinger.com for assistance. Include error20180505-022737.txt and a description of what you were doing when the error occurred.
+
+WARNING: Job launch failed for 2/2 times.
+% jaguar run pka_deprot.bat -jobname SM24_micro002_conf_1 SM24_micro002_conf_1.in -HOST lsf-cpu
+Output
+Launch failed: no JobId found.
+
+Command:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar run pka_deprot.bat -jobname SM24_micro002_conf_1 SM24_micro002_conf_1.in -HOST lsf-cpu
+Output:
+Launching JAGUAR under jobcontrol.
+An error has occurred.  Information about the error has been written to 
+/home/rustenburg/.schrodinger/exceptions/error20180505-023216.txt 
+
+Please contact help@schrodinger.com for assistance. Include error20180505-023216.txt and a description of what you were doing when the error occurred.
+
+WARNING: Job launch failed for 1/2 times.
+% jaguar run pka_deprot.bat -jobname SM24_micro002_conf_2 SM24_micro002_conf_2.in -HOST lsf-cpu
+Output
+Launch failed: no JobId found.
+
+Command:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar run pka_deprot.bat -jobname SM24_micro002_conf_2 SM24_micro002_conf_2.in -HOST lsf-cpu
+Output:
+Launching JAGUAR under jobcontrol.
+An error has occurred.  Information about the error has been written to 
+/home/rustenburg/.schrodinger/exceptions/error20180505-023654.txt 
+
+Please contact help@schrodinger.com for assistance. Include error20180505-023654.txt and a description of what you were doing when the error occurred.
+
+WARNING: Job launch failed for 2/2 times.
+% jaguar run pka_deprot.bat -jobname SM24_micro002_conf_2 SM24_micro002_conf_2.in -HOST lsf-cpu
+Output
+Launch failed: no JobId found.
+
+Command:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar run pka_deprot.bat -jobname SM24_micro002_conf_2 SM24_micro002_conf_2.in -HOST lsf-cpu
+Output:
+Launching JAGUAR under jobcontrol.
+An error has occurred.  Information about the error has been written to 
+/home/rustenburg/.schrodinger/exceptions/error20180505-024131.txt 
+
+Please contact help@schrodinger.com for assistance. Include error20180505-024131.txt and a description of what you were doing when the error occurred.
+
+WARNING: Job launch failed for 1/2 times.
+% jaguar run pka_deprot.bat -jobname SM24_micro002_conf_3 SM24_micro002_conf_3.in -HOST lsf-cpu
+Output
+Launch failed: no JobId found.
+
+Command:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar run pka_deprot.bat -jobname SM24_micro002_conf_3 SM24_micro002_conf_3.in -HOST lsf-cpu
+Output:
+Launching JAGUAR under jobcontrol.
+An error has occurred.  Information about the error has been written to 
+/home/rustenburg/.schrodinger/exceptions/error20180505-024612.txt 
+
+Please contact help@schrodinger.com for assistance. Include error20180505-024612.txt and a description of what you were doing when the error occurred.
+
+WARNING: Job launch failed for 2/2 times.
+% jaguar run pka_deprot.bat -jobname SM24_micro002_conf_3 SM24_micro002_conf_3.in -HOST lsf-cpu
+Output
+Launch failed: no JobId found.
+
+Command:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar run pka_deprot.bat -jobname SM24_micro002_conf_3 SM24_micro002_conf_3.in -HOST lsf-cpu
+Output:
+Launching JAGUAR under jobcontrol.
+An error has occurred.  Information about the error has been written to 
+/home/rustenburg/.schrodinger/exceptions/error20180505-025052.txt 
+
+Please contact help@schrodinger.com for assistance. Include error20180505-025052.txt and a description of what you were doing when the error occurred.
+
+ 6  2  2 | fizzled   lt09-0-5aed08e2 SM24_micro002_conf_1 lsf-cpu [lt21]
+ERROR: Subjob 'SM24_micro002_conf_1' has failed after 3 retries.
+
+Last 20 lines of 'SM24_micro002_conf_1.log':
+
+  ERROR: this job could not be launched.
+  
+  Launch host: lt09.hpc.private
+  Launch directory: /lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro006_SM24_micro002/jag_SM24_micro006_SM24_micro002.workdir
+  Launch time: 2018-05-05-02:27:42
+  Command line: /data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar run pka_deprot.bat -jobname SM24_micro002_conf_1 SM24_micro002_conf_1.in -HOST lsf-cpu
+  
+  The following error message was returned:
+  Error: in replying to 'JPROXYPORT lilac rustenburg "/data/chodera/schrodinger/schrodinger2017-4-advanced"' - dial tcp lilac:35321: i/o timeout
+
+
+Last 20 lines of 'SM24_micro002_conf_1.recover':
+
+  
+
+Job control errors (from job record):
+  ERROR: could not recover job: remote command failed with exit code 127 [remote host: lilac, output: 'ssh_exchange_identification: Connection closed by remote host']
+Launch failed: no JobId found.
+
+Command:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar run pka_deprot.bat -jobname SM24_micro002_conf_1 SM24_micro002_conf_1.in -HOST lsf-cpu
+Output:
+Launching JAGUAR under jobcontrol.
+An error has occurred.  Information about the error has been written to 
+/home/rustenburg/.schrodinger/exceptions/error20180505-023216.txt 
+
+Please contact help@schrodinger.com for assistance. Include error20180505-023216.txt and a description of what you were doing when the error occurred.
+
+Subjob 'SM24_micro002_conf_4' died (fizzled) [jobid lt09-1-5aed08f0]
+ 6  1  3 | fizzled   lt09-1-5aed08f0 SM24_micro002_conf_4 lsf-cpu [lt22]
+WARNING: Job launch failed for 1/2 times.
+% jaguar run pka_deprot.bat -jobname SM24_micro002_conf_2 SM24_micro002_conf_2.in -HOST lsf-cpu
+Output
+Launch failed: no JobId found.
+
+Command:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar run pka_deprot.bat -jobname SM24_micro002_conf_2 SM24_micro002_conf_2.in -HOST lsf-cpu
+Output:
+Launching JAGUAR under jobcontrol.
+An error has occurred.  Information about the error has been written to 
+/home/rustenburg/.schrodinger/exceptions/error20180505-025530.txt 
+
+Please contact help@schrodinger.com for assistance. Include error20180505-025530.txt and a description of what you were doing when the error occurred.
+
+WARNING: Job launch failed for 2/2 times.
+% jaguar run pka_deprot.bat -jobname SM24_micro002_conf_2 SM24_micro002_conf_2.in -HOST lsf-cpu
+Output
+Launch failed: no JobId found.
+
+Command:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar run pka_deprot.bat -jobname SM24_micro002_conf_2 SM24_micro002_conf_2.in -HOST lsf-cpu
+Output:
+Launching JAGUAR under jobcontrol.
+An error has occurred.  Information about the error has been written to 
+/home/rustenburg/.schrodinger/exceptions/error20180505-030008-1.txt 
+
+Please contact help@schrodinger.com for assistance. Include error20180505-030008-1.txt and a description of what you were doing when the error occurred.
+
+WARNING: Job launch failed for 1/2 times.
+% jaguar run pka_deprot.bat -jobname SM24_micro002_conf_3 SM24_micro002_conf_3.in -HOST lsf-cpu
+Output
+Launch failed: no JobId found.
+
+Command:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar run pka_deprot.bat -jobname SM24_micro002_conf_3 SM24_micro002_conf_3.in -HOST lsf-cpu
+Output:
+Launching JAGUAR under jobcontrol.
+An error has occurred.  Information about the error has been written to 
+/home/rustenburg/.schrodinger/exceptions/error20180505-030447.txt 
+
+Please contact help@schrodinger.com for assistance. Include error20180505-030447.txt and a description of what you were doing when the error occurred.
+
+WARNING: Job launch failed for 2/2 times.
+% jaguar run pka_deprot.bat -jobname SM24_micro002_conf_3 SM24_micro002_conf_3.in -HOST lsf-cpu
+Output
+Launch failed: no JobId found.
+
+Command:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar run pka_deprot.bat -jobname SM24_micro002_conf_3 SM24_micro002_conf_3.in -HOST lsf-cpu
+Output:
+Launching JAGUAR under jobcontrol.
+An error has occurred.  Information about the error has been written to 
+/home/rustenburg/.schrodinger/exceptions/error20180505-030926.txt 
+
+Please contact help@schrodinger.com for assistance. Include error20180505-030926.txt and a description of what you were doing when the error occurred.
+
+WARNING: Job launch failed for 1/2 times.
+% jaguar run pka_deprot.bat -jobname SM24_micro002_conf_4 SM24_micro002_conf_4.in -HOST lsf-cpu
+Output
+Launch failed: no JobId found.
+
+Command:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar run pka_deprot.bat -jobname SM24_micro002_conf_4 SM24_micro002_conf_4.in -HOST lsf-cpu
+Output:
+Launching JAGUAR under jobcontrol.
+An error has occurred.  Information about the error has been written to 
+/home/rustenburg/.schrodinger/exceptions/error20180505-031407.txt 
+
+Please contact help@schrodinger.com for assistance. Include error20180505-031407.txt and a description of what you were doing when the error occurred.
+
+WARNING: Job launch failed for 2/2 times.
+% jaguar run pka_deprot.bat -jobname SM24_micro002_conf_4 SM24_micro002_conf_4.in -HOST lsf-cpu
+Output
+Launch failed: no JobId found.
+
+Command:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar run pka_deprot.bat -jobname SM24_micro002_conf_4 SM24_micro002_conf_4.in -HOST lsf-cpu
+Output:
+Launching JAGUAR under jobcontrol.
+An error has occurred.  Information about the error has been written to 
+/home/rustenburg/.schrodinger/exceptions/error20180505-031847.txt 
+
+Please contact help@schrodinger.com for assistance. Include error20180505-031847.txt and a description of what you were doing when the error occurred.
+
+ 7  1  2 | fizzled   lt09-0-5aed08e7 SM24_micro002_conf_2 lsf-cpu [lt22]
+ERROR: Subjob 'SM24_micro002_conf_2' has failed after 3 retries.
+
+Last 20 lines of 'SM24_micro002_conf_2.log':
+
+  ERROR: this job could not be launched.
+  
+  Launch host: lt09.hpc.private
+  Launch directory: /lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro006_SM24_micro002/jag_SM24_micro006_SM24_micro002.workdir
+  Launch time: 2018-05-05-02:55:34
+  Command line: /data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar run pka_deprot.bat -jobname SM24_micro002_conf_2 SM24_micro002_conf_2.in -HOST lsf-cpu
+  
+  The following error message was returned:
+  Error: in replying to 'JPROXYPORT lilac rustenburg "/data/chodera/schrodinger/schrodinger2017-4-advanced"' - dial tcp lilac:35321: i/o timeout
+
+
+Last 20 lines of 'SM24_micro002_conf_2.recover':
+
+  
+
+Job control errors (from job record):
+  ERROR: could not recover job: remote command failed with exit code 127 [remote host: lilac, output: 'ssh_exchange_identification: Connection closed by remote host']
+Launch failed: no JobId found.
+
+Command:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar run pka_deprot.bat -jobname SM24_micro002_conf_2 SM24_micro002_conf_2.in -HOST lsf-cpu
+Output:
+Launching JAGUAR under jobcontrol.
+An error has occurred.  Information about the error has been written to 
+/home/rustenburg/.schrodinger/exceptions/error20180505-030008-1.txt 
+
+Please contact help@schrodinger.com for assistance. Include error20180505-030008-1.txt and a description of what you were doing when the error occurred.
+
+ 8  0  2 | finished  lt09-0-5aed2bbc SM24_micro002_conf_5 localhost [lt09]
+ 8  1  1 | restarted lt09-0-5aed5add SM24_micro002_conf_3 localhost [lt09]
+WARNING: Job launch failed for 1/2 times.
+% jaguar run pka_deprot.bat -jobname SM24_micro002_conf_4 SM24_micro002_conf_4.in -HOST lsf-cpu
+Output
+Launch failed: no JobId found.
+
+Command:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar run pka_deprot.bat -jobname SM24_micro002_conf_4 SM24_micro002_conf_4.in -HOST lsf-cpu
+Output:
+Launching JAGUAR under jobcontrol.
+An error has occurred.  Information about the error has been written to 
+/home/rustenburg/.schrodinger/exceptions/error20180505-032337.txt 
+
+Please contact help@schrodinger.com for assistance. Include error20180505-032337.txt and a description of what you were doing when the error occurred.
+
+WARNING: Job launch failed for 2/2 times.
+% jaguar run pka_deprot.bat -jobname SM24_micro002_conf_4 SM24_micro002_conf_4.in -HOST lsf-cpu
+Output
+Launch failed: no JobId found.
+
+Command:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar run pka_deprot.bat -jobname SM24_micro002_conf_4 SM24_micro002_conf_4.in -HOST lsf-cpu
+Output:
+Launching JAGUAR under jobcontrol.
+An error has occurred.  Information about the error has been written to 
+/home/rustenburg/.schrodinger/exceptions/error20180505-032824.txt 
+
+Please contact help@schrodinger.com for assistance. Include error20180505-032824.txt and a description of what you were doing when the error occurred.
+
+WARNING: Job launch failed for 1/2 times.
+% jaguar run pka_deprot.bat -jobname SM24_micro002_conf_4 SM24_micro002_conf_4.in -HOST lsf-cpu
+Output
+Launch failed: no JobId found.
+
+Command:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar run pka_deprot.bat -jobname SM24_micro002_conf_4 SM24_micro002_conf_4.in -HOST lsf-cpu
+Output:
+Launching JAGUAR under jobcontrol.
+An error has occurred.  Information about the error has been written to 
+/home/rustenburg/.schrodinger/exceptions/error20180505-033309.txt 
+
+Please contact help@schrodinger.com for assistance. Include error20180505-033309.txt and a description of what you were doing when the error occurred.
+
+WARNING: Job launch failed for 2/2 times.
+% jaguar run pka_deprot.bat -jobname SM24_micro002_conf_4 SM24_micro002_conf_4.in -HOST lsf-cpu
+Output
+Launch failed: no JobId found.
+
+Command:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar run pka_deprot.bat -jobname SM24_micro002_conf_4 SM24_micro002_conf_4.in -HOST lsf-cpu
+Output:
+Launching JAGUAR under jobcontrol.
+An error has occurred.  Information about the error has been written to 
+/home/rustenburg/.schrodinger/exceptions/error20180505-033752.txt 
+
+Please contact help@schrodinger.com for assistance. Include error20180505-033752.txt and a description of what you were doing when the error occurred.
+
+ 9  1  0 | fizzled   lt09-1-5aed08f0 SM24_micro002_conf_4 lsf-cpu [lt22]
+ERROR: Subjob 'SM24_micro002_conf_4' has failed after 3 retries.
+
+Last 20 lines of 'SM24_micro002_conf_4.log':
+
+  ERROR: this job could not be launched.
+  
+  Launch host: lt09.hpc.private
+  Launch directory: /lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro006_SM24_micro002/jag_SM24_micro006_SM24_micro002.workdir
+  Launch time: 2018-05-05-03:33:17
+  Command line: /data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar run pka_deprot.bat -jobname SM24_micro002_conf_4 SM24_micro002_conf_4.in -HOST lsf-cpu
+  
+  The following error message was returned:
+  Error: in replying to 'JPROXYPORT lilac rustenburg "/data/chodera/schrodinger/schrodinger2017-4-advanced"' - dial tcp lilac:35321: i/o timeout
+
+
+Last 20 lines of 'SM24_micro002_conf_4.recover':
+
+  
+
+Job control errors (from job record):
+  ERROR: could not recover job: remote command failed with exit code 127 [remote host: lilac, output: 'ssh_exchange_identification: Connection closed by remote host']
+Launch failed: no JobId found.
+
+Command:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar run pka_deprot.bat -jobname SM24_micro002_conf_4 SM24_micro002_conf_4.in -HOST lsf-cpu
+Output:
+Launching JAGUAR under jobcontrol.
+An error has occurred.  Information about the error has been written to 
+/home/rustenburg/.schrodinger/exceptions/error20180505-033752.txt 
+
+Please contact help@schrodinger.com for assistance. Include error20180505-033752.txt and a description of what you were doing when the error occurred.
+
+10  0  0 | finished  lt09-0-5aed5add SM24_micro002_conf_3 localhost [lt09]
+
+All jobs have completed.
+
+3 of 10 job(s) succeeded; 7 job(s) failed.
+
+Timer (distribute subjobs) : 26813.90 secs (7 hrs, 26 mins, 53 secs)
+
+Processing QM output files...
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -energy SM24_micro006_conf_1.nrg_h.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -esolv SM24_micro006_conf_1.sol_h.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -energy SM24_micro006_conf_2.nrg_h.out
+
+  Results command failed: "/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -energy SM24_micro006_conf_2.nrg_h.out"
+
+An error has occurred.  Information about the error has been written to 
+/home/rustenburg/.schrodinger/exceptions/error20180505-045544.txt 
+
+Please contact help@schrodinger.com for assistance. Include error20180505-045544.txt and a description of what you were doing when the error occurred.

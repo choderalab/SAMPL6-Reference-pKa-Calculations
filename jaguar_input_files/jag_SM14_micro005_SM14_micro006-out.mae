@@ -1,0 +1,996 @@
+{ 
+ s_m_m2io_version
+ :::
+ 2.0.0 
+} 
+
+f_m_ct { 
+ s_m_title
+ s_m_entry_id
+ s_m_entry_name
+ s_canvas_canonical_SMILES
+ i_canvas_canvasUID
+ s_m_Source_Path
+ s_m_Source_File
+ i_m_Source_File_Index
+ s_m_subgroupid
+ s_m_subgroup_title
+ b_m_subgroup_collapsed
+ i_m_Molecular_charge
+ i_m_Spin_multiplicity
+ s_j_Task
+ s_j_Jaguar_input_file
+ s_j_Jaguar_restart_input_file
+ s_j_Jaguar_restart_mae_file
+ s_j_Jaguar_output_file
+ s_j_Jaguar_log_file
+ s_j_Jaguar_mae_file
+ s_j_QM_Method
+ s_j_QM_Basis
+ i_j_Number_of_canonical_orbitals
+ i_j_Geometry_convergence_category
+ r_j_Gas_Phase_Energy
+ r_j_HOMO
+ r_j_LUMO
+ r_j_pKa_water
+ i_m_ct_format
+ :::
+ "lowest energy protonated conformer" 
+  177 
+  converted.177 
+  c1ccc(cc1)n2c[nH+]c3c2ccc(c3)[NH-] 
+  177
+  C:\Users\rustenba\Documents\Repos\Jaguar_Ref_pKa\microstates 
+  converted.mae 
+  177
+  SM14_micro005 
+  converted 
+  0
+  0
+  1
+  Optimization 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM14_micro005_conf_2.dft_h.in 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM14_micro005_conf_2.dft_h.01.in 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM14_micro005_conf_2.dft_h.01.mae 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM14_micro005_conf_2.dft_h.out 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM14_micro005_conf_2.dft_h.log 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM14_micro005_conf_2.mae 
+  DFT(b3lyp) 
+  pka-geopt* 
+  260
+  0
+  -666.190545094903
+  -0.125498048747518
+  -0.0367526739028153
+  7.1
+  2
+ m_depend[16] { 
+  # First column is dependency index #
+  i_m_depend_dependency
+  s_m_depend_property
+  :::
+  1 20 i_m_Molecular_charge 
+  2 20 i_m_Spin_multiplicity 
+  3 20 s_j_Task 
+  4 20 s_j_Jaguar_input_file 
+  5 20 s_j_Jaguar_restart_input_file 
+  6 20 s_j_Jaguar_restart_mae_file 
+  7 20 s_j_Jaguar_output_file 
+  8 20 s_j_Jaguar_log_file 
+  9 20 s_j_Jaguar_mae_file 
+  10 20 s_j_QM_Method 
+  11 20 s_j_QM_Basis 
+  12 20 i_j_Number_of_canonical_orbitals 
+  13 20 i_j_Geometry_convergence_category 
+  14 20 r_j_Gas_Phase_Energy 
+  15 20 r_j_HOMO 
+  16 20 r_j_LUMO 
+  :::
+ } 
+ m_atom[27] { 
+  # First column is atom index #
+  i_m_mmod_type
+  r_m_x_coord
+  r_m_y_coord
+  r_m_z_coord
+  i_m_residue_number
+  i_m_color
+  r_m_charge1
+  r_m_charge2
+  i_m_atomic_number
+  i_m_formal_charge
+  s_m_atom_name
+  s_m_label_format
+  i_m_label_color
+  s_m_label_user_text
+  i_m_Hcount
+  r_j_pKa_water
+  :::
+  1 2 -0.550704 -0.508897 -0.955182 900 2 -0.09682 -0.09682 6 0 C1  %UA:r_j_pKa_water:  1 ""  1 <>
+  2 2 -1.937220 -0.460629 -1.100794 900 2 -0.09682 -0.09682 6 0 C2  %UA:r_j_pKa_water:  1 ""  1 <>
+  3 2 -2.722058 0.160769 -0.127844 900 2 -0.09682 -0.09682 6 0 C3  %UA:r_j_pKa_water:  1 ""  1 <>
+  4 2 -2.124335 0.738373 0.993656 900 2 -0.09682 -0.09682 6 0 C4  %UA:r_j_pKa_water:  1 ""  1 <>
+  5 2 -0.738587 0.694976 1.148079 900 2 -0.09682 -0.09682 6 0 C5  %UA:r_j_pKa_water:  1 ""  1 <>
+  6 2 0.034581 0.065225 0.173036 900 2 0.14068 0.14068 6 0 C6  %UA:r_j_pKa_water:  1 ""  0 <>
+  7 25 1.461747 0.018805 0.327296 900 43 -0.52890 -0.52890 7 0 N7  %UA:r_j_pKa_water:  1 ""  0 <>
+  8 2 2.117859 -0.967619 0.956022 900 2 0.26588 0.26588 6 0 C8  %UA:r_j_pKa_water:  1 ""  1 <>
+  9 31 3.445569 -0.686498 0.910265 900 43 -0.43180 -0.43180 7 1 N9  %UA:r_j_pKa_water:  1 ""  1 <>
+  10 2 2.366074 0.965806 -0.140033 900 2 0.28378 0.28378 6 0 C10  %UA:r_j_pKa_water:  1 ""  0 <>
+  11 2 3.667712 0.525730 0.229355 900 2 0.28378 0.28378 6 0 C11  %UA:r_j_pKa_water:  1 ""  0 <>
+  12 2 2.208611 2.172097 -0.851093 900 2 -0.29542 -0.29542 6 0 C12  %UA:r_j_pKa_water:  1 ""  1 <>
+  13 2 3.346274 2.875427 -1.154919 900 2 -0.07502 -0.07502 6 0 C13  %UA:r_j_pKa_water:  1 ""  1 <>
+  14 2 4.713982 2.463167 -0.795631 900 2 0.22898 0.22898 6 0 C14  %UA:r_j_pKa_water:  1 ""  0 <>
+  15 2 4.816574 1.211236 -0.064089 900 2 -0.29542 -0.29542 6 0 C15  %UA:r_j_pKa_water:  1 ""  1 <>
+  16 39 5.796379 3.138229 -1.089574 900 43 -1.33250 -1.33250 7 -1 N16  %UA:r_j_pKa_water:  1 ""  1 <>
+  17 44 4.165159 -1.268665 1.311276 900 21 0.42540 0.42540 1 0 H17  %UA:r_j_pKa_water:  1 ""  0 7.1
+  18 45 5.534504 3.986938 -1.602885 900 21 0.21000 0.21000 1 0 H18  %UA:r_j_pKa_water:  1 ""  0 <>
+  19 41 0.077588 -0.980939 -1.704513 900 21 0.13318 0.13318 1 0 H19  %UA:r_j_pKa_water:  1 ""  0 <>
+  20 41 -2.402386 -0.907001 -1.974882 900 21 0.13318 0.13318 1 0 H20  %UA:r_j_pKa_water:  1 ""  0 <>
+  21 41 -3.801575 0.197354 -0.245266 900 21 0.13318 0.13318 1 0 H21  %UA:r_j_pKa_water:  1 ""  0 <>
+  22 41 -2.734985 1.224782 1.748744 900 21 0.13318 0.13318 1 0 H22  %UA:r_j_pKa_water:  1 ""  0 <>
+  23 41 -0.254095 1.144986 2.009388 900 21 0.13318 0.13318 1 0 H23  %UA:r_j_pKa_water:  1 ""  0 <>
+  24 41 1.658051 -1.828855 1.409362 900 21 0.24028 0.24028 1 0 H24  %UA:r_j_pKa_water:  1 ""  0 <>
+  25 41 1.224449 2.529936 -1.140955 900 21 0.24938 0.24938 1 0 H25  %UA:r_j_pKa_water:  1 ""  0 <>
+  26 41 3.251275 3.811332 -1.702708 900 21 0.19968 0.19968 1 0 H26  %UA:r_j_pKa_water:  1 ""  0 <>
+  27 41 5.801356 0.860266 0.226016 900 21 0.24938 0.24938 1 0 H27  %UA:r_j_pKa_water:  1 ""  0 <>
+  :::
+ } 
+ m_bond[29] { 
+  # First column is bond index #
+  i_m_from
+  i_m_to
+  i_m_order
+  :::
+  1 1 6 1
+  2 1 2 2
+  3 1 19 1
+  4 2 3 1
+  5 2 20 1
+  6 3 4 2
+  7 3 21 1
+  8 4 5 1
+  9 4 22 1
+  10 5 6 2
+  11 5 23 1
+  12 6 7 1
+  13 7 8 1
+  14 7 10 1
+  15 8 9 2
+  16 8 24 1
+  17 9 11 1
+  18 9 17 1
+  19 10 11 2
+  20 10 12 1
+  21 11 15 1
+  22 12 13 2
+  23 12 25 1
+  24 13 14 1
+  25 13 26 1
+  26 14 15 2
+  27 14 16 1
+  28 15 27 1
+  29 16 18 1
+  :::
+ } 
+} 
+
+f_m_ct { 
+ s_m_title
+ s_m_entry_id
+ s_m_entry_name
+ s_canvas_canonical_SMILES
+ i_canvas_canvasUID
+ s_m_Source_Path
+ s_m_Source_File
+ i_m_Source_File_Index
+ s_m_subgroupid
+ s_m_subgroup_title
+ b_m_subgroup_collapsed
+ i_m_Molecular_charge
+ i_m_Spin_multiplicity
+ s_j_Task
+ s_j_Jaguar_input_file
+ s_j_Jaguar_restart_input_file
+ s_j_Jaguar_restart_mae_file
+ s_j_Jaguar_output_file
+ s_j_Jaguar_log_file
+ s_j_Jaguar_mae_file
+ s_j_QM_Method
+ s_j_QM_Basis
+ i_j_Number_of_canonical_orbitals
+ i_j_Geometry_convergence_category
+ r_j_Gas_Phase_Energy
+ r_j_HOMO
+ r_j_LUMO
+ r_j_pKa_water
+ i_m_ct_format
+ :::
+ "lowest energy deprotonated conformer" 
+  178 
+  converted.178 
+  c1ccc(cc1)n2cnc3c2ccc(c3)[NH-] 
+  178
+  C:\Users\rustenba\Documents\Repos\Jaguar_Ref_pKa\microstates 
+  converted.mae 
+  178
+  SM14_micro005 
+  converted 
+  0
+  -1
+  1
+  Optimization 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM14_micro006_conf_2.dft.in 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM14_micro006_conf_2.dft.01.in 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM14_micro006_conf_2.dft.01.mae 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM14_micro006_conf_2.dft.out 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM14_micro006_conf_2.dft.log 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM14_micro006_conf_2.mae 
+  DFT(b3lyp) 
+  pka-geopt* 
+  258
+  0
+  -665.658100707277
+  0.0216191827867156
+  0.0919778724882943
+  7.1
+  2
+ m_depend[16] { 
+  # First column is dependency index #
+  i_m_depend_dependency
+  s_m_depend_property
+  :::
+  1 20 i_m_Molecular_charge 
+  2 20 i_m_Spin_multiplicity 
+  3 20 s_j_Task 
+  4 20 s_j_Jaguar_input_file 
+  5 20 s_j_Jaguar_restart_input_file 
+  6 20 s_j_Jaguar_restart_mae_file 
+  7 20 s_j_Jaguar_output_file 
+  8 20 s_j_Jaguar_log_file 
+  9 20 s_j_Jaguar_mae_file 
+  10 20 s_j_QM_Method 
+  11 20 s_j_QM_Basis 
+  12 20 i_j_Number_of_canonical_orbitals 
+  13 20 i_j_Geometry_convergence_category 
+  14 20 r_j_Gas_Phase_Energy 
+  15 20 r_j_HOMO 
+  16 20 r_j_LUMO 
+  :::
+ } 
+ m_atom[26] { 
+  # First column is atom index #
+  i_m_mmod_type
+  r_m_x_coord
+  r_m_y_coord
+  r_m_z_coord
+  i_m_residue_number
+  i_m_color
+  r_m_charge1
+  r_m_charge2
+  i_m_atomic_number
+  i_m_formal_charge
+  s_m_atom_name
+  s_m_label_format
+  i_m_label_color
+  s_m_label_user_text
+  i_m_Hcount
+  r_j_pKa_water
+  :::
+  1 2 -0.867398 0.204603 -1.261213 900 2 -0.11500 -0.11500 6 0 C1  %UA:r_j_pKa_water:  1 ""  1 <>
+  2 2 -2.233138 0.296014 -1.015502 900 2 -0.11500 -0.11500 6 0 C2  %UA:r_j_pKa_water:  1 ""  1 <>
+  3 2 -2.744120 0.118963 0.274759 900 2 -0.11500 -0.11500 6 0 C3  %UA:r_j_pKa_water:  1 ""  1 <>
+  4 2 -1.853145 -0.140792 1.319261 900 2 -0.11500 -0.11500 6 0 C4  %UA:r_j_pKa_water:  1 ""  1 <>
+  5 2 -0.482385 -0.219727 1.092303 900 2 -0.11500 -0.11500 6 0 C5  %UA:r_j_pKa_water:  1 ""  1 <>
+  6 2 0.036545 -0.044307 -0.207000 900 2 0.12250 0.12250 6 0 C6  %UA:r_j_pKa_water:  1 ""  0 <>
+  7 25 1.408503 -0.115743 -0.447290 900 43 -0.34100 -0.34100 7 0 N7  %UA:r_j_pKa_water:  1 ""  0 <>
+  8 2 2.090509 0.647322 -1.394159 900 2 0.36110 0.36110 6 0 C8  %UA:r_j_pKa_water:  1 ""  1 <>
+  9 25 3.384139 0.541397 -1.349634 900 43 -0.67870 -0.67870 7 0 N9  %UA:r_j_pKa_water:  1 ""  0 7.1
+  10 2 2.421789 -0.777622 0.287176 900 2 0.22990 0.22990 6 0 C10  %UA:r_j_pKa_water:  1 ""  0 <>
+  11 2 3.647033 -0.367461 -0.300863 900 2 0.49820 0.49820 6 0 C11  %UA:r_j_pKa_water:  1 ""  0 <>
+  12 2 2.428004 -1.740564 1.305943 900 2 -0.32900 -0.32900 6 0 C12  %UA:r_j_pKa_water:  1 ""  1 <>
+  13 2 3.650835 -2.223647 1.742802 900 2 -0.18170 -0.18170 6 0 C13  %UA:r_j_pKa_water:  1 ""  1 <>
+  14 2 4.946697 -1.811665 1.207771 900 2 0.12490 0.12490 6 0 C14  %UA:r_j_pKa_water:  1 ""  0 <>
+  15 2 4.870010 -0.852818 0.126753 900 2 -0.36960 -0.36960 6 0 C15  %UA:r_j_pKa_water:  1 ""  1 <>
+  16 39 6.125577 -2.255284 1.627830 900 43 -1.33250 -1.33250 7 -1 N16  %UA:r_j_pKa_water:  1 ""  1 <>
+  17 45 5.951881 -2.929772 2.385809 900 21 0.21000 0.21000 1 0 H17  %UA:r_j_pKa_water:  1 ""  0 <>
+  18 41 -0.491225 0.298513 -2.275548 900 21 0.11500 0.11500 1 0 H18  %UA:r_j_pKa_water:  1 ""  0 <>
+  19 41 -2.909447 0.486385 -1.846758 900 21 0.11500 0.11500 1 0 H19  %UA:r_j_pKa_water:  1 ""  0 <>
+  20 41 -3.814256 0.174114 0.458971 900 21 0.11500 0.11500 1 0 H20  %UA:r_j_pKa_water:  1 ""  0 <>
+  21 41 -2.228693 -0.274701 2.332008 900 21 0.11500 0.11500 1 0 H21  %UA:r_j_pKa_water:  1 ""  0 <>
+  22 41 0.204013 -0.385452 1.914147 900 21 0.11500 0.11500 1 0 H22  %UA:r_j_pKa_water:  1 ""  0 <>
+  23 41 1.542022 1.306889 -2.056200 900 21 0.11770 0.11770 1 0 H23  %UA:r_j_pKa_water:  1 ""  0 <>
+  24 41 1.506618 -2.124480 1.739349 900 21 0.19840 0.19840 1 0 H24  %UA:r_j_pKa_water:  1 ""  0 <>
+  25 41 3.660497 -2.969259 2.539539 900 21 0.16070 0.16070 1 0 H25  %UA:r_j_pKa_water:  1 ""  0 <>
+  26 41 5.791611 -0.529784 -0.349021 900 21 0.20910 0.20910 1 0 H26  %UA:r_j_pKa_water:  1 ""  0 <>
+  :::
+ } 
+ m_bond[28] { 
+  # First column is bond index #
+  i_m_from
+  i_m_to
+  i_m_order
+  :::
+  1 1 6 1
+  2 1 2 2
+  3 1 18 1
+  4 2 3 1
+  5 2 19 1
+  6 3 4 2
+  7 3 20 1
+  8 4 5 1
+  9 4 21 1
+  10 5 6 2
+  11 5 22 1
+  12 6 7 1
+  13 7 8 1
+  14 7 10 1
+  15 8 9 2
+  16 8 23 1
+  17 9 11 1
+  18 10 11 2
+  19 10 12 1
+  20 11 15 1
+  21 12 13 2
+  22 12 24 1
+  23 13 14 1
+  24 13 25 1
+  25 14 15 2
+  26 14 16 1
+  27 15 26 1
+  28 16 17 1
+  :::
+ } 
+} 
+
+f_m_ct { 
+ s_m_title
+ s_m_entry_id
+ s_m_entry_name
+ s_canvas_canonical_SMILES
+ i_canvas_canvasUID
+ s_m_Source_Path
+ s_m_Source_File
+ i_m_Source_File_Index
+ s_m_subgroupid
+ s_m_subgroup_title
+ b_m_subgroup_collapsed
+ i_m_Molecular_charge
+ i_m_Spin_multiplicity
+ s_j_Task
+ s_j_Jaguar_input_file
+ s_j_Jaguar_restart_input_file
+ s_j_Jaguar_restart_mae_file
+ s_j_Jaguar_output_file
+ s_j_Jaguar_log_file
+ s_j_Jaguar_mae_file
+ s_j_QM_Method
+ s_j_QM_Basis
+ i_j_Number_of_canonical_orbitals
+ i_j_Geometry_convergence_category
+ r_j_Gas_Phase_Energy
+ r_j_HOMO
+ r_j_LUMO
+ i_m_ct_format
+ :::
+ conf-1 
+  177 
+  converted.177 
+  c1ccc(cc1)n2c[nH+]c3c2ccc(c3)[NH-] 
+  177
+  C:\Users\rustenba\Documents\Repos\Jaguar_Ref_pKa\microstates 
+  converted.mae 
+  177
+  "SM14_micro005->all protonated conformers" 
+  converted 
+  1
+  0
+  1
+  Optimization 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM14_micro005_conf_1.dft_h.in 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM14_micro005_conf_1.dft_h.01.in 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM14_micro005_conf_1.dft_h.01.mae 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM14_micro005_conf_1.dft_h.out 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM14_micro005_conf_1.dft_h.log 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM14_micro005_conf_1.mae 
+  DFT(b3lyp) 
+  pka-geopt* 
+  260
+  0
+  -666.191957723956
+  -0.12716129331711
+  -0.0487931537262546
+  2
+ m_depend[16] { 
+  # First column is dependency index #
+  i_m_depend_dependency
+  s_m_depend_property
+  :::
+  1 20 i_m_Molecular_charge 
+  2 20 i_m_Spin_multiplicity 
+  3 20 s_j_Task 
+  4 20 s_j_Jaguar_input_file 
+  5 20 s_j_Jaguar_restart_input_file 
+  6 20 s_j_Jaguar_restart_mae_file 
+  7 20 s_j_Jaguar_output_file 
+  8 20 s_j_Jaguar_log_file 
+  9 20 s_j_Jaguar_mae_file 
+  10 20 s_j_QM_Method 
+  11 20 s_j_QM_Basis 
+  12 20 i_j_Number_of_canonical_orbitals 
+  13 20 i_j_Geometry_convergence_category 
+  14 20 r_j_Gas_Phase_Energy 
+  15 20 r_j_HOMO 
+  16 20 r_j_LUMO 
+  :::
+ } 
+ m_atom[27] { 
+  # First column is atom index #
+  i_m_mmod_type
+  r_m_x_coord
+  r_m_y_coord
+  r_m_z_coord
+  i_m_residue_number
+  i_m_color
+  r_m_charge1
+  r_m_charge2
+  i_m_atomic_number
+  i_m_formal_charge
+  s_m_atom_name
+  i_m_Hcount
+  :::
+  1 2 -0.650430 -0.982239 -0.627733 900 2 -0.09682 -0.09682 6 0 C1  1
+  2 2 -2.042639 -0.937484 -0.690578 900 2 -0.09682 -0.09682 6 0 C2  1
+  3 2 -2.738829 0.116888 -0.098735 900 2 -0.09682 -0.09682 6 0 C3  1
+  4 2 -2.039854 1.127322 0.564454 900 2 -0.09682 -0.09682 6 0 C4  1
+  5 2 -0.649300 1.085935 0.646266 900 2 -0.09682 -0.09682 6 0 C5  1
+  6 2 0.037791 0.026857 0.048966 900 2 0.14068 0.14068 6 0 C6  0
+  7 25 1.463059 -0.032095 0.142590 900 43 -0.52890 -0.52890 7 0 N7  0
+  8 2 2.133722 -1.124866 0.545695 900 2 0.26588 0.26588 6 0 C8  1
+  9 31 3.456749 -0.829235 0.560651 900 43 -0.43180 -0.43180 7 1 N9  1
+  10 2 2.362528 1.001288 -0.113774 900 2 0.28378 0.28378 6 0 C10  0
+  11 2 3.668742 0.499949 0.148840 900 2 0.28378 0.28378 6 0 C11  0
+  12 2 2.211740 2.309657 -0.618743 900 2 -0.29542 -0.29542 6 0 C12  1
+  13 2 3.349527 3.056711 -0.789212 900 2 -0.07502 -0.07502 6 0 C13  1
+  14 2 4.716477 2.593388 -0.497242 900 2 0.22898 0.22898 6 0 C14  0
+  15 2 4.818249 1.223788 -0.021284 900 2 -0.29542 -0.29542 6 0 C15  1
+  16 39 5.797311 3.315340 -0.649698 900 43 -1.33250 -1.33250 7 -1 N16  1
+  17 44 4.181092 -1.474688 0.837196 900 21 0.42540 0.42540 1 0 H17  0
+  18 45 5.535425 4.244285 -0.997135 900 21 0.21000 0.21000 1 0 H18  0
+  19 41 -0.096174 -1.778951 -1.115177 900 21 0.13318 0.13318 1 0 H19  0
+  20 41 -2.580504 -1.720587 -1.217246 900 21 0.13318 0.13318 1 0 H20  0
+  21 41 -3.822950 0.153694 -0.157251 900 21 0.13318 0.13318 1 0 H21  0
+  22 41 -2.577972 1.948147 1.029781 900 21 0.13318 0.13318 1 0 H22  0
+  23 41 -0.096993 1.854324 1.177283 900 21 0.13318 0.13318 1 0 H23  0
+  24 41 1.679124 -2.038457 0.888176 900 21 0.24028 0.24028 1 0 H24  0
+  25 41 1.233004 2.711698 -0.863960 900 21 0.24938 0.24938 1 0 H25  0
+  26 41 3.253966 4.071104 -1.172498 900 21 0.19968 0.19968 1 0 H26  0
+  27 41 5.803502 0.817115 0.181210 900 21 0.24938 0.24938 1 0 H27  0
+  :::
+ } 
+ m_bond[29] { 
+  # First column is bond index #
+  i_m_from
+  i_m_to
+  i_m_order
+  :::
+  1 1 6 1
+  2 1 2 2
+  3 1 19 1
+  4 2 3 1
+  5 2 20 1
+  6 3 4 2
+  7 3 21 1
+  8 4 5 1
+  9 4 22 1
+  10 5 6 2
+  11 5 23 1
+  12 6 7 1
+  13 7 8 1
+  14 7 10 1
+  15 8 9 2
+  16 8 24 1
+  17 9 11 1
+  18 9 17 1
+  19 10 11 2
+  20 10 12 1
+  21 11 15 1
+  22 12 13 2
+  23 12 25 1
+  24 13 14 1
+  25 13 26 1
+  26 14 15 2
+  27 14 16 1
+  28 15 27 1
+  29 16 18 1
+  :::
+ } 
+} 
+
+f_m_ct { 
+ s_m_title
+ s_m_entry_id
+ s_m_entry_name
+ s_canvas_canonical_SMILES
+ i_canvas_canvasUID
+ s_m_Source_Path
+ s_m_Source_File
+ i_m_Source_File_Index
+ s_m_subgroupid
+ s_m_subgroup_title
+ b_m_subgroup_collapsed
+ i_m_Molecular_charge
+ i_m_Spin_multiplicity
+ s_j_Task
+ s_j_Jaguar_input_file
+ s_j_Jaguar_restart_input_file
+ s_j_Jaguar_restart_mae_file
+ s_j_Jaguar_output_file
+ s_j_Jaguar_log_file
+ s_j_Jaguar_mae_file
+ s_j_QM_Method
+ s_j_QM_Basis
+ i_j_Number_of_canonical_orbitals
+ i_j_Geometry_convergence_category
+ r_j_Gas_Phase_Energy
+ r_j_HOMO
+ r_j_LUMO
+ i_m_ct_format
+ :::
+ conf-2 
+  177 
+  converted.177 
+  c1ccc(cc1)n2c[nH+]c3c2ccc(c3)[NH-] 
+  177
+  C:\Users\rustenba\Documents\Repos\Jaguar_Ref_pKa\microstates 
+  converted.mae 
+  177
+  "SM14_micro005->all protonated conformers" 
+  converted 
+  1
+  0
+  1
+  Optimization 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM14_micro005_conf_2.dft_h.in 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM14_micro005_conf_2.dft_h.01.in 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM14_micro005_conf_2.dft_h.01.mae 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM14_micro005_conf_2.dft_h.out 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM14_micro005_conf_2.dft_h.log 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM14_micro005_conf_2.mae 
+  DFT(b3lyp) 
+  pka-geopt* 
+  260
+  0
+  -666.190545094903
+  -0.125498048747518
+  -0.0367526739028153
+  2
+ m_depend[16] { 
+  # First column is dependency index #
+  i_m_depend_dependency
+  s_m_depend_property
+  :::
+  1 20 i_m_Molecular_charge 
+  2 20 i_m_Spin_multiplicity 
+  3 20 s_j_Task 
+  4 20 s_j_Jaguar_input_file 
+  5 20 s_j_Jaguar_restart_input_file 
+  6 20 s_j_Jaguar_restart_mae_file 
+  7 20 s_j_Jaguar_output_file 
+  8 20 s_j_Jaguar_log_file 
+  9 20 s_j_Jaguar_mae_file 
+  10 20 s_j_QM_Method 
+  11 20 s_j_QM_Basis 
+  12 20 i_j_Number_of_canonical_orbitals 
+  13 20 i_j_Geometry_convergence_category 
+  14 20 r_j_Gas_Phase_Energy 
+  15 20 r_j_HOMO 
+  16 20 r_j_LUMO 
+  :::
+ } 
+ m_atom[27] { 
+  # First column is atom index #
+  i_m_mmod_type
+  r_m_x_coord
+  r_m_y_coord
+  r_m_z_coord
+  i_m_residue_number
+  i_m_color
+  r_m_charge1
+  r_m_charge2
+  i_m_atomic_number
+  i_m_formal_charge
+  s_m_atom_name
+  i_m_Hcount
+  :::
+  1 2 -0.550704 -0.508897 -0.955182 900 2 -0.09682 -0.09682 6 0 C1  1
+  2 2 -1.937220 -0.460629 -1.100794 900 2 -0.09682 -0.09682 6 0 C2  1
+  3 2 -2.722058 0.160769 -0.127844 900 2 -0.09682 -0.09682 6 0 C3  1
+  4 2 -2.124335 0.738373 0.993656 900 2 -0.09682 -0.09682 6 0 C4  1
+  5 2 -0.738587 0.694976 1.148079 900 2 -0.09682 -0.09682 6 0 C5  1
+  6 2 0.034581 0.065225 0.173036 900 2 0.14068 0.14068 6 0 C6  0
+  7 25 1.461747 0.018805 0.327296 900 43 -0.52890 -0.52890 7 0 N7  0
+  8 2 2.117859 -0.967619 0.956022 900 2 0.26588 0.26588 6 0 C8  1
+  9 31 3.445569 -0.686498 0.910265 900 43 -0.43180 -0.43180 7 1 N9  1
+  10 2 2.366074 0.965806 -0.140033 900 2 0.28378 0.28378 6 0 C10  0
+  11 2 3.667712 0.525730 0.229355 900 2 0.28378 0.28378 6 0 C11  0
+  12 2 2.208611 2.172097 -0.851093 900 2 -0.29542 -0.29542 6 0 C12  1
+  13 2 3.346274 2.875427 -1.154919 900 2 -0.07502 -0.07502 6 0 C13  1
+  14 2 4.713982 2.463167 -0.795631 900 2 0.22898 0.22898 6 0 C14  0
+  15 2 4.816574 1.211236 -0.064089 900 2 -0.29542 -0.29542 6 0 C15  1
+  16 39 5.796379 3.138229 -1.089574 900 43 -1.33250 -1.33250 7 -1 N16  1
+  17 44 4.165159 -1.268665 1.311276 900 21 0.42540 0.42540 1 0 H17  0
+  18 45 5.534504 3.986938 -1.602885 900 21 0.21000 0.21000 1 0 H18  0
+  19 41 0.077588 -0.980939 -1.704513 900 21 0.13318 0.13318 1 0 H19  0
+  20 41 -2.402386 -0.907001 -1.974882 900 21 0.13318 0.13318 1 0 H20  0
+  21 41 -3.801575 0.197354 -0.245266 900 21 0.13318 0.13318 1 0 H21  0
+  22 41 -2.734985 1.224782 1.748744 900 21 0.13318 0.13318 1 0 H22  0
+  23 41 -0.254095 1.144986 2.009388 900 21 0.13318 0.13318 1 0 H23  0
+  24 41 1.658051 -1.828855 1.409362 900 21 0.24028 0.24028 1 0 H24  0
+  25 41 1.224449 2.529936 -1.140955 900 21 0.24938 0.24938 1 0 H25  0
+  26 41 3.251275 3.811332 -1.702708 900 21 0.19968 0.19968 1 0 H26  0
+  27 41 5.801356 0.860266 0.226016 900 21 0.24938 0.24938 1 0 H27  0
+  :::
+ } 
+ m_bond[29] { 
+  # First column is bond index #
+  i_m_from
+  i_m_to
+  i_m_order
+  :::
+  1 1 6 1
+  2 1 2 2
+  3 1 19 1
+  4 2 3 1
+  5 2 20 1
+  6 3 4 2
+  7 3 21 1
+  8 4 5 1
+  9 4 22 1
+  10 5 6 2
+  11 5 23 1
+  12 6 7 1
+  13 7 8 1
+  14 7 10 1
+  15 8 9 2
+  16 8 24 1
+  17 9 11 1
+  18 9 17 1
+  19 10 11 2
+  20 10 12 1
+  21 11 15 1
+  22 12 13 2
+  23 12 25 1
+  24 13 14 1
+  25 13 26 1
+  26 14 15 2
+  27 14 16 1
+  28 15 27 1
+  29 16 18 1
+  :::
+ } 
+} 
+
+f_m_ct { 
+ s_m_title
+ s_m_entry_id
+ s_m_entry_name
+ s_canvas_canonical_SMILES
+ i_canvas_canvasUID
+ s_m_Source_Path
+ s_m_Source_File
+ i_m_Source_File_Index
+ s_m_subgroupid
+ s_m_subgroup_title
+ b_m_subgroup_collapsed
+ i_m_Molecular_charge
+ i_m_Spin_multiplicity
+ s_j_Task
+ s_j_Jaguar_input_file
+ s_j_Jaguar_restart_input_file
+ s_j_Jaguar_restart_mae_file
+ s_j_Jaguar_output_file
+ s_j_Jaguar_log_file
+ s_j_Jaguar_mae_file
+ s_j_QM_Method
+ s_j_QM_Basis
+ i_j_Number_of_canonical_orbitals
+ i_j_Geometry_convergence_category
+ r_j_Gas_Phase_Energy
+ r_j_HOMO
+ r_j_LUMO
+ i_m_ct_format
+ :::
+ conf-1 
+  178 
+  converted.178 
+  c1ccc(cc1)n2cnc3c2ccc(c3)[NH-] 
+  178
+  C:\Users\rustenba\Documents\Repos\Jaguar_Ref_pKa\microstates 
+  converted.mae 
+  178
+  "SM14_micro005->all deprotonated conformers" 
+  converted 
+  1
+  -1
+  1
+  Optimization 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM14_micro006_conf_1.dft.in 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM14_micro006_conf_1.dft.01.in 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM14_micro006_conf_1.dft.01.mae 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM14_micro006_conf_1.dft.out 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM14_micro006_conf_1.dft.log 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM14_micro006_conf_1.mae 
+  DFT(b3lyp) 
+  pka-geopt* 
+  258
+  3
+  -665.658099555923
+  0.0215275215805482
+  0.0920384620968602
+  2
+ m_depend[16] { 
+  # First column is dependency index #
+  i_m_depend_dependency
+  s_m_depend_property
+  :::
+  1 20 i_m_Molecular_charge 
+  2 20 i_m_Spin_multiplicity 
+  3 20 s_j_Task 
+  4 20 s_j_Jaguar_input_file 
+  5 20 s_j_Jaguar_restart_input_file 
+  6 20 s_j_Jaguar_restart_mae_file 
+  7 20 s_j_Jaguar_output_file 
+  8 20 s_j_Jaguar_log_file 
+  9 20 s_j_Jaguar_mae_file 
+  10 20 s_j_QM_Method 
+  11 20 s_j_QM_Basis 
+  12 20 i_j_Number_of_canonical_orbitals 
+  13 20 i_j_Geometry_convergence_category 
+  14 20 r_j_Gas_Phase_Energy 
+  15 20 r_j_HOMO 
+  16 20 r_j_LUMO 
+  :::
+ } 
+ m_atom[26] { 
+  # First column is atom index #
+  i_m_mmod_type
+  r_m_x_coord
+  r_m_y_coord
+  r_m_z_coord
+  i_m_residue_number
+  i_m_color
+  r_m_charge1
+  r_m_charge2
+  i_m_atomic_number
+  i_m_formal_charge
+  s_m_atom_name
+  i_m_Hcount
+  :::
+  1 2 -0.567257 -1.094084 -0.267044 900 2 -0.11500 -0.11500 6 0 C1  1
+  2 2 -1.955070 -1.189222 -0.305781 900 2 -0.11500 -0.11500 6 0 C2  1
+  3 2 -2.762492 -0.080920 -0.037585 900 2 -0.11500 -0.11500 6 0 C3  1
+  4 2 -2.149208 1.136398 0.277523 900 2 -0.11500 -0.11500 6 0 C4  1
+  5 2 -0.763943 1.243714 0.335684 900 2 -0.11500 -0.11500 6 0 C5  1
+  6 2 0.054816 0.130139 0.052752 900 2 0.12250 0.12250 6 0 C6  0
+  7 25 1.444529 0.239770 0.090608 900 43 -0.34100 -0.34100 7 0 N7  0
+  8 2 2.163636 1.375424 -0.279782 900 2 0.36110 0.36110 6 0 C8  1
+  9 25 3.452246 1.216635 -0.314646 900 43 -0.67870 -0.67870 7 0 N9  0
+  10 2 2.424407 -0.759329 0.305225 900 2 0.22990 0.22990 6 0 C10  0
+  11 2 3.671922 -0.125940 0.064878 900 2 0.49820 0.49820 6 0 C11  0
+  12 2 2.394568 -2.079880 0.774326 900 2 -0.32900 -0.32900 6 0 C12  1
+  13 2 3.599035 -2.745442 0.933342 900 2 -0.18170 -0.18170 6 0 C13  1
+  14 2 4.912227 -2.164699 0.661427 900 2 0.12490 0.12490 6 0 C14  0
+  15 2 4.877687 -0.783816 0.230391 900 2 -0.36960 -0.36960 6 0 C15  1
+  16 39 6.072350 -2.796416 0.795406 900 43 -1.33250 -1.33250 7 -1 N16  1
+  17 45 5.869863 -3.752012 1.120173 900 21 0.21000 0.21000 1 0 H17  0
+  18 41 0.051496 -1.949535 -0.510936 900 21 0.11500 0.11500 1 0 H18  0
+  19 41 -2.411570 -2.144073 -0.559837 900 21 0.11500 0.11500 1 0 H19  0
+  20 41 -3.846213 -0.164219 -0.065244 900 21 0.11500 0.11500 1 0 H20  0
+  21 41 -2.758254 2.010080 0.501976 900 21 0.11500 0.11500 1 0 H21  0
+  22 41 -0.304242 2.183546 0.626580 900 21 0.11500 0.11500 1 0 H22  0
+  23 41 1.639871 2.279776 -0.566230 900 21 0.11770 0.11770 1 0 H23  0
+  24 41 1.461071 -2.578479 1.027847 900 21 0.19840 0.19840 1 0 H24  0
+  25 41 3.580231 -3.776112 1.291455 900 21 0.16070 0.16070 1 0 H25  0
+  26 41 5.818469 -0.271238 0.050553 900 21 0.20910 0.20910 1 0 H26  0
+  :::
+ } 
+ m_bond[28] { 
+  # First column is bond index #
+  i_m_from
+  i_m_to
+  i_m_order
+  :::
+  1 1 6 1
+  2 1 2 2
+  3 1 18 1
+  4 2 3 1
+  5 2 19 1
+  6 3 4 2
+  7 3 20 1
+  8 4 5 1
+  9 4 21 1
+  10 5 6 2
+  11 5 22 1
+  12 6 7 1
+  13 7 8 1
+  14 7 10 1
+  15 8 9 2
+  16 8 23 1
+  17 9 11 1
+  18 10 11 2
+  19 10 12 1
+  20 11 15 1
+  21 12 13 2
+  22 12 24 1
+  23 13 14 1
+  24 13 25 1
+  25 14 15 2
+  26 14 16 1
+  27 15 26 1
+  28 16 17 1
+  :::
+ } 
+} 
+
+f_m_ct { 
+ s_m_title
+ s_m_entry_id
+ s_m_entry_name
+ s_canvas_canonical_SMILES
+ i_canvas_canvasUID
+ s_m_Source_Path
+ s_m_Source_File
+ i_m_Source_File_Index
+ s_m_subgroupid
+ s_m_subgroup_title
+ b_m_subgroup_collapsed
+ i_m_Molecular_charge
+ i_m_Spin_multiplicity
+ s_j_Task
+ s_j_Jaguar_input_file
+ s_j_Jaguar_restart_input_file
+ s_j_Jaguar_restart_mae_file
+ s_j_Jaguar_output_file
+ s_j_Jaguar_log_file
+ s_j_Jaguar_mae_file
+ s_j_QM_Method
+ s_j_QM_Basis
+ i_j_Number_of_canonical_orbitals
+ i_j_Geometry_convergence_category
+ r_j_Gas_Phase_Energy
+ r_j_HOMO
+ r_j_LUMO
+ i_m_ct_format
+ :::
+ conf-2 
+  178 
+  converted.178 
+  c1ccc(cc1)n2cnc3c2ccc(c3)[NH-] 
+  178
+  C:\Users\rustenba\Documents\Repos\Jaguar_Ref_pKa\microstates 
+  converted.mae 
+  178
+  "SM14_micro005->all deprotonated conformers" 
+  converted 
+  1
+  -1
+  1
+  Optimization 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM14_micro006_conf_2.dft.in 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM14_micro006_conf_2.dft.01.in 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM14_micro006_conf_2.dft.01.mae 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM14_micro006_conf_2.dft.out 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM14_micro006_conf_2.dft.log 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM14_micro006_conf_2.mae 
+  DFT(b3lyp) 
+  pka-geopt* 
+  258
+  0
+  -665.658100707277
+  0.0216191827867156
+  0.0919778724882943
+  2
+ m_depend[16] { 
+  # First column is dependency index #
+  i_m_depend_dependency
+  s_m_depend_property
+  :::
+  1 20 i_m_Molecular_charge 
+  2 20 i_m_Spin_multiplicity 
+  3 20 s_j_Task 
+  4 20 s_j_Jaguar_input_file 
+  5 20 s_j_Jaguar_restart_input_file 
+  6 20 s_j_Jaguar_restart_mae_file 
+  7 20 s_j_Jaguar_output_file 
+  8 20 s_j_Jaguar_log_file 
+  9 20 s_j_Jaguar_mae_file 
+  10 20 s_j_QM_Method 
+  11 20 s_j_QM_Basis 
+  12 20 i_j_Number_of_canonical_orbitals 
+  13 20 i_j_Geometry_convergence_category 
+  14 20 r_j_Gas_Phase_Energy 
+  15 20 r_j_HOMO 
+  16 20 r_j_LUMO 
+  :::
+ } 
+ m_atom[26] { 
+  # First column is atom index #
+  i_m_mmod_type
+  r_m_x_coord
+  r_m_y_coord
+  r_m_z_coord
+  i_m_residue_number
+  i_m_color
+  r_m_charge1
+  r_m_charge2
+  i_m_atomic_number
+  i_m_formal_charge
+  s_m_atom_name
+  i_m_Hcount
+  :::
+  1 2 -0.867398 0.204603 -1.261213 900 2 -0.11500 -0.11500 6 0 C1  1
+  2 2 -2.233138 0.296014 -1.015502 900 2 -0.11500 -0.11500 6 0 C2  1
+  3 2 -2.744120 0.118963 0.274759 900 2 -0.11500 -0.11500 6 0 C3  1
+  4 2 -1.853145 -0.140792 1.319261 900 2 -0.11500 -0.11500 6 0 C4  1
+  5 2 -0.482385 -0.219727 1.092303 900 2 -0.11500 -0.11500 6 0 C5  1
+  6 2 0.036545 -0.044307 -0.207000 900 2 0.12250 0.12250 6 0 C6  0
+  7 25 1.408503 -0.115743 -0.447290 900 43 -0.34100 -0.34100 7 0 N7  0
+  8 2 2.090509 0.647322 -1.394159 900 2 0.36110 0.36110 6 0 C8  1
+  9 25 3.384139 0.541397 -1.349634 900 43 -0.67870 -0.67870 7 0 N9  0
+  10 2 2.421789 -0.777622 0.287176 900 2 0.22990 0.22990 6 0 C10  0
+  11 2 3.647033 -0.367461 -0.300863 900 2 0.49820 0.49820 6 0 C11  0
+  12 2 2.428004 -1.740564 1.305943 900 2 -0.32900 -0.32900 6 0 C12  1
+  13 2 3.650835 -2.223647 1.742802 900 2 -0.18170 -0.18170 6 0 C13  1
+  14 2 4.946697 -1.811665 1.207771 900 2 0.12490 0.12490 6 0 C14  0
+  15 2 4.870010 -0.852818 0.126753 900 2 -0.36960 -0.36960 6 0 C15  1
+  16 39 6.125577 -2.255284 1.627830 900 43 -1.33250 -1.33250 7 -1 N16  1
+  17 45 5.951881 -2.929772 2.385809 900 21 0.21000 0.21000 1 0 H17  0
+  18 41 -0.491225 0.298513 -2.275548 900 21 0.11500 0.11500 1 0 H18  0
+  19 41 -2.909447 0.486385 -1.846758 900 21 0.11500 0.11500 1 0 H19  0
+  20 41 -3.814256 0.174114 0.458971 900 21 0.11500 0.11500 1 0 H20  0
+  21 41 -2.228693 -0.274701 2.332008 900 21 0.11500 0.11500 1 0 H21  0
+  22 41 0.204013 -0.385452 1.914147 900 21 0.11500 0.11500 1 0 H22  0
+  23 41 1.542022 1.306889 -2.056200 900 21 0.11770 0.11770 1 0 H23  0
+  24 41 1.506618 -2.124480 1.739349 900 21 0.19840 0.19840 1 0 H24  0
+  25 41 3.660497 -2.969259 2.539539 900 21 0.16070 0.16070 1 0 H25  0
+  26 41 5.791611 -0.529784 -0.349021 900 21 0.20910 0.20910 1 0 H26  0
+  :::
+ } 
+ m_bond[28] { 
+  # First column is bond index #
+  i_m_from
+  i_m_to
+  i_m_order
+  :::
+  1 1 6 1
+  2 1 2 2
+  3 1 18 1
+  4 2 3 1
+  5 2 19 1
+  6 3 4 2
+  7 3 20 1
+  8 4 5 1
+  9 4 21 1
+  10 5 6 2
+  11 5 22 1
+  12 6 7 1
+  13 7 8 1
+  14 7 10 1
+  15 8 9 2
+  16 8 23 1
+  17 9 11 1
+  18 10 11 2
+  19 10 12 1
+  20 11 15 1
+  21 12 13 2
+  22 12 24 1
+  23 13 14 1
+  24 13 25 1
+  25 14 15 2
+  26 14 16 1
+  27 15 26 1
+  28 16 17 1
+  :::
+ } 
+} 
+

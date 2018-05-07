@@ -1,0 +1,235 @@
+Command:    jaguar run pka.py -jobname jag_SM05_micro009_SM05_micro008 -PARALLEL 10 -n -csrch -prot SM05_micro009.in -deprot SM05_micro008.in
+Release:    2017-4
+Exec:       /data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar-v9.8/bin/Linux-x86_64
+Host:       ls12
+JobId:      lilac-0-5aec7130
+JobDir:     /lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM05_micro009_SM05_micro008
+Date:       Fri May  4 10:42:26 2018
+
+Contents of /lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM05_micro009_SM05_micro008:
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM05_micro009_SM05_micro008/SM05_micro008.mae
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM05_micro009_SM05_micro008/SM05_micro009.mae
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM05_micro009_SM05_micro008/lilac-0-5aec7130.nodes
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM05_micro009_SM05_micro008/SM05_micro008.in
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM05_micro009_SM05_micro008/lilac-0-5aec7130.jlog
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM05_micro009_SM05_micro008/SM05_micro009.in
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM05_micro009_SM05_micro008/lilac-0-5aec7130.mpinodes
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM05_micro009_SM05_micro008/lilac-0-5aec7130.hosts
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM05_micro009_SM05_micro008/jag_SM05_micro009_SM05_micro008.recover
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM05_micro009_SM05_micro008/jag_SM05_micro009_SM05_micro008.log
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM05_micro009_SM05_micro008/lilac-0-5aec7130.recover
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM05_micro009_SM05_micro008/lilac-0-5aec7130
+
+=====================
+ Jaguar pKa workflow
+=====================
+
+Analysing user-provided (prot, deprot) pair:
+(SM05_micro009.in, SM05_micro008.in)
+Found labile hydrogen 37 in SM05_micro009.in
+Found labile hydrogen at atom 13 in SM05_micro008.in
+Adding 'ipkat' keyword to input files.
+
+Identifying pKa functional group for pair:
+(SM05_micro009, SM05_micro008)
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar-v9.8/bin/Linux-x86_64/pka -i -j SM05_micro009.tmp.jres -n
+
+Taking protonated structures from:
+SM05_micro009.mae
+Taking deprotonated structures from:
+SM05_micro008.mae
+
+This molecule from 'SM05_micro009.mae' in water was recognized as:
+
+ # 	                  Shell                   
+---	------------------------------------------
+1: 	Protonation of sp2-like aliphatic nitrogen
+2: 	Protonation of generic atom               
+
+
+Executing conformational search...
+
+Executing 2 distributed subjobs:
+---------------------------------
+
+No more than 8 cpu(s) will be used per subjob.
+No more than 10 cpu(s) will be used simultaneously.
+
+Processing the following subjobs:
+(1) jaguar run csrch.py SM05_micro009.mae -jobname SM05_micro009 -max_conf 5 -erg_window 50.208 -acc_level 1 -TPP 5
+(2) jaguar run csrch.py SM05_micro008.mae -jobname SM05_micro008 -max_conf 5 -erg_window 50.208 -acc_level 1 -TPP 5
+
+Running subjobs on hosts:
+  lsf-cpu (Max: 2)
+Number of jobs:       2
+Max retries per job:  3
+Max allowed failures: unlimited
+Run with -LOCAL:      False
+Verbosity:            normal
+
+Starting JobDJ...
+
+Keep one job on driver host: False
+JobDJ columns:
+  C: Number of completed subjobs
+  A: Number of active subjobs (e.g., submitted, running)
+  W: Number of waiting/pending subjobs
+
+C A W | Activity  JobId  JobName  JobHost
+- - - | --------- -----------------------
+0 1 1 | launched  ls12-0-5aec7160 SM05_micro009 lsf-cpu
+0 2 0 | launched  ls12-0-5aec7169 SM05_micro008 lsf-cpu
+1 1 0 | finished  ls12-0-5aec7169 SM05_micro008 lsf-cpu
+2 0 0 | finished  ls12-0-5aec7160 SM05_micro009 lsf-cpu [ls17]
+
+All jobs have completed.
+
+2 of 2 job(s) succeeded; 0 job(s) failed.
+
+Timer (distribute subjobs) : 725.56 secs (0 hrs, 12 mins, 05 secs)
+
+Setting up QM workflow for (protonated, deprotonated) pair:
+(1) (SM05_micro009, SM05_micro008)
+
+Executing Jaguar quantum-mechanical subjobs...
+
+Executing 10 distributed subjobs:
+----------------------------------
+
+No more than 8 cpu(s) will be used per subjob.
+No more than 10 cpu(s) will be used simultaneously.
+
+Processing the following subjobs:
+(1) jaguar run pka_prot.bat -jobname SM05_micro009_conf_1 SM05_micro009_conf_1.in
+(2) jaguar run pka_prot.bat -jobname SM05_micro009_conf_2 SM05_micro009_conf_2.in
+(3) jaguar run pka_prot.bat -jobname SM05_micro009_conf_3 SM05_micro009_conf_3.in
+(4) jaguar run pka_prot.bat -jobname SM05_micro009_conf_4 SM05_micro009_conf_4.in
+(5) jaguar run pka_prot.bat -jobname SM05_micro009_conf_5 SM05_micro009_conf_5.in
+(6) jaguar run pka_deprot.bat -jobname SM05_micro008_conf_1 SM05_micro008_conf_1.in
+(7) jaguar run pka_deprot.bat -jobname SM05_micro008_conf_2 SM05_micro008_conf_2.in
+(8) jaguar run pka_deprot.bat -jobname SM05_micro008_conf_3 SM05_micro008_conf_3.in
+(9) jaguar run pka_deprot.bat -jobname SM05_micro008_conf_4 SM05_micro008_conf_4.in
+(10) jaguar run pka_deprot.bat -jobname SM05_micro008_conf_5 SM05_micro008_conf_5.in
+
+Running subjobs on hosts:
+  lsf-cpu (Max: 10)
+Number of jobs:       10
+Max retries per job:  3
+Max allowed failures: unlimited
+Run with -LOCAL:      False
+Verbosity:            normal
+
+Starting JobDJ...
+
+Keep one job on driver host: True
+JobDJ columns:
+  C: Number of completed subjobs
+  A: Number of active subjobs (e.g., submitted, running)
+  W: Number of waiting/pending subjobs
+
+ C  A  W | Activity  JobId  JobName  JobHost
+-- -- -- | --------- -----------------------
+ 0  1  9 | launched  ls12-0-5aec743a SM05_micro009_conf_1 localhost [ls12]
+ 0  2  8 | launched  ls12-1-5aec7444 SM05_micro009_conf_2 lsf-cpu
+ 0  3  7 | launched  ls12-0-5aec744d SM05_micro009_conf_3 lsf-cpu
+ 0  4  6 | launched  ls12-0-5aec7459 SM05_micro009_conf_4 lsf-cpu
+ 0  5  5 | launched  ls12-0-5aec7464 SM05_micro009_conf_5 lsf-cpu
+ 0  6  4 | launched  ls12-0-5aec746f SM05_micro008_conf_1 lsf-cpu
+ 0  7  3 | launched  ls12-1-5aec747a SM05_micro008_conf_2 lsf-cpu
+ 0  8  2 | launched  ls12-0-5aec7483 SM05_micro008_conf_3 lsf-cpu
+ 0  9  1 | launched  ls12-0-5aec7487 SM05_micro008_conf_4 lsf-cpu
+ 0 10  0 | launched  ls12-0-5aec748c SM05_micro008_conf_5 lsf-cpu
+ 1  9  0 | finished  ls12-0-5aec7464 SM05_micro009_conf_5 lsf-cpu [ls02]
+ 2  8  0 | finished  ls12-0-5aec746f SM05_micro008_conf_1 lsf-cpu [ls01]
+ 3  7  0 | finished  ls12-0-5aec748c SM05_micro008_conf_5 lsf-cpu [ls07]
+ 4  6  0 | finished  ls12-0-5aec7459 SM05_micro009_conf_4 lsf-cpu [ls02]
+ 5  5  0 | finished  ls12-0-5aec7487 SM05_micro008_conf_4 lsf-cpu [ls07]
+ 6  4  0 | finished  ls12-0-5aec7483 SM05_micro008_conf_3 lsf-cpu [ls07]
+ 7  3  0 | finished  ls12-0-5aec743a SM05_micro009_conf_1 localhost [ls12]
+ 8  2  0 | finished  ls12-0-5aec744d SM05_micro009_conf_3 lsf-cpu [ls02]
+ 9  1  0 | finished  ls12-1-5aec747a SM05_micro008_conf_2 lsf-cpu [ls07]
+10  0  0 | finished  ls12-1-5aec7444 SM05_micro009_conf_2 lsf-cpu [ls02]
+
+All jobs have completed.
+
+10 of 10 job(s) succeeded; 0 job(s) failed.
+
+Timer (distribute subjobs) : 4981.34 secs (1 hrs, 23 mins, 01 secs)
+
+Processing QM output files...
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -energy SM05_micro009_conf_1.nrg_h.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -esolv SM05_micro009_conf_1.sol_h.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -energy SM05_micro009_conf_2.nrg_h.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -esolv SM05_micro009_conf_2.sol_h.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -energy SM05_micro009_conf_3.nrg_h.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -esolv SM05_micro009_conf_3.sol_h.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -energy SM05_micro009_conf_4.nrg_h.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -esolv SM05_micro009_conf_4.sol_h.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -energy SM05_micro009_conf_5.nrg_h.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -esolv SM05_micro009_conf_5.sol_h.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -energy SM05_micro008_conf_1.nrg.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -esolv SM05_micro008_conf_1.sol.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -energy SM05_micro008_conf_2.nrg.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -esolv SM05_micro008_conf_2.sol.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -energy SM05_micro008_conf_3.nrg.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -esolv SM05_micro008_conf_3.sol.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -energy SM05_micro008_conf_4.nrg.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -esolv SM05_micro008_conf_4.sol.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -energy SM05_micro008_conf_5.nrg.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -esolv SM05_micro008_conf_5.sol.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar-v9.8/bin/Linux-x86_64/pka -o SM05_micro009_deprot-out.mae -j SM05_micro009.jres -n -d
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar-v9.8/bin/Linux-x86_64/pka -o SM05_micro009_prot-out.mae -j SM05_micro009.jres -n
+
+pKa calculation for SM05_micro009 completed.
+
+pKa workflow jag_SM05_micro009_SM05_micro008 completed.
+
+Timer (Jaguar pKa) : 5782.08 secs (1 hrs, 36 mins, 22 secs)
+Timer (jaguar_backend.py) : 5782.08 secs (1 hrs, 36 mins, 22 secs)
+Finished:   Fri May  4 12:18:48 2018

@@ -1,0 +1,154 @@
+Command:    jaguar run pka.py -jobname jag_SM18_micro004_SM18_micro003 -PARALLEL 10 -n -csrch -prot SM18_micro004.in -deprot SM18_micro003.in
+Release:    2017-4
+Exec:       /data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar-v9.8/bin/Linux-x86_64
+Host:       lt11
+JobId:      lilac-0-5aecad8e
+JobDir:     /lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM18_micro004_SM18_micro003
+Date:       Fri May  4 14:59:33 2018
+
+Contents of /lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM18_micro004_SM18_micro003:
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM18_micro004_SM18_micro003/lilac-0-5aecad8e.hosts
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM18_micro004_SM18_micro003/SM18_micro004.in
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM18_micro004_SM18_micro003/SM18_micro003.mae
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM18_micro004_SM18_micro003/SM18_micro004.mae
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM18_micro004_SM18_micro003/lilac-0-5aecad8e
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM18_micro004_SM18_micro003/lilac-0-5aecad8e.nodes
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM18_micro004_SM18_micro003/jag_SM18_micro004_SM18_micro003.log
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM18_micro004_SM18_micro003/jag_SM18_micro004_SM18_micro003.recover
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM18_micro004_SM18_micro003/lilac-0-5aecad8e.jlog
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM18_micro004_SM18_micro003/lilac-0-5aecad8e.recover
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM18_micro004_SM18_micro003/lilac-0-5aecad8e.mpinodes
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM18_micro004_SM18_micro003/SM18_micro003.in
+
+=====================
+ Jaguar pKa workflow
+=====================
+
+Analysing user-provided (prot, deprot) pair:
+(SM18_micro004.in, SM18_micro003.in)
+Found labile hydrogen 40 in SM18_micro004.in
+Found labile hydrogen at atom 13 in SM18_micro003.in
+Adding 'ipkat' keyword to input files.
+
+Identifying pKa functional group for pair:
+(SM18_micro004, SM18_micro003)
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar-v9.8/bin/Linux-x86_64/pka -i -j SM18_micro004.tmp.jres -n
+
+Taking protonated structures from:
+SM18_micro004.mae
+Taking deprotonated structures from:
+SM18_micro003.mae
+
+This molecule from 'SM18_micro004.mae' in water was recognized as:
+
+ # 	                 Shell                  
+---	----------------------------------------
+1: 	mono keto CH acid                       
+2: 	Protonation of generic atom             
+3: 	aliphatic CH acid in water              
+4: 	Protonation of sp2-like aliphatic carbon
+
+
+Executing conformational search...
+
+Executing 2 distributed subjobs:
+---------------------------------
+
+No more than 8 cpu(s) will be used per subjob.
+No more than 10 cpu(s) will be used simultaneously.
+
+Processing the following subjobs:
+(1) jaguar run csrch.py SM18_micro004.mae -jobname SM18_micro004 -max_conf 5 -erg_window 50.208 -acc_level 1 -TPP 5
+(2) jaguar run csrch.py SM18_micro003.mae -jobname SM18_micro003 -max_conf 5 -erg_window 50.208 -acc_level 1 -TPP 5
+
+Running subjobs on hosts:
+  lsf-cpu (Max: 2)
+Number of jobs:       2
+Max retries per job:  3
+Max allowed failures: unlimited
+Run with -LOCAL:      False
+Verbosity:            normal
+
+Starting JobDJ...
+
+Keep one job on driver host: False
+JobDJ columns:
+  C: Number of completed subjobs
+  A: Number of active subjobs (e.g., submitted, running)
+  W: Number of waiting/pending subjobs
+
+C A W | Activity  JobId  JobName  JobHost
+- - - | --------- -----------------------
+0 1 1 | launched  lt11-0-5aecad99 SM18_micro004 lsf-cpu
+0 2 0 | launched  lt11-1-5aecad9e SM18_micro003 lsf-cpu
+1 1 0 | finished  lt11-1-5aecad9e SM18_micro003 lsf-cpu [ls07]
+2 0 0 | finished  lt11-0-5aecad99 SM18_micro004 lsf-cpu [ls10]
+
+All jobs have completed.
+
+2 of 2 job(s) succeeded; 0 job(s) failed.
+
+Timer (distribute subjobs) : 3064.23 secs (0 hrs, 51 mins, 04 secs)
+
+Setting up QM workflow for (protonated, deprotonated) pair:
+(1) (SM18_micro004, SM18_micro003)
+
+Executing Jaguar quantum-mechanical subjobs...
+
+Executing 10 distributed subjobs:
+----------------------------------
+
+No more than 8 cpu(s) will be used per subjob.
+No more than 10 cpu(s) will be used simultaneously.
+
+Processing the following subjobs:
+(1) jaguar run pka_prot.bat -jobname SM18_micro004_conf_1 SM18_micro004_conf_1.in
+(2) jaguar run pka_prot.bat -jobname SM18_micro004_conf_2 SM18_micro004_conf_2.in
+(3) jaguar run pka_prot.bat -jobname SM18_micro004_conf_3 SM18_micro004_conf_3.in
+(4) jaguar run pka_prot.bat -jobname SM18_micro004_conf_4 SM18_micro004_conf_4.in
+(5) jaguar run pka_prot.bat -jobname SM18_micro004_conf_5 SM18_micro004_conf_5.in
+(6) jaguar run pka_deprot.bat -jobname SM18_micro003_conf_1 SM18_micro003_conf_1.in
+(7) jaguar run pka_deprot.bat -jobname SM18_micro003_conf_2 SM18_micro003_conf_2.in
+(8) jaguar run pka_deprot.bat -jobname SM18_micro003_conf_3 SM18_micro003_conf_3.in
+(9) jaguar run pka_deprot.bat -jobname SM18_micro003_conf_4 SM18_micro003_conf_4.in
+(10) jaguar run pka_deprot.bat -jobname SM18_micro003_conf_5 SM18_micro003_conf_5.in
+
+Running subjobs on hosts:
+  lsf-cpu (Max: 10)
+Number of jobs:       10
+Max retries per job:  3
+Max allowed failures: unlimited
+Run with -LOCAL:      False
+Verbosity:            normal
+
+Starting JobDJ...
+
+Keep one job on driver host: True
+JobDJ columns:
+  C: Number of completed subjobs
+  A: Number of active subjobs (e.g., submitted, running)
+  W: Number of waiting/pending subjobs
+
+ C  A  W | Activity  JobId  JobName  JobHost
+-- -- -- | --------- -----------------------
+ 0  1  9 | launched  lt11-0-5aecb997 SM18_micro004_conf_1 localhost [lt11]
+ 0  2  8 | launched  lt11-0-5aecb99a SM18_micro004_conf_2 lsf-cpu
+ 0  3  7 | launched  lt11-0-5aecb99d SM18_micro004_conf_3 lsf-cpu
+ 0  4  6 | launched  lt11-0-5aecb99f SM18_micro004_conf_4 lsf-cpu
+ 0  5  5 | launched  lt11-0-5aecb9a2 SM18_micro004_conf_5 lsf-cpu
+ 0  6  4 | launched  lt11-0-5aecb9a5 SM18_micro003_conf_1 lsf-cpu
+ 0  7  3 | launched  lt11-0-5aecb9a8 SM18_micro003_conf_2 lsf-cpu
+ 0  8  2 | launched  lt11-0-5aecb9ab SM18_micro003_conf_3 lsf-cpu
+ 0  9  1 | launched  lt11-0-5aecb9af SM18_micro003_conf_4 lsf-cpu
+ 0 10  0 | launched  lt11-0-5aecb9b2 SM18_micro003_conf_5 lsf-cpu
+ 1  9  0 | finished  lt11-0-5aecb997 SM18_micro004_conf_1 localhost [lt11]
+ 2  8  0 | finished  lt11-0-5aecb9ab SM18_micro003_conf_3 lsf-cpu [lt21]
+ 3  7  0 | finished  lt11-0-5aecb9a2 SM18_micro004_conf_5 lsf-cpu [lt14]
+ 4  6  0 | finished  lt11-0-5aecb9a5 SM18_micro003_conf_1 lsf-cpu [lt14]
+ 5  5  0 | finished  lt11-0-5aecb99a SM18_micro004_conf_2 lsf-cpu [ls01]
+ 6  4  0 | finished  lt11-0-5aecb99d SM18_micro004_conf_3 lsf-cpu [lt14]
+ 7  3  0 | finished  lt11-0-5aecb99f SM18_micro004_conf_4 lsf-cpu [lt14]
+ 8  2  0 | finished  lt11-0-5aecb9a8 SM18_micro003_conf_2 lsf-cpu [lt20]
+ 9  1  0 | finished  lt11-0-5aecb9b2 SM18_micro003_conf_5 lsf-cpu [lt05]
