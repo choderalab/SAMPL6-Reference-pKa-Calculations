@@ -12,7 +12,13 @@ SM08_micro008
 SM08_micro009
 SM08_micro010
 SM08_micro011
-
+SM10_micro009
+SM10_micro033
+SM18_micro017
+SM18_micro055
+SM18_micro059
+SM19_micro005
+SM19_micro016
 
 ## SM03
 
@@ -38,33 +44,44 @@ One subjob failed. will rerun this pair.
 
 ## SM08
 
-jag_SM08_micro002_SM08_micro008.log:Error: heavy atoms are different in input files:
-jag_SM08_micro002_SM08_micro010.log:Error: heavy atoms are different in input files:
-jag_SM08_micro006_SM08_micro004.log:Error: heavy atoms are different in input files:
-jag_SM08_micro008_SM08_micro006.log:Error: heavy atoms are different in input files:
-jag_SM08_micro011_SM08_micro003.log:Error: heavy atoms are different in input files:
+* jag_SM08_micro002_SM08_micro008.log:Error: heavy atoms are different in input files:
+* jag_SM08_micro002_SM08_micro010.log:Error: heavy atoms are different in input files:
+* jag_SM08_micro006_SM08_micro004.log:Error: heavy atoms are different in input files:
+* jag_SM08_micro008_SM08_micro006.log:Error: heavy atoms are different in input files:
+* jag_SM08_micro011_SM08_micro003.log:Error: heavy atoms are different in input files:
 
 The microstates for this molecule dont have consistent heavy atom names. Going to rebuild all of them. 
 
 ## SM10
-jag_SM10_micro009_SM10_micro013.log:Error: heavy atoms are different in input files:
-jag_SM10_micro009_SM10_micro034.log:Error: heavy atoms are different in input files:
-jag_SM10_micro026_SM10_micro009.log:Error: heavy atoms are different in input files:
-jag_SM10_micro033_SM10_micro006.log:Error: heavy atoms are different in input files:
-jag_SM10_micro033_SM10_micro007.log:Error: heavy atoms are different in input files:
+
+* jag_SM10_micro009_SM10_micro013.log:Error: heavy atoms are different in input files:
+* jag_SM10_micro009_SM10_micro034.log:Error: heavy atoms are different in input files:
+* jag_SM10_micro026_SM10_micro009.log:Error: heavy atoms are different in input files:
+* jag_SM10_micro033_SM10_micro006.log:Error: heavy atoms are different in input files:
+* jag_SM10_micro033_SM10_micro007.log:Error: heavy atoms are different in input files:
+
+The heavy atom names of state  SM10_micro009 and  SM10_micro033 are not compatible with the other states. Manually constructing them from SM10_micro006
 
 ## SM18
 
-jag_SM18_micro017_SM18_micro075.log:Error: heavy atoms are different in input files:
-jag_SM18_micro055_SM18_micro042.log:Error: heavy atoms are different in input files:
-jag_SM18_micro055_SM18_micro072.log:Error: heavy atoms are different in input files:
-jag_SM18_micro059_SM18_micro021.log:Error: heavy atoms are different in input files:
-jag_SM18_micro059_SM18_micro025.log:Error: heavy atoms are different in input files:
-jag_SM18_micro075_SM18_micro064.log:  Error: in replying to 'JPROXYPORT lilac rustenburg "/data/chodera/schrodinger/schrodinger2017-4-advanced"' - dial tcp lilac:35321: i/o timeout
-jag_SM18_micro075_SM18_micro064.log:  Error: in replying to 'JPROXYPORT lilac rustenburg "/data/chodera/schrodinger/schrodinger2017-4-advanced"' - dial tcp lilac:35321: i/o timeout
-jag_SM18_micro075_SM18_micro064.log:  Error: in replying to 'JPROXYPORT lilac rustenburg "/data/chodera/schrodinger/schrodinger2017-4-advanced"' - dial tcp lilac:35321: i/o timeout
-jag_SM18_micro075_SM18_micro064.log:  Error: in replying to 'JPROXYPORT lilac rustenburg "/data/chodera/schrodinger/schrodinger2017-4-advanced"' - dial tcp lilac:35321: i/o timeout
-jag_SM18_micro075_SM18_micro064.log:  Error: in replying to 'JPROXYPORT lilac rustenburg "/data/chodera/schrodinger/schrodinger2017-4-advanced"' - dial tcp lilac:35321: i/o timeout
+* jag_SM18_micro017_SM18_micro075.log:Error: heavy atoms are different in input files:
+* jag_SM18_micro055_SM18_micro042.log:Error: heavy atoms are different in input files:
+* jag_SM18_micro055_SM18_micro072.log:Error: heavy atoms are different in input files:
+* jag_SM18_micro059_SM18_micro021.log:Error: heavy atoms are different in input files:
+* jag_SM18_micro059_SM18_micro025.log:Error: heavy atoms are different in input files:
+
+The heavy atom names in SM18_micro017 SM18_micro055 SM18_micro059 are different from the other states. 
+Manually constructing them from SM18_micro042.
+
+
+
+* jag_SM18_micro075_SM18_micro064.log:  Error: in replying to 'JPROXYPORT lilac rustenburg "/data/chodera/schrodinger/schrodinger2017-4-advanced"' - dial tcp lilac:35321: i/o timeout
+* jag_SM18_micro075_SM18_micro064.log:  Error: in replying to 'JPROXYPORT lilac rustenburg "/data/chodera/schrodinger/schrodinger2017-4-advanced"' - dial tcp lilac:35321: i/o timeout
+* jag_SM18_micro075_SM18_micro064.log:  Error: in replying to 'JPROXYPORT lilac rustenburg "/data/chodera/schrodinger/schrodinger2017-4-advanced"' - dial tcp lilac:35321: i/o timeout
+* jag_SM18_micro075_SM18_micro064.log:  Error: in replying to 'JPROXYPORT lilac rustenburg "/data/chodera/schrodinger/schrodinger2017-4-advanced"' - dial tcp lilac:35321: i/o timeout
+* jag_SM18_micro075_SM18_micro064.log:  Error: in replying to 'JPROXYPORT lilac rustenburg "/data/chodera/schrodinger/schrodinger2017-4-advanced"' - dial tcp lilac:35321: i/o timeout
+
+timeout, will rerun
 
 ## SM19
 jag_SM19_micro001_SM19_micro016.log:Error: heavy atoms are different in input files:
@@ -72,6 +89,9 @@ jag_SM19_micro005_SM19_micro002.log:Error: more than 1 heavy atom differs by 1 p
 jag_SM19_micro005_SM19_micro018.log:Error: more than 1 heavy atom differs by 1 proton in:
 jag_SM19_micro016_SM19_micro004.log:Error: more than 1 heavy atom differs by 1 proton in:
 jag_SM19_micro016_SM19_micro008.log:Error: more than 1 heavy atom differs by 1 proton in:
+
+Heavy atom names different between SM19_micro005, SM19_micro016. Manually Recreating from micro001.
+
 
 ## SM20
 jag_SM20_micro005_SM20_micro004.log:Error: heavy atoms are different in input files:
