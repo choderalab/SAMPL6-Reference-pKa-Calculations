@@ -12,7 +12,9 @@ shifted the bonds in maestro, and added the missing hydrogen. Exported structure
 * jag_SM03_micro022_SM03_micro009.log:Error: more than 1 heavy atom differs by 1 proton in:
 * jag_SM03_micro022_SM03_micro013.log:Error: more than 1 heavy atom differs by 1 proton in:
 
-SM03_micro022 does not have the same heavy atom names.
+SM03_micro022 does not have the same heavy atom names as 13 and 9.
+Regenerating SM03_micro022 manually from 13 in maestro.
+
 
 ## SM06 
 
