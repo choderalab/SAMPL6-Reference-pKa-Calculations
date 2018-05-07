@@ -19,6 +19,7 @@ SM18_micro055
 SM18_micro059
 SM19_micro005
 SM19_micro016
+SM20_micro005 
 
 ## SM03
 
@@ -90,11 +91,13 @@ jag_SM19_micro005_SM19_micro018.log:Error: more than 1 heavy atom differs by 1 p
 jag_SM19_micro016_SM19_micro004.log:Error: more than 1 heavy atom differs by 1 proton in:
 jag_SM19_micro016_SM19_micro008.log:Error: more than 1 heavy atom differs by 1 proton in:
 
-Heavy atom names different between SM19_micro005, SM19_micro016. Manually Recreating from micro001.
+Heavy atom names different between SM19_micro005, SM19_micro016 and the other structures. Manually Recreating from micro001.
 
 
 ## SM20
 jag_SM20_micro005_SM20_micro004.log:Error: heavy atoms are different in input files:
+
+Heavy atoms of SM20_micro005 are different from the other structures. Fixing by rebuilding from SM20_micro004.
 
 ## SM21
 jag_SM21_micro001_SM21_micro018.log:Error: heavy atoms are different in input files:
