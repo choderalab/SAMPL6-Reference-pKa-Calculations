@@ -1,6 +1,13 @@
 # Notes on errors
 
-jag_SM03_micro021_SM03_micro001.log:Error: prot/deprot structures appear to be reversed:
+
+## jag_SM03_micro021_SM03_micro001.log:Error: prot/deprot structures appear to be reversed:
+
+This file never got hydrogens or minimized because the bond orders automatically generated 
+lead to atom types not available in macromodel. I started from SM03_micro001 instead and 
+shifted the bonds in maestro, and added the missing hydrogen. Exported structure to maestro.
+
+
 jag_SM03_micro022_SM03_micro009.log:Error: more than 1 heavy atom differs by 1 proton in:
 jag_SM03_micro022_SM03_micro013.log:Error: more than 1 heavy atom differs by 1 proton in:
 jag_SM06_micro002_SM06_micro004.log:  Error: jaguar died in program scf
