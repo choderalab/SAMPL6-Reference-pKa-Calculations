@@ -1,5 +1,19 @@
 # Notes on errors
 
+# List of invalidated structures
+Any runs containing these structures will need to be rerun
+
+SM03_micro021
+SM03_micro022
+SM08_micro003
+SM08_micro004
+SM08_micro006
+SM08_micro008
+SM08_micro009
+SM08_micro010
+SM08_micro011
+
+
 ## SM03
 
 * jag_SM03_micro021_SM03_micro001.log:Error: prot/deprot structures appear to be reversed:
@@ -17,8 +31,10 @@ Regenerating SM03_micro022 manually from 13 in maestro.
 
 
 ## SM06 
+One subjob failed. will rerun.
+* jag_SM06_micro002_SM06_micro004.log:  Error: jaguar died in program scf
 
-jag_SM06_micro002_SM06_micro004.log:  Error: jaguar died in program scf
+One subjob failed. will rerun this pair.
 
 ## SM08
 
@@ -27,6 +43,8 @@ jag_SM08_micro002_SM08_micro010.log:Error: heavy atoms are different in input fi
 jag_SM08_micro006_SM08_micro004.log:Error: heavy atoms are different in input files:
 jag_SM08_micro008_SM08_micro006.log:Error: heavy atoms are different in input files:
 jag_SM08_micro011_SM08_micro003.log:Error: heavy atoms are different in input files:
+
+The microstates for this molecule dont have consistent heavy atom names. Going to rebuild all of them. 
 
 ## SM10
 jag_SM10_micro009_SM10_micro013.log:Error: heavy atoms are different in input files:
