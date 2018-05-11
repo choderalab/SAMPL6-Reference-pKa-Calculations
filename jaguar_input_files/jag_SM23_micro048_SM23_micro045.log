@@ -1,0 +1,79 @@
+Command:    jaguar run pka.py -jobname jag_SM23_micro048_SM23_micro045 -PARALLEL 10 -WAIT -n -csrch -prot SM23_micro048.in -deprot SM23_micro045.in
+Release:    2017-4
+Exec:       /data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar-v9.8/bin/Linux-x86_64
+Host:       ls10
+JobId:      ls10-0-5af470d5
+JobDir:     /lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM23_micro048_SM23_micro045
+Date:       Thu May 10 12:18:57 2018
+
+Contents of /lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM23_micro048_SM23_micro045:
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM23_micro048_SM23_micro045/ls10-0-5af470d5.recover
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM23_micro048_SM23_micro045/ls10-0-5af470d5
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM23_micro048_SM23_micro045/SM23_micro045.mae
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM23_micro048_SM23_micro045/SM23_micro045.in
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM23_micro048_SM23_micro045/SM23_micro048.mae
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM23_micro048_SM23_micro045/ls10-0-5af470d5.mpinodes
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM23_micro048_SM23_micro045/SM23_micro048.in
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM23_micro048_SM23_micro045/jag_SM23_micro048_SM23_micro045.recover
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM23_micro048_SM23_micro045/jag_SM23_micro048_SM23_micro045.log
+
+=====================
+ Jaguar pKa workflow
+=====================
+
+Analysing user-provided (prot, deprot) pair:
+(SM23_micro048.in, SM23_micro045.in)
+Found labile hydrogen 35 in SM23_micro048.in
+Found labile hydrogen at atom 19 in SM23_micro045.in
+Adding 'ipkat' keyword to input files.
+
+Identifying pKa functional group for pair:
+(SM23_micro048, SM23_micro045)
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar-v9.8/bin/Linux-x86_64/pka -i -j SM23_micro048.tmp.jres -n
+
+Taking protonated structures from:
+SM23_micro048.mae
+Taking deprotonated structures from:
+SM23_micro045.mae
+
+This molecule from 'SM23_micro048.mae' in water was recognized as:
+
+ # 	           Shell           
+---	---------------------------
+1: 	Protonation of generic atom
+
+
+Executing conformational search...
+
+Executing 2 distributed subjobs:
+---------------------------------
+
+No more than 8 cpu(s) will be used per subjob.
+No more than 10 cpu(s) will be used simultaneously.
+
+Processing the following subjobs:
+(1) jaguar run csrch.py SM23_micro048.mae -jobname SM23_micro048 -max_conf 5 -erg_window 50.208 -acc_level 1 -TPP 5
+(2) jaguar run csrch.py SM23_micro045.mae -jobname SM23_micro045 -max_conf 5 -erg_window 50.208 -acc_level 1 -TPP 5
+
+Running subjobs on hosts:
+  localhost (Max: 2)
+Number of jobs:       2
+Max retries per job:  3
+Max allowed failures: unlimited
+Run with -LOCAL:      False
+Verbosity:            normal
+
+Starting JobDJ...
+
+Keep one job on driver host: False
+JobDJ columns:
+  C: Number of completed subjobs
+  A: Number of active subjobs (e.g., submitted, running)
+  W: Number of waiting/pending subjobs
+
+C A W | Activity  JobId  JobName  JobHost
+- - - | --------- -----------------------
+0 1 1 | launched  ls10-1-5af47111 SM23_micro048 localhost [ls10]
+0 2 0 | launched  ls10-0-5af4714c SM23_micro045 localhost [ls10]

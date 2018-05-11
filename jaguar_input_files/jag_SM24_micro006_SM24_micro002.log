@@ -1,0 +1,80 @@
+Command:    jaguar run pka.py -jobname jag_SM24_micro006_SM24_micro002 -PARALLEL 10 -WAIT -n -csrch -prot SM24_micro006.in -deprot SM24_micro002.in
+Release:    2017-4
+Exec:       /data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar-v9.8/bin/Linux-x86_64
+Host:       ls10
+JobId:      ls10-0-5af473ca
+JobDir:     /lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro006_SM24_micro002
+Date:       Thu May 10 12:31:20 2018
+
+Contents of /lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro006_SM24_micro002:
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro006_SM24_micro002/SM24_micro002.in
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro006_SM24_micro002/SM24_micro006.in
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro006_SM24_micro002/SM24_micro002.mae
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro006_SM24_micro002/jag_SM24_micro006_SM24_micro002.recover
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro006_SM24_micro002/ls10-0-5af473ca.mpinodes
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro006_SM24_micro002/jag_SM24_micro006_SM24_micro002.log
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro006_SM24_micro002/ls10-0-5af473ca
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro006_SM24_micro002/SM24_micro006.mae
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro006_SM24_micro002/ls10-0-5af473ca.recover
+
+=====================
+ Jaguar pKa workflow
+=====================
+
+Analysing user-provided (prot, deprot) pair:
+(SM24_micro006.in, SM24_micro002.in)
+Found labile hydrogen 45 in SM24_micro006.in
+Found labile hydrogen at atom 26 in SM24_micro002.in
+Adding 'ipkat' keyword to input files.
+
+Identifying pKa functional group for pair:
+(SM24_micro006, SM24_micro002)
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar-v9.8/bin/Linux-x86_64/pka -i -j SM24_micro006.tmp.jres -n
+
+Taking protonated structures from:
+SM24_micro006.mae
+Taking deprotonated structures from:
+SM24_micro002.mae
+
+This molecule from 'SM24_micro006.mae' in water was recognized as:
+
+ # 	                  Shell                   
+---	------------------------------------------
+1: 	Protonation of sp2-like aliphatic nitrogen
+2: 	Protonation of generic atom               
+
+
+Executing conformational search...
+
+Executing 2 distributed subjobs:
+---------------------------------
+
+No more than 8 cpu(s) will be used per subjob.
+No more than 10 cpu(s) will be used simultaneously.
+
+Processing the following subjobs:
+(1) jaguar run csrch.py SM24_micro006.mae -jobname SM24_micro006 -max_conf 5 -erg_window 50.208 -acc_level 1 -TPP 5
+(2) jaguar run csrch.py SM24_micro002.mae -jobname SM24_micro002 -max_conf 5 -erg_window 50.208 -acc_level 1 -TPP 5
+
+Running subjobs on hosts:
+  localhost (Max: 2)
+Number of jobs:       2
+Max retries per job:  3
+Max allowed failures: unlimited
+Run with -LOCAL:      False
+Verbosity:            normal
+
+Starting JobDJ...
+
+Keep one job on driver host: False
+JobDJ columns:
+  C: Number of completed subjobs
+  A: Number of active subjobs (e.g., submitted, running)
+  W: Number of waiting/pending subjobs
+
+C A W | Activity  JobId  JobName  JobHost
+- - - | --------- -----------------------
+0 1 1 | launched  ls10-1-5af473ef SM24_micro006 localhost [ls10]
+0 2 0 | launched  ls10-2-5af4741a SM24_micro002 localhost [ls10]

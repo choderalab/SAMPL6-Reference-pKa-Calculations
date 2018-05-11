@@ -1,0 +1,196 @@
+Command:    jaguar run pka.py -jobname jag_SM03_micro021_SM03_micro001 -PARALLEL 10 -WAIT -n -csrch -prot SM03_micro021.in -deprot SM03_micro001.in
+Release:    2017-4
+Exec:       /data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar-v9.8/bin/Linux-x86_64
+Host:       lt02
+JobId:      ls01-0-5af3622d
+JobDir:     /lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM03_micro021_SM03_micro001.1
+Date:       Wed May  9 17:04:09 2018
+
+Contents of /lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM03_micro021_SM03_micro001.1:
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM03_micro021_SM03_micro001.1/jag_SM03_micro021_SM03_micro001.recover
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM03_micro021_SM03_micro001.1/ls01-0-5af3622d
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM03_micro021_SM03_micro001.1/ls01-0-5af3622d.nodes
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM03_micro021_SM03_micro001.1/ls01-0-5af3622d.jlog
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM03_micro021_SM03_micro001.1/ls01-0-5af3622d.hosts
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM03_micro021_SM03_micro001.1/jag_SM03_micro021_SM03_micro001.log
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM03_micro021_SM03_micro001.1/SM03_micro001.in
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM03_micro021_SM03_micro001.1/ls01-0-5af3622d.mpinodes
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM03_micro021_SM03_micro001.1/SM03_micro021.in
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM03_micro021_SM03_micro001.1/SM03_micro001.mae
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM03_micro021_SM03_micro001.1/SM03_micro021.mae
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM03_micro021_SM03_micro001.1/ls01-0-5af3622d.recover
+
+=====================
+ Jaguar pKa workflow
+=====================
+
+Analysing user-provided (prot, deprot) pair:
+(SM03_micro021.in, SM03_micro001.in)
+Found labile hydrogen 21 in SM03_micro021.in
+Found labile hydrogen at atom 9 in SM03_micro001.in
+Adding 'ipkat' keyword to input files.
+
+Identifying pKa functional group for pair:
+(SM03_micro021, SM03_micro001)
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar-v9.8/bin/Linux-x86_64/pka -i -j SM03_micro021.tmp.jres -n
+
+Taking protonated structures from:
+SM03_micro021.mae
+Taking deprotonated structures from:
+SM03_micro001.mae
+
+This molecule from 'SM03_micro021.mae' in water was recognized as:
+
+ # 	           Shell           
+---	---------------------------
+1: 	Protonation of generic atom
+
+
+Executing conformational search...
+
+Executing 2 distributed subjobs:
+---------------------------------
+
+No more than 8 cpu(s) will be used per subjob.
+No more than 10 cpu(s) will be used simultaneously.
+
+Processing the following subjobs:
+(1) jaguar run csrch.py SM03_micro021.mae -jobname SM03_micro021 -max_conf 5 -erg_window 50.208 -acc_level 1 -TPP 5
+(2) jaguar run csrch.py SM03_micro001.mae -jobname SM03_micro001 -max_conf 5 -erg_window 50.208 -acc_level 1 -TPP 5
+
+Running subjobs on hosts:
+  lsf-cpu (Max: 2)
+Number of jobs:       2
+Max retries per job:  3
+Max allowed failures: unlimited
+Run with -LOCAL:      False
+Verbosity:            normal
+
+Starting JobDJ...
+
+Keep one job on driver host: False
+JobDJ columns:
+  C: Number of completed subjobs
+  A: Number of active subjobs (e.g., submitted, running)
+  W: Number of waiting/pending subjobs
+
+C A W | Activity  JobId  JobName  JobHost
+- - - | --------- -----------------------
+0 1 1 | launched  lt02-2-5af36253 SM03_micro021 lsf-cpu
+0 2 0 | launched  lt02-2-5af3625c SM03_micro001 lsf-cpu
+1 1 0 | finished  lt02-2-5af36253 SM03_micro021 lsf-cpu
+2 0 0 | finished  lt02-2-5af3625c SM03_micro001 lsf-cpu [ls11]
+
+All jobs have completed.
+
+2 of 2 job(s) succeeded; 0 job(s) failed.
+
+Timer (distribute subjobs) : 1110.05 secs (0 hrs, 18 mins, 30 secs)
+
+Setting up QM workflow for (protonated, deprotonated) pair:
+(1) (SM03_micro021, SM03_micro001)
+
+Executing Jaguar quantum-mechanical subjobs...
+
+Executing 6 distributed subjobs:
+---------------------------------
+
+No more than 8 cpu(s) will be used per subjob.
+No more than 10 cpu(s) will be used simultaneously.
+
+Processing the following subjobs:
+(1) jaguar run pka_prot.bat -jobname SM03_micro021_conf SM03_micro021_conf.in -TPP 2
+(2) jaguar run pka_deprot.bat -jobname SM03_micro001_conf_1 SM03_micro001_conf_1.in -TPP 2
+(3) jaguar run pka_deprot.bat -jobname SM03_micro001_conf_2 SM03_micro001_conf_2.in -TPP 2
+(4) jaguar run pka_deprot.bat -jobname SM03_micro001_conf_3 SM03_micro001_conf_3.in -TPP 2
+(5) jaguar run pka_deprot.bat -jobname SM03_micro001_conf_4 SM03_micro001_conf_4.in
+(6) jaguar run pka_deprot.bat -jobname SM03_micro001_conf_5 SM03_micro001_conf_5.in
+
+Running subjobs on hosts:
+  lsf-cpu (Max: 6)
+Number of jobs:       6
+Max retries per job:  3
+Max allowed failures: unlimited
+Run with -LOCAL:      False
+Verbosity:            normal
+
+Starting JobDJ...
+
+Keep one job on driver host: False
+JobDJ columns:
+  C: Number of completed subjobs
+  A: Number of active subjobs (e.g., submitted, running)
+  W: Number of waiting/pending subjobs
+
+C A W | Activity  JobId  JobName  JobHost
+- - - | --------- -----------------------
+0 1 5 | launched  lt02-0-5af366ab SM03_micro021_conf lsf-cpu
+0 2 4 | launched  lt02-2-5af366da SM03_micro001_conf_1 lsf-cpu
+0 3 3 | launched  lt02-0-5af366fa SM03_micro001_conf_2 lsf-cpu
+0 4 2 | launched  lt02-2-5af36727 SM03_micro001_conf_3 lsf-cpu
+0 5 1 | launched  lt02-1-5af3675e SM03_micro001_conf_4 lsf-cpu
+0 6 0 | launched  lt02-0-5af3677f SM03_micro001_conf_5 lsf-cpu
+Subjob 'SM03_micro021_conf' died (died) [jobid lt02-0-5af366ab]
+1 5 0 | died      lt02-0-5af366ab SM03_micro021_conf lsf-cpu [ls01]
+ERROR: Subjob 'SM03_micro021_conf' has failed.
+
+Last 20 lines of 'SM03_micro021_conf.log':
+
+  then ALL processes must call "init" prior to termination.
+  
+  2. this process called "init", but exited without calling "finalize".
+  By rule, all processes that call "init" MUST call "finalize" prior to
+  exiting or it will be considered an "abnormal termination"
+  
+  This may have caused other processes in the application to be
+  terminated by signals sent by orterun (as reported here).
+  --------------------------------------------------------------------------
+  Error: jaguar died in program pre
+  
+  Job SM03_micro021_conf.dft_h halted prematurely on ls01 at Wed May  9 17:26:15 2018
+  Timer (jaguar_backend.py) : 13.28 secs
+  Finished:   Wed May  9 17:26:15 2018
+  
+  
+  Done. 
+  Wed, 9 May 2018 17:26:26
+  Timer (jaguar_backend.py) : 35.05 secs
+  Finished:   Wed May  9 17:26:26 2018
+
+
+Last 20 lines of 'SM03_micro021_conf.recover':
+
+  Name: 'SM03_micro021_conf'
+  JobId: 'lt02-0-5af366ab'
+  Commandline: '/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar run pka_prot.bat -jobname SM03_micro021_conf SM03_micro021_conf.in -TPP 2 -HOST lsf-cpu'
+  BackendCmdline: 'run batscript.py -jobname SM03_micro021_conf -TPP 2 SM03_micro021_conf.in -script pka_prot.bat'
+  Outfiles:
+
+
+No job control errors were found.
+1 5 0 | died      lt02-0-5af366ab SM03_micro021_conf lsf-cpu [ls01]
+2 4 0 | finished  lt02-0-5af366fa SM03_micro001_conf_2 lsf-cpu [lt02]
+3 3 0 | finished  lt02-1-5af3675e SM03_micro001_conf_4 lsf-cpu [ls01]
+4 2 0 | finished  lt02-2-5af366da SM03_micro001_conf_1 lsf-cpu [ls01]
+5 1 0 | finished  lt02-0-5af3677f SM03_micro001_conf_5 lsf-cpu [ls01]
+6 0 0 | finished  lt02-2-5af36727 SM03_micro001_conf_3 lsf-cpu [lt07]
+
+All jobs have completed.
+
+5 of 6 job(s) succeeded; 1 job(s) failed.
+
+Timer (distribute subjobs) : 2669.53 secs (0 hrs, 44 mins, 29 secs)
+
+Processing QM output files...
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -energy SM03_micro021_conf.nrg_h.out
+
+  Results command failed: "/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -energy SM03_micro021_conf.nrg_h.out"
+
+An error has occurred.  Information about the error has been written to 
+/home/rustenburg/.schrodinger/exceptions/error20180509-180720.txt 
+
+Please contact help@schrodinger.com for assistance. Include error20180509-180720.txt and a description of what you were doing when the error occurred.

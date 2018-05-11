@@ -1,0 +1,142 @@
+Command:    jaguar run pka.py -jobname jag_SM24_micro029_SM24_micro009 -PARALLEL 10 -WAIT -n -csrch -prot SM24_micro029.in -deprot SM24_micro009.in
+Release:    2017-4
+Exec:       /data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar-v9.8/bin/Linux-x86_64
+Host:       ls16
+JobId:      ls16-0-5af47d1e
+JobDir:     /lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro029_SM24_micro009.1
+Date:       Thu May 10 13:11:00 2018
+
+Contents of /lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro029_SM24_micro009.1:
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro029_SM24_micro009.1/ls16-0-5af47d1e.recover
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro029_SM24_micro009.1/jag_SM24_micro029_SM24_micro009.log
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro029_SM24_micro009.1/SM24_micro029.mae
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro029_SM24_micro009.1/ls16-0-5af47d1e.mpinodes
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro029_SM24_micro009.1/ls16-0-5af47d1e
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro029_SM24_micro009.1/SM24_micro009.mae
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro029_SM24_micro009.1/SM24_micro009.in
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro029_SM24_micro009.1/jag_SM24_micro029_SM24_micro009.recover
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro029_SM24_micro009.1/SM24_micro029.in
+
+=====================
+ Jaguar pKa workflow
+=====================
+
+Analysing user-provided (prot, deprot) pair:
+(SM24_micro029.in, SM24_micro009.in)
+Found labile hydrogen 30 in SM24_micro029.in
+Found labile hydrogen at atom 22 in SM24_micro009.in
+Adding 'ipkat' keyword to input files.
+
+Identifying pKa functional group for pair:
+(SM24_micro029, SM24_micro009)
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar-v9.8/bin/Linux-x86_64/pka -i -j SM24_micro029.tmp.jres -n
+
+Taking protonated structures from:
+SM24_micro029.mae
+Taking deprotonated structures from:
+SM24_micro009.mae
+
+This molecule from 'SM24_micro029.mae' in water was recognized as:
+
+ # 	           Shell           
+---	---------------------------
+1: 	pyrimidine                 
+2: 	heterocycle custom 1       
+3: 	heterocycle                
+4: 	Protonation of generic atom
+
+
+Executing conformational search...
+
+Executing 2 distributed subjobs:
+---------------------------------
+
+No more than 8 cpu(s) will be used per subjob.
+No more than 10 cpu(s) will be used simultaneously.
+
+Processing the following subjobs:
+(1) jaguar run csrch.py SM24_micro029.mae -jobname SM24_micro029 -max_conf 5 -erg_window 50.208 -acc_level 1 -TPP 5
+(2) jaguar run csrch.py SM24_micro009.mae -jobname SM24_micro009 -max_conf 5 -erg_window 50.208 -acc_level 1 -TPP 5
+
+Running subjobs on hosts:
+  localhost (Max: 2)
+Number of jobs:       2
+Max retries per job:  3
+Max allowed failures: unlimited
+Run with -LOCAL:      False
+Verbosity:            normal
+
+Starting JobDJ...
+
+Keep one job on driver host: False
+JobDJ columns:
+  C: Number of completed subjobs
+  A: Number of active subjobs (e.g., submitted, running)
+  W: Number of waiting/pending subjobs
+
+C A W | Activity  JobId  JobName  JobHost
+- - - | --------- -----------------------
+0 1 1 | launched  ls16-0-5af47d40 SM24_micro029 localhost [ls16]
+0 2 0 | launched  ls16-1-5af47d62 SM24_micro009 localhost [ls16]
+1 1 0 | finished  ls16-0-5af47d40 SM24_micro029 localhost [ls16]
+2 0 0 | finished  ls16-1-5af47d62 SM24_micro009 localhost [ls16]
+
+All jobs have completed.
+
+2 of 2 job(s) succeeded; 0 job(s) failed.
+
+Timer (distribute subjobs) : 1893.00 secs (0 hrs, 31 mins, 33 secs)
+
+Setting up QM workflow for (protonated, deprotonated) pair:
+(1) (SM24_micro029, SM24_micro009)
+
+Executing Jaguar quantum-mechanical subjobs...
+
+Executing 10 distributed subjobs:
+----------------------------------
+
+No more than 8 cpu(s) will be used per subjob.
+No more than 10 cpu(s) will be used simultaneously.
+
+Processing the following subjobs:
+(1) jaguar run pka_prot.bat -jobname SM24_micro029_conf_1 SM24_micro029_conf_1.in
+(2) jaguar run pka_prot.bat -jobname SM24_micro029_conf_2 SM24_micro029_conf_2.in
+(3) jaguar run pka_prot.bat -jobname SM24_micro029_conf_3 SM24_micro029_conf_3.in
+(4) jaguar run pka_prot.bat -jobname SM24_micro029_conf_4 SM24_micro029_conf_4.in
+(5) jaguar run pka_prot.bat -jobname SM24_micro029_conf_5 SM24_micro029_conf_5.in
+(6) jaguar run pka_deprot.bat -jobname SM24_micro009_conf_1 SM24_micro009_conf_1.in
+(7) jaguar run pka_deprot.bat -jobname SM24_micro009_conf_2 SM24_micro009_conf_2.in
+(8) jaguar run pka_deprot.bat -jobname SM24_micro009_conf_3 SM24_micro009_conf_3.in
+(9) jaguar run pka_deprot.bat -jobname SM24_micro009_conf_4 SM24_micro009_conf_4.in
+(10) jaguar run pka_deprot.bat -jobname SM24_micro009_conf_5 SM24_micro009_conf_5.in
+
+Running subjobs on hosts:
+  localhost (Max: 10)
+Number of jobs:       10
+Max retries per job:  3
+Max allowed failures: unlimited
+Run with -LOCAL:      False
+Verbosity:            normal
+
+Starting JobDJ...
+
+Keep one job on driver host: False
+JobDJ columns:
+  C: Number of completed subjobs
+  A: Number of active subjobs (e.g., submitted, running)
+  W: Number of waiting/pending subjobs
+
+ C  A  W | Activity  JobId  JobName  JobHost
+-- -- -- | --------- -----------------------
+ 0  1  9 | launched  ls16-0-5af484a6 SM24_micro029_conf_1 localhost [ls16]
+ 0  2  8 | launched  ls16-1-5af484c0 SM24_micro029_conf_2 localhost [ls16]
+ 0  3  7 | launched  ls16-0-5af484c3 SM24_micro029_conf_3 localhost [ls16]
+ 0  4  6 | launched  ls16-0-5af484c8 SM24_micro029_conf_4 localhost [ls16]
+ 0  5  5 | launched  ls16-0-5af484cc SM24_micro029_conf_5 localhost [ls16]
+ 0  6  4 | launched  ls16-1-5af484d0 SM24_micro009_conf_1 localhost [ls16]
+ 0  7  3 | launched  ls16-0-5af484d7 SM24_micro009_conf_2 localhost [ls16]
+ 0  8  2 | launched  ls16-0-5af484dd SM24_micro009_conf_3 localhost [ls16]
+ 0  9  1 | launched  ls16-0-5af48503 SM24_micro009_conf_4 localhost [ls16]
+ 0 10  0 | launched  ls16-0-5af48529 SM24_micro009_conf_5 localhost [ls16]

@@ -1,0 +1,99 @@
+Command:    jaguar run pka.py -jobname jag_SM24_micro035_SM24_micro034 -PARALLEL 10 -WAIT -n -csrch -prot SM24_micro035.in -deprot SM24_micro034.in
+Release:    2017-4
+Exec:       /data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar-v9.8/bin/Linux-x86_64
+Host:       lt02
+JobId:      lt02-0-5af48520
+JobDir:     /lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro035_SM24_micro034.1
+Date:       Thu May 10 13:45:12 2018
+
+Contents of /lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro035_SM24_micro034.1:
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro035_SM24_micro034.1/lt02-0-5af48520
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro035_SM24_micro034.1/SM24_micro034.mae
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro035_SM24_micro034.1/lt02-0-5af48520.recover
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro035_SM24_micro034.1/jag_SM24_micro035_SM24_micro034.recover
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro035_SM24_micro034.1/SM24_micro034.in
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro035_SM24_micro034.1/lt02-0-5af48520.mpinodes
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro035_SM24_micro034.1/SM24_micro035.in
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro035_SM24_micro034.1/SM24_micro035.mae
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro035_SM24_micro034.1/jag_SM24_micro035_SM24_micro034.log
+
+=====================
+ Jaguar pKa workflow
+=====================
+
+Analysing user-provided (prot, deprot) pair:
+(SM24_micro035.in, SM24_micro034.in)
+Found labile hydrogen 53 in SM24_micro035.in
+Found labile hydrogen at atom 29 in SM24_micro034.in
+Adding 'ipkat' keyword to input files.
+
+Identifying pKa functional group for pair:
+(SM24_micro035, SM24_micro034)
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar-v9.8/bin/Linux-x86_64/pka -i -j SM24_micro035.tmp.jres -n
+
+Taking protonated structures from:
+SM24_micro035.mae
+Taking deprotonated structures from:
+SM24_micro034.mae
+
+This molecule from 'SM24_micro035.mae' in water was recognized as:
+
+ # 	            Shell             
+---	------------------------------
+1: 	alcohol                       
+2: 	Protonation of generic atom   
+3: 	Protonation of sp2-like oxygen
+
+
+Executing conformational search...
+
+Executing 2 distributed subjobs:
+---------------------------------
+
+No more than 8 cpu(s) will be used per subjob.
+No more than 10 cpu(s) will be used simultaneously.
+
+Processing the following subjobs:
+(1) jaguar run csrch.py SM24_micro035.mae -jobname SM24_micro035 -max_conf 5 -erg_window 50.208 -acc_level 1 -TPP 5
+(2) jaguar run csrch.py SM24_micro034.mae -jobname SM24_micro034 -max_conf 5 -erg_window 50.208 -acc_level 1 -TPP 5
+
+Running subjobs on hosts:
+  localhost (Max: 2)
+Number of jobs:       2
+Max retries per job:  3
+Max allowed failures: unlimited
+Run with -LOCAL:      False
+Verbosity:            normal
+
+Starting JobDJ...
+
+Keep one job on driver host: False
+JobDJ columns:
+  C: Number of completed subjobs
+  A: Number of active subjobs (e.g., submitted, running)
+  W: Number of waiting/pending subjobs
+
+C A W | Activity  JobId  JobName  JobHost
+- - - | --------- -----------------------
+WARNING: Job launch failed for 1/2 times.
+% jaguar run csrch.py SM24_micro035.mae -jobname SM24_micro035 -max_conf 5 -erg_window 50.208 -acc_level 1 -TPP 5 -HOST localhost
+Output
+Launch failed: Process timed out after 300.0 seconds.
+
+Command:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar run csrch.py SM24_micro035.mae -jobname SM24_micro035 -max_conf 5 -erg_window 50.208 -acc_level 1 -TPP 5 -HOST localhost
+Output:
+
+WARNING: Job launch failed for 2/2 times.
+% jaguar run csrch.py SM24_micro035.mae -jobname SM24_micro035 -max_conf 5 -erg_window 50.208 -acc_level 1 -TPP 5 -HOST localhost
+Output
+Launch failed: Process timed out after 300.0 seconds.
+
+Command:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar run csrch.py SM24_micro035.mae -jobname SM24_micro035 -max_conf 5 -erg_window 50.208 -acc_level 1 -TPP 5 -HOST localhost
+Output:
+
+0 1 1 | launched  lt02-3-5af487d8 SM24_micro034 localhost [lt02]
+0 2 0 | restarted lt02-2-5af487de SM24_micro035 localhost [lt02]
