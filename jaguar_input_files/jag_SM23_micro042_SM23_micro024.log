@@ -1,17 +1,17 @@
 Command:    jaguar run pka.py -jobname jag_SM23_micro042_SM23_micro024 -PARALLEL 10 -WAIT -n -csrch -prot SM23_micro042.in -deprot SM23_micro024.in
 Release:    2017-4
 Exec:       /data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar-v9.8/bin/Linux-x86_64
-Host:       ls04
-JobId:      ls04-0-5af4602b
+Host:       lt21
+JobId:      lt21-0-5af5cfe4
 JobDir:     /lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM23_micro042_SM23_micro024
-Date:       Thu May 10 11:07:28 2018
+Date:       Fri May 11 13:16:23 2018
 
 Contents of /lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM23_micro042_SM23_micro024:
 /lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM23_micro042_SM23_micro024/jag_SM23_micro042_SM23_micro024.log
 /lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM23_micro042_SM23_micro024/SM23_micro042.in
-/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM23_micro042_SM23_micro024/ls04-0-5af4602b.recover
-/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM23_micro042_SM23_micro024/ls04-0-5af4602b.mpinodes
-/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM23_micro042_SM23_micro024/ls04-0-5af4602b
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM23_micro042_SM23_micro024/lt21-0-5af5cfe4.recover
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM23_micro042_SM23_micro024/lt21-0-5af5cfe4
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM23_micro042_SM23_micro024/lt21-0-5af5cfe4.mpinodes
 /lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM23_micro042_SM23_micro024/SM23_micro024.mae
 /lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM23_micro042_SM23_micro024/SM23_micro024.in
 /lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM23_micro042_SM23_micro024/jag_SM23_micro042_SM23_micro024.recover
@@ -78,5 +78,65 @@ JobDJ columns:
 
 C A W | Activity  JobId  JobName  JobHost
 - - - | --------- -----------------------
-0 1 1 | launched  ls04-0-5af46039 SM23_micro042 localhost [ls04]
-0 2 0 | launched  ls04-0-5af4603f SM23_micro024 localhost [ls04]
+0 1 1 | launched  lt21-0-5af5cfed SM23_micro042 localhost [lt21]
+0 2 0 | launched  lt21-0-5af5cff0 SM23_micro024 localhost [lt21]
+1 1 0 | finished  lt21-0-5af5cff0 SM23_micro024 localhost [lt21]
+2 0 0 | finished  lt21-0-5af5cfed SM23_micro042 localhost [lt21]
+
+All jobs have completed.
+
+2 of 2 job(s) succeeded; 0 job(s) failed.
+
+Timer (distribute subjobs) : 12439.25 secs (3 hrs, 27 mins, 19 secs)
+
+Setting up QM workflow for (protonated, deprotonated) pair:
+(1) (SM23_micro042, SM23_micro024)
+
+Executing Jaguar quantum-mechanical subjobs...
+
+Executing 10 distributed subjobs:
+----------------------------------
+
+No more than 8 cpu(s) will be used per subjob.
+No more than 10 cpu(s) will be used simultaneously.
+
+Processing the following subjobs:
+(1) jaguar run pka_prot.bat -jobname SM23_micro042_conf_1 SM23_micro042_conf_1.in
+(2) jaguar run pka_prot.bat -jobname SM23_micro042_conf_2 SM23_micro042_conf_2.in
+(3) jaguar run pka_prot.bat -jobname SM23_micro042_conf_3 SM23_micro042_conf_3.in
+(4) jaguar run pka_prot.bat -jobname SM23_micro042_conf_4 SM23_micro042_conf_4.in
+(5) jaguar run pka_prot.bat -jobname SM23_micro042_conf_5 SM23_micro042_conf_5.in
+(6) jaguar run pka_deprot.bat -jobname SM23_micro024_conf_1 SM23_micro024_conf_1.in
+(7) jaguar run pka_deprot.bat -jobname SM23_micro024_conf_2 SM23_micro024_conf_2.in
+(8) jaguar run pka_deprot.bat -jobname SM23_micro024_conf_3 SM23_micro024_conf_3.in
+(9) jaguar run pka_deprot.bat -jobname SM23_micro024_conf_4 SM23_micro024_conf_4.in
+(10) jaguar run pka_deprot.bat -jobname SM23_micro024_conf_5 SM23_micro024_conf_5.in
+
+Running subjobs on hosts:
+  localhost (Max: 10)
+Number of jobs:       10
+Max retries per job:  3
+Max allowed failures: unlimited
+Run with -LOCAL:      False
+Verbosity:            normal
+
+Starting JobDJ...
+
+Keep one job on driver host: False
+JobDJ columns:
+  C: Number of completed subjobs
+  A: Number of active subjobs (e.g., submitted, running)
+  W: Number of waiting/pending subjobs
+
+ C  A  W | Activity  JobId  JobName  JobHost
+-- -- -- | --------- -----------------------
+ 0  1  9 | launched  lt21-0-5af6008a SM23_micro042_conf_1 localhost [lt21]
+ 0  2  8 | launched  lt21-0-5af6008d SM23_micro042_conf_2 localhost [lt21]
+ 0  3  7 | launched  lt21-0-5af60092 SM23_micro042_conf_3 localhost [lt21]
+ 0  4  6 | launched  lt21-0-5af60098 SM23_micro042_conf_4 localhost [lt21]
+ 0  5  5 | launched  lt21-1-5af6009f SM23_micro042_conf_5 localhost [lt21]
+ 0  6  4 | launched  lt21-0-5af600a8 SM23_micro024_conf_1 localhost [lt21]
+ 0  7  3 | launched  lt21-0-5af600b3 SM23_micro024_conf_2 localhost [lt21]
+ 0  8  2 | launched  lt21-0-5af600bf SM23_micro024_conf_3 localhost [lt21]
+ 0  9  1 | launched  lt21-0-5af600cd SM23_micro024_conf_4 localhost [lt21]
+ 0 10  0 | launched  lt21-0-5af600dc SM23_micro024_conf_5 localhost [lt21]

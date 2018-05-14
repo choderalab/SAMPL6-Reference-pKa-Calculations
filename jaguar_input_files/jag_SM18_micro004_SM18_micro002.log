@@ -1,20 +1,20 @@
 Command:    jaguar run pka.py -jobname jag_SM18_micro004_SM18_micro002 -PARALLEL 10 -WAIT -n -csrch -prot SM18_micro004.in -deprot SM18_micro002.in
 Release:    2017-4
 Exec:       /data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar-v9.8/bin/Linux-x86_64
-Host:       lt02
-JobId:      lt02-0-5af455f7
+Host:       ls14
+JobId:      ls14-0-5af5cfe5
 JobDir:     /lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM18_micro004_SM18_micro002.1
-Date:       Thu May 10 10:23:53 2018
+Date:       Fri May 11 13:16:24 2018
 
 Contents of /lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM18_micro004_SM18_micro002.1:
-/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM18_micro004_SM18_micro002.1/lt02-0-5af455f7.recover
-/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM18_micro004_SM18_micro002.1/lt02-0-5af455f7
 /lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM18_micro004_SM18_micro002.1/SM18_micro004.in
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM18_micro004_SM18_micro002.1/ls14-0-5af5cfe5.recover
 /lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM18_micro004_SM18_micro002.1/SM18_micro002.mae
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM18_micro004_SM18_micro002.1/ls14-0-5af5cfe5.mpinodes
 /lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM18_micro004_SM18_micro002.1/SM18_micro004.mae
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM18_micro004_SM18_micro002.1/ls14-0-5af5cfe5
 /lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM18_micro004_SM18_micro002.1/jag_SM18_micro004_SM18_micro002.log
 /lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM18_micro004_SM18_micro002.1/SM18_micro002.in
-/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM18_micro004_SM18_micro002.1/lt02-0-5af455f7.mpinodes
 /lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM18_micro004_SM18_micro002.1/jag_SM18_micro004_SM18_micro002.recover
 
 =====================
@@ -75,16 +75,16 @@ JobDJ columns:
 
 C A W | Activity  JobId  JobName  JobHost
 - - - | --------- -----------------------
-0 1 1 | launched  lt02-0-5af455fe SM18_micro004 localhost [lt02]
-0 2 0 | launched  lt02-0-5af45600 SM18_micro002 localhost [lt02]
-1 1 0 | finished  lt02-0-5af455fe SM18_micro004 localhost [lt02]
-2 0 0 | finished  lt02-0-5af45600 SM18_micro002 localhost [lt02]
+0 1 1 | launched  ls14-0-5af5cfed SM18_micro004 localhost [ls14]
+0 2 0 | launched  ls14-0-5af5cff0 SM18_micro002 localhost [ls14]
+1 1 0 | finished  ls14-0-5af5cfed SM18_micro004 localhost [ls14]
+2 0 0 | finished  ls14-0-5af5cff0 SM18_micro002 localhost [ls14]
 
 All jobs have completed.
 
 2 of 2 job(s) succeeded; 0 job(s) failed.
 
-Timer (distribute subjobs) : 5534.47 secs (1 hrs, 32 mins, 14 secs)
+Timer (distribute subjobs) : 1454.50 secs (0 hrs, 24 mins, 14 secs)
 
 Setting up QM workflow for (protonated, deprotonated) pair:
 (1) (SM18_micro004, SM18_micro002)
@@ -127,13 +127,105 @@ JobDJ columns:
 
  C  A  W | Activity  JobId  JobName  JobHost
 -- -- -- | --------- -----------------------
- 0  1  9 | launched  lt02-1-5af46bac SM18_micro004_conf_1 localhost [lt02]
- 0  2  8 | launched  lt02-1-5af46bdd SM18_micro004_conf_2 localhost [lt02]
- 0  3  7 | launched  lt02-1-5af46be6 SM18_micro004_conf_3 localhost [lt02]
- 0  4  6 | launched  lt02-2-5af46be9 SM18_micro004_conf_4 localhost [lt02]
- 0  5  5 | launched  lt02-2-5af46bed SM18_micro004_conf_5 localhost [lt02]
- 0  6  4 | launched  lt02-1-5af46bf1 SM18_micro002_conf_1 localhost [lt02]
- 0  7  3 | launched  lt02-1-5af46bf8 SM18_micro002_conf_2 localhost [lt02]
- 0  8  2 | launched  lt02-2-5af46c0b SM18_micro002_conf_3 localhost [lt02]
- 0  9  1 | launched  lt02-0-5af46c2d SM18_micro002_conf_4 localhost [lt02]
- 0 10  0 | launched  lt02-0-5af46c5d SM18_micro002_conf_5 localhost [lt02]
+ 0  1  9 | launched  ls14-0-5af5d5a9 SM18_micro004_conf_1 localhost [ls14]
+ 0  2  8 | launched  ls14-0-5af5d5ac SM18_micro004_conf_2 localhost [ls14]
+ 0  3  7 | launched  ls14-0-5af5d5af SM18_micro004_conf_3 localhost [ls14]
+ 0  4  6 | launched  ls14-0-5af5d5b1 SM18_micro004_conf_4 localhost [ls14]
+ 0  5  5 | launched  ls14-0-5af5d5b4 SM18_micro004_conf_5 localhost [ls14]
+ 0  6  4 | launched  ls14-0-5af5d5b6 SM18_micro002_conf_1 localhost [ls14]
+ 0  7  3 | launched  ls14-1-5af5d5b8 SM18_micro002_conf_2 localhost [ls14]
+ 0  8  2 | launched  ls14-0-5af5d5bb SM18_micro002_conf_3 localhost [ls14]
+ 0  9  1 | launched  ls14-1-5af5d5bd SM18_micro002_conf_4 localhost [ls14]
+ 0 10  0 | launched  ls14-1-5af5d5bf SM18_micro002_conf_5 localhost [ls14]
+ 1  9  0 | finished  ls14-0-5af5d5b6 SM18_micro002_conf_1 localhost [ls14]
+ 2  8  0 | finished  ls14-0-5af5d5bb SM18_micro002_conf_3 localhost [ls14]
+ 3  7  0 | finished  ls14-1-5af5d5b8 SM18_micro002_conf_2 localhost [ls14]
+ 4  6  0 | finished  ls14-0-5af5d5b1 SM18_micro004_conf_4 localhost [ls14]
+ 5  5  0 | finished  ls14-0-5af5d5ac SM18_micro004_conf_2 localhost [ls14]
+ 6  4  0 | finished  ls14-0-5af5d5a9 SM18_micro004_conf_1 localhost [ls14]
+ 7  3  0 | finished  ls14-0-5af5d5b4 SM18_micro004_conf_5 localhost [ls14]
+ 8  2  0 | finished  ls14-1-5af5d5bd SM18_micro002_conf_4 localhost [ls14]
+ 9  1  0 | finished  ls14-1-5af5d5bf SM18_micro002_conf_5 localhost [ls14]
+10  0  0 | finished  ls14-0-5af5d5af SM18_micro004_conf_3 localhost [ls14]
+
+All jobs have completed.
+
+10 of 10 job(s) succeeded; 0 job(s) failed.
+
+Timer (distribute subjobs) : 13546.08 secs (3 hrs, 45 mins, 46 secs)
+
+Processing QM output files...
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -energy SM18_micro004_conf_1.nrg_h.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -esolv SM18_micro004_conf_1.sol_h.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -energy SM18_micro004_conf_2.nrg_h.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -esolv SM18_micro004_conf_2.sol_h.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -energy SM18_micro004_conf_3.nrg_h.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -esolv SM18_micro004_conf_3.sol_h.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -energy SM18_micro004_conf_4.nrg_h.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -esolv SM18_micro004_conf_4.sol_h.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -energy SM18_micro004_conf_5.nrg_h.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -esolv SM18_micro004_conf_5.sol_h.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -energy SM18_micro002_conf_1.nrg.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -esolv SM18_micro002_conf_1.sol.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -energy SM18_micro002_conf_2.nrg.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -esolv SM18_micro002_conf_2.sol.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -energy SM18_micro002_conf_3.nrg.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -esolv SM18_micro002_conf_3.sol.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -energy SM18_micro002_conf_4.nrg.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -esolv SM18_micro002_conf_4.sol.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -energy SM18_micro002_conf_5.nrg.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -esolv SM18_micro002_conf_5.sol.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar-v9.8/bin/Linux-x86_64/pka -o SM18_micro004_deprot-out.mae -j SM18_micro004.jres -n -d
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar-v9.8/bin/Linux-x86_64/pka -o SM18_micro004_prot-out.mae -j SM18_micro004.jres -n
+
+pKa calculation for SM18_micro004 completed.
+
+pKa workflow jag_SM18_micro004_SM18_micro002 completed.
+
+Timer (Jaguar pKa) : 15056.54 secs (4 hrs, 10 mins, 56 secs)
+Timer (jaguar_backend.py) : 15056.54 secs (4 hrs, 10 mins, 56 secs)
+Finished:   Fri May 11 17:27:20 2018

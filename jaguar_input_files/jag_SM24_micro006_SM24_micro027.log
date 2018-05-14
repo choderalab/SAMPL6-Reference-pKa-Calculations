@@ -1,21 +1,21 @@
 Command:    jaguar run pka.py -jobname jag_SM24_micro006_SM24_micro027 -PARALLEL 10 -WAIT -n -csrch -prot SM24_micro006.in -deprot SM24_micro027.in
 Release:    2017-4
 Exec:       /data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar-v9.8/bin/Linux-x86_64
-Host:       ls10
-JobId:      ls10-0-5af47b86
+Host:       lt19
+JobId:      lt19-0-5af5cfe4
 JobDir:     /lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro006_SM24_micro027.1
-Date:       Thu May 10 13:04:50 2018
+Date:       Fri May 11 13:16:24 2018
 
 Contents of /lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro006_SM24_micro027.1:
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro006_SM24_micro027.1/lt19-0-5af5cfe4
 /lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro006_SM24_micro027.1/SM24_micro027.mae
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro006_SM24_micro027.1/lt19-0-5af5cfe4.recover
 /lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro006_SM24_micro027.1/jag_SM24_micro006_SM24_micro027.recover
 /lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro006_SM24_micro027.1/SM24_micro006.in
-/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro006_SM24_micro027.1/ls10-0-5af47b86.mpinodes
 /lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro006_SM24_micro027.1/jag_SM24_micro006_SM24_micro027.log
 /lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro006_SM24_micro027.1/SM24_micro027.in
-/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro006_SM24_micro027.1/ls10-0-5af47b86
-/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro006_SM24_micro027.1/ls10-0-5af47b86.recover
 /lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro006_SM24_micro027.1/SM24_micro006.mae
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro006_SM24_micro027.1/lt19-0-5af5cfe4.mpinodes
 
 =====================
  Jaguar pKa workflow
@@ -77,5 +77,65 @@ JobDJ columns:
 
 C A W | Activity  JobId  JobName  JobHost
 - - - | --------- -----------------------
-0 1 1 | launched  ls10-0-5af47bc5 SM24_micro006 localhost [ls10]
-0 2 0 | launched  ls10-4-5af47bf6 SM24_micro027 localhost [ls10]
+0 1 1 | launched  lt19-0-5af5cfee SM24_micro006 localhost [lt19]
+0 2 0 | launched  lt19-3-5af5cff1 SM24_micro027 localhost [lt19]
+1 1 0 | finished  lt19-3-5af5cff1 SM24_micro027 localhost [lt19]
+2 0 0 | finished  lt19-0-5af5cfee SM24_micro006 localhost [lt19]
+
+All jobs have completed.
+
+2 of 2 job(s) succeeded; 0 job(s) failed.
+
+Timer (distribute subjobs) : 6680.06 secs (1 hrs, 51 mins, 20 secs)
+
+Setting up QM workflow for (protonated, deprotonated) pair:
+(1) (SM24_micro006, SM24_micro027)
+
+Executing Jaguar quantum-mechanical subjobs...
+
+Executing 10 distributed subjobs:
+----------------------------------
+
+No more than 8 cpu(s) will be used per subjob.
+No more than 10 cpu(s) will be used simultaneously.
+
+Processing the following subjobs:
+(1) jaguar run pka_prot.bat -jobname SM24_micro006_conf_1 SM24_micro006_conf_1.in
+(2) jaguar run pka_prot.bat -jobname SM24_micro006_conf_2 SM24_micro006_conf_2.in
+(3) jaguar run pka_prot.bat -jobname SM24_micro006_conf_3 SM24_micro006_conf_3.in
+(4) jaguar run pka_prot.bat -jobname SM24_micro006_conf_4 SM24_micro006_conf_4.in
+(5) jaguar run pka_prot.bat -jobname SM24_micro006_conf_5 SM24_micro006_conf_5.in
+(6) jaguar run pka_deprot.bat -jobname SM24_micro027_conf_1 SM24_micro027_conf_1.in
+(7) jaguar run pka_deprot.bat -jobname SM24_micro027_conf_2 SM24_micro027_conf_2.in
+(8) jaguar run pka_deprot.bat -jobname SM24_micro027_conf_3 SM24_micro027_conf_3.in
+(9) jaguar run pka_deprot.bat -jobname SM24_micro027_conf_4 SM24_micro027_conf_4.in
+(10) jaguar run pka_deprot.bat -jobname SM24_micro027_conf_5 SM24_micro027_conf_5.in
+
+Running subjobs on hosts:
+  localhost (Max: 10)
+Number of jobs:       10
+Max retries per job:  3
+Max allowed failures: unlimited
+Run with -LOCAL:      False
+Verbosity:            normal
+
+Starting JobDJ...
+
+Keep one job on driver host: False
+JobDJ columns:
+  C: Number of completed subjobs
+  A: Number of active subjobs (e.g., submitted, running)
+  W: Number of waiting/pending subjobs
+
+ C  A  W | Activity  JobId  JobName  JobHost
+-- -- -- | --------- -----------------------
+ 0  1  9 | launched  lt19-0-5af5ea09 SM24_micro006_conf_1 localhost [lt19]
+ 0  2  8 | launched  lt19-0-5af5ea0d SM24_micro006_conf_2 localhost [lt19]
+ 0  3  7 | launched  lt19-0-5af5ea11 SM24_micro006_conf_3 localhost [lt19]
+ 0  4  6 | launched  lt19-0-5af5ea16 SM24_micro006_conf_4 localhost [lt19]
+ 0  5  5 | launched  lt19-0-5af5ea1d SM24_micro006_conf_5 localhost [lt19]
+ 0  6  4 | launched  lt19-0-5af5ea25 SM24_micro027_conf_1 localhost [lt19]
+ 0  7  3 | launched  lt19-0-5af5ea2f SM24_micro027_conf_2 localhost [lt19]
+ 0  8  2 | launched  lt19-0-5af5ea39 SM24_micro027_conf_3 localhost [lt19]
+ 0  9  1 | launched  lt19-0-5af5ea45 SM24_micro027_conf_4 localhost [lt19]
+ 0 10  0 | launched  lt19-0-5af5ea52 SM24_micro027_conf_5 localhost [lt19]

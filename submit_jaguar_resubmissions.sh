@@ -3,6 +3,7 @@ bsub << SCRIPT
 #!/usr/bin/bash
 #BSUB -J submit_${protonated}_${deprotonated}
 #BSUB -n 11
+#BSUB -R rusage[mem=4]
 #BSUB -q cpuqueue
 #BSUB -W  120:00
 #BSUB -We 119:30
