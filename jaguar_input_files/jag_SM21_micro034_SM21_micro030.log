@@ -1,0 +1,231 @@
+Command:    jaguar run pka.py -jobname jag_SM21_micro034_SM21_micro030 -PARALLEL 10 -WAIT -n -csrch -prot SM21_micro034.in -deprot SM21_micro030.in
+Release:    2017-4
+Exec:       /data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar-v9.8/bin/Linux-x86_64
+Host:       ls14
+JobId:      ls14-0-5b03270f
+JobDir:     /lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM21_micro034_SM21_micro030.1
+Date:       Mon May 21 16:07:45 2018
+
+Contents of /lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM21_micro034_SM21_micro030.1:
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM21_micro034_SM21_micro030.1/jag_SM21_micro034_SM21_micro030.log
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM21_micro034_SM21_micro030.1/ls14-0-5b03270f.mpinodes
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM21_micro034_SM21_micro030.1/jag_SM21_micro034_SM21_micro030.recover
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM21_micro034_SM21_micro030.1/SM21_micro034.mae
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM21_micro034_SM21_micro030.1/ls14-0-5b03270f
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM21_micro034_SM21_micro030.1/SM21_micro030.mae
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM21_micro034_SM21_micro030.1/ls14-0-5b03270f.recover
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM21_micro034_SM21_micro030.1/SM21_micro030.in
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM21_micro034_SM21_micro030.1/SM21_micro034.in
+
+=====================
+ Jaguar pKa workflow
+=====================
+
+Analysing user-provided (prot, deprot) pair:
+(SM21_micro034.in, SM21_micro030.in)
+Found labile hydrogen 37 in SM21_micro034.in
+Found labile hydrogen at atom 15 in SM21_micro030.in
+Adding 'ipkat' keyword to input files.
+
+Identifying pKa functional group for pair:
+(SM21_micro034, SM21_micro030)
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar-v9.8/bin/Linux-x86_64/pka -i -j SM21_micro034.tmp.jres -n
+
+Taking protonated structures from:
+SM21_micro034.mae
+Taking deprotonated structures from:
+SM21_micro030.mae
+
+This molecule from 'SM21_micro034.mae' in water was recognized as:
+
+ # 	           Shell           
+---	---------------------------
+1: 	Protonation of generic atom
+
+
+Executing conformational search...
+
+Executing 2 distributed subjobs:
+---------------------------------
+
+No more than 8 cpu(s) will be used per subjob.
+No more than 10 cpu(s) will be used simultaneously.
+
+Processing the following subjobs:
+(1) jaguar run csrch.py SM21_micro034.mae -jobname SM21_micro034 -max_conf 5 -erg_window 50.208 -acc_level 1 -TPP 5
+(2) jaguar run csrch.py SM21_micro030.mae -jobname SM21_micro030 -max_conf 5 -erg_window 50.208 -acc_level 1 -TPP 5
+
+Running subjobs on hosts:
+  localhost (Max: 2)
+Number of jobs:       2
+Max retries per job:  3
+Max allowed failures: unlimited
+Run with -LOCAL:      False
+Verbosity:            normal
+
+Starting JobDJ...
+
+Keep one job on driver host: False
+JobDJ columns:
+  C: Number of completed subjobs
+  A: Number of active subjobs (e.g., submitted, running)
+  W: Number of waiting/pending subjobs
+
+C A W | Activity  JobId  JobName  JobHost
+- - - | --------- -----------------------
+0 1 1 | launched  ls14-0-5b032716 SM21_micro034 localhost [ls14]
+0 2 0 | launched  ls14-0-5b032719 SM21_micro030 localhost [ls14]
+1 1 0 | finished  ls14-0-5b032716 SM21_micro034 localhost [ls14]
+2 0 0 | finished  ls14-0-5b032719 SM21_micro030 localhost [ls14]
+
+All jobs have completed.
+
+2 of 2 job(s) succeeded; 0 job(s) failed.
+
+Timer (distribute subjobs) : 1153.98 secs (0 hrs, 19 mins, 13 secs)
+
+Setting up QM workflow for (protonated, deprotonated) pair:
+(1) (SM21_micro034, SM21_micro030)
+
+Executing Jaguar quantum-mechanical subjobs...
+
+Executing 10 distributed subjobs:
+----------------------------------
+
+No more than 8 cpu(s) will be used per subjob.
+No more than 10 cpu(s) will be used simultaneously.
+
+Processing the following subjobs:
+(1) jaguar run pka_prot.bat -jobname SM21_micro034_conf_1 SM21_micro034_conf_1.in
+(2) jaguar run pka_prot.bat -jobname SM21_micro034_conf_2 SM21_micro034_conf_2.in
+(3) jaguar run pka_prot.bat -jobname SM21_micro034_conf_3 SM21_micro034_conf_3.in
+(4) jaguar run pka_prot.bat -jobname SM21_micro034_conf_4 SM21_micro034_conf_4.in
+(5) jaguar run pka_prot.bat -jobname SM21_micro034_conf_5 SM21_micro034_conf_5.in
+(6) jaguar run pka_deprot.bat -jobname SM21_micro030_conf_1 SM21_micro030_conf_1.in
+(7) jaguar run pka_deprot.bat -jobname SM21_micro030_conf_2 SM21_micro030_conf_2.in
+(8) jaguar run pka_deprot.bat -jobname SM21_micro030_conf_3 SM21_micro030_conf_3.in
+(9) jaguar run pka_deprot.bat -jobname SM21_micro030_conf_4 SM21_micro030_conf_4.in
+(10) jaguar run pka_deprot.bat -jobname SM21_micro030_conf_5 SM21_micro030_conf_5.in
+
+Running subjobs on hosts:
+  localhost (Max: 10)
+Number of jobs:       10
+Max retries per job:  3
+Max allowed failures: unlimited
+Run with -LOCAL:      False
+Verbosity:            normal
+
+Starting JobDJ...
+
+Keep one job on driver host: False
+JobDJ columns:
+  C: Number of completed subjobs
+  A: Number of active subjobs (e.g., submitted, running)
+  W: Number of waiting/pending subjobs
+
+ C  A  W | Activity  JobId  JobName  JobHost
+-- -- -- | --------- -----------------------
+ 0  1  9 | launched  ls14-0-5b032b9c SM21_micro034_conf_1 localhost [ls14]
+ 0  2  8 | launched  ls14-0-5b032b9e SM21_micro034_conf_2 localhost [ls14]
+ 0  3  7 | launched  ls14-0-5b032ba1 SM21_micro034_conf_3 localhost [ls14]
+ 0  4  6 | launched  ls14-1-5b032ba3 SM21_micro034_conf_4 localhost [ls14]
+ 0  5  5 | launched  ls14-0-5b032ba6 SM21_micro034_conf_5 localhost [ls14]
+ 0  6  4 | launched  ls14-0-5b032ba9 SM21_micro030_conf_1 localhost [ls14]
+ 0  7  3 | launched  ls14-0-5b032bac SM21_micro030_conf_2 localhost [ls14]
+ 0  8  2 | launched  ls14-0-5b032bb0 SM21_micro030_conf_3 localhost [ls14]
+ 0  9  1 | launched  ls14-0-5b032bb5 SM21_micro030_conf_4 localhost [ls14]
+ 0 10  0 | launched  ls14-0-5b032bba SM21_micro030_conf_5 localhost [ls14]
+ 1  9  0 | finished  ls14-0-5b032b9e SM21_micro034_conf_2 localhost [ls14]
+ 2  8  0 | finished  ls14-0-5b032ba6 SM21_micro034_conf_5 localhost [ls14]
+ 3  7  0 | finished  ls14-0-5b032ba1 SM21_micro034_conf_3 localhost [ls14]
+ 4  6  0 | finished  ls14-0-5b032ba9 SM21_micro030_conf_1 localhost [ls14]
+ 5  5  0 | finished  ls14-0-5b032bba SM21_micro030_conf_5 localhost [ls14]
+ 6  4  0 | finished  ls14-0-5b032bb5 SM21_micro030_conf_4 localhost [ls14]
+ 7  3  0 | finished  ls14-0-5b032bb0 SM21_micro030_conf_3 localhost [ls14]
+ 8  2  0 | finished  ls14-1-5b032ba3 SM21_micro034_conf_4 localhost [ls14]
+ 9  1  0 | finished  ls14-0-5b032b9c SM21_micro034_conf_1 localhost [ls14]
+10  0  0 | finished  ls14-0-5b032bac SM21_micro030_conf_2 localhost [ls14]
+
+All jobs have completed.
+
+10 of 10 job(s) succeeded; 0 job(s) failed.
+
+Timer (distribute subjobs) : 13441.97 secs (3 hrs, 44 mins, 01 secs)
+
+Processing QM output files...
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -energy SM21_micro034_conf_1.nrg_h.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -esolv SM21_micro034_conf_1.sol_h.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -energy SM21_micro034_conf_2.nrg_h.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -esolv SM21_micro034_conf_2.sol_h.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -energy SM21_micro034_conf_3.nrg_h.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -esolv SM21_micro034_conf_3.sol_h.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -energy SM21_micro034_conf_4.nrg_h.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -esolv SM21_micro034_conf_4.sol_h.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -energy SM21_micro034_conf_5.nrg_h.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -esolv SM21_micro034_conf_5.sol_h.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -energy SM21_micro030_conf_1.nrg.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -esolv SM21_micro030_conf_1.sol.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -energy SM21_micro030_conf_2.nrg.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -esolv SM21_micro030_conf_2.sol.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -energy SM21_micro030_conf_3.nrg.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -esolv SM21_micro030_conf_3.sol.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -energy SM21_micro030_conf_4.nrg.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -esolv SM21_micro030_conf_4.sol.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -energy SM21_micro030_conf_5.nrg.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -esolv SM21_micro030_conf_5.sol.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar-v9.8/bin/Linux-x86_64/pka -o SM21_micro034_deprot-out.mae -j SM21_micro034.jres -n -d
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar-v9.8/bin/Linux-x86_64/pka -o SM21_micro034_prot-out.mae -j SM21_micro034.jres -n
+
+pKa calculation for SM21_micro034 completed.
+
+pKa workflow jag_SM21_micro034_SM21_micro030 completed.
+
+Timer (Jaguar pKa) : 14647.49 secs (4 hrs, 04 mins, 07 secs)
+Timer (jaguar_backend.py) : 14647.49 secs (4 hrs, 04 mins, 07 secs)
+Finished:   Mon May 21 20:11:52 2018
