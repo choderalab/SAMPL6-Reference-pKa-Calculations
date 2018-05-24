@@ -1,0 +1,73 @@
+LigPrep: preparing subjobs
+
+Running subjobs on hosts:
+  localhost (Max: 2)
+Number of jobs:       1
+Max retries per job:  2
+Max allowed failures: unlimited
+Run with -LOCAL:      False
+Verbosity:            normal
+
+Starting JobDJ...
+
+Keep one job on driver host: False
+JobDJ columns:
+  C: Number of completed subjobs
+  A: Number of active subjobs (e.g., submitted, running)
+  W: Number of waiting/pending subjobs
+
+C A W | Activity  JobId  JobName  JobHost
+- - - | --------- -----------------------
+0 1 0 | launched  LMIS8010-0-5af0924c 3dmin_04-1 localhost [LMIS8010]
+1 0 0 | finished  LMIS8010-0-5af0924c 3dmin_04-1 localhost [LMIS8010]
+
+All jobs have completed.
+
+1 of 1 job(s) succeeded; 0 job(s) failed.
+
+--------------------------------------------------------------------------------
+SUBJOB:  3dmin_04-1
+
+LigPrep (version 42013). Copyright Schrodinger, LLC. All rights reserved.
+
+LigPrep command:
+$SCHRODINGER/ligprep -nd -s 1 -nt -i 0 -bff 14 -orig_file C:\Users\rustenba\Documents\Repos\Jaguar_Ref_pKa\microstates\converting_states.cnv\3dmin\3dmin_04\3dmin_04_in.maegz -orig_file_index 1 -imae in_3dmin_04-1.maegz -osd 3dmin_04-1.sdf.gz
+
+Processing steps:
+$DO\sdstereoexpander.py -max_output 1 -max_generated 32 <infile.mae> <outfile.mae>
+$DO\htreat.py -t All-None -a all -s -l 200 <infile.mae> <outfile.mae>
+$DO\guard.py <infile.mae> <outfile.mae>
+$DO\stereoizer.py -n 1 <infile.mae> <outfile.mae>
+$DO\cgx.py -optimize -ffld 14 -epsilon 10.0 <infile.mae> <outfile.mae>
+
+DO=$SCHRODINGER\run -FROM macromodel ..\..\lib\Windows-x64\python_packages\ligprep3\
+
+# counts of output and dropped structures after processing steps
+# index  sdstex  htreat   guard  stereo    cgx   title
+guard:
+INFO atom 9 is of undesired type 161
+
+       1   1/0     1/0     0/1     0/0     0/0   'SM03_micro021'
+
+dropped structures:
+guard: 1
+
+# of processed structures in "3dmin_04-1.sdf.gz" : 0
+# of dropped structures in "3dmin_04-1-dropped.maegz" : 1
+
+backend run time: 0 hours 0 minutes 5.964 seconds
+--------------------------------------------------------------------------------
+FATAL mmmdl_count_structures: File is empty - 3dmin_04.sdf.gzTraceback (most recent call last):
+  File "C:\Program Files\Schrodinger2017-2\macromodel-v11.6\bin\Windows-x64\ligprep3_driver.py", line 312, in <module>
+    main()
+  File "C:\Program Files\Schrodinger2017-2\macromodel-v11.6\bin\Windows-x64\ligprep3_driver.py", line 283, in main
+    combine_results(args, subjobnames, namer, failedsubjobnames)
+  File "C:\Program Files\Schrodinger2017-2\macromodel-v11.6\bin\Windows-x64\ligprep3_driver.py", line 183, in combine_results
+    [namer.outName(j) for j in _subjobnames], count_structures=True)
+  File "C:\Program Files\Schrodinger2017-2\macromodel-v11.6\lib\Windows-x64\python_packages\ligprep3\driver.py", line 237, in concatenate_structures
+    num_written = structure.count_structures(outname)
+  File "C:\Program Files\Schrodinger2017-2\internal\lib\site-packages\schrodinger\structure.py", line 5981, in count_structures
+    num_structures = mm.mmmdl_count_structures(filename)
+  File "C:\Program Files\Schrodinger2017-2\internal\lib\site-packages\schrodinger\infra\mmcheck.py", line 90, in __call__
+    raise MmException(self, args, rc)
+schrodinger.infra.mmcheck.MmException: mmmdl_count_structures returned error code 1 (MMMDL_ERR) for arguments ('3dmin_04.sdf.gz',) with message: "FATAL mmmdl_count_structures: File is empty - 3dmin_04.sdf.gz"
