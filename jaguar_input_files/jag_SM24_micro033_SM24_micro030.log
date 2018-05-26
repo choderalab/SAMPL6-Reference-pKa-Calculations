@@ -1,0 +1,233 @@
+Command:    jaguar run pka.py -jobname jag_SM24_micro033_SM24_micro030 -PARALLEL 10 -WAIT -n -csrch -prot SM24_micro033.in -deprot SM24_micro030.in
+Release:    2017-4
+Exec:       /data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar-v9.8/bin/Linux-x86_64
+Host:       lt14
+JobId:      lt14-0-5b0820ef
+JobDir:     /lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro033_SM24_micro030.1
+Date:       Fri May 25 10:42:57 2018
+
+Contents of /lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro033_SM24_micro030.1:
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro033_SM24_micro030.1/lt14-0-5b0820ef.recover
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro033_SM24_micro030.1/SM24_micro033.in
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro033_SM24_micro030.1/lt14-0-5b0820ef.mpinodes
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro033_SM24_micro030.1/jag_SM24_micro033_SM24_micro030.recover
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro033_SM24_micro030.1/SM24_micro033.mae
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro033_SM24_micro030.1/SM24_micro030.in
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro033_SM24_micro030.1/jag_SM24_micro033_SM24_micro030.log
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro033_SM24_micro030.1/SM24_micro030.mae
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM24_micro033_SM24_micro030.1/lt14-0-5b0820ef
+
+=====================
+ Jaguar pKa workflow
+=====================
+
+Analysing user-provided (prot, deprot) pair:
+(SM24_micro033.in, SM24_micro030.in)
+Found labile hydrogen 52 in SM24_micro033.in
+Found labile hydrogen at atom 29 in SM24_micro030.in
+Adding 'ipkat' keyword to input files.
+
+Identifying pKa functional group for pair:
+(SM24_micro033, SM24_micro030)
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar-v9.8/bin/Linux-x86_64/pka -i -j SM24_micro033.tmp.jres -n
+
+Taking protonated structures from:
+SM24_micro033.mae
+Taking deprotonated structures from:
+SM24_micro030.mae
+
+This molecule from 'SM24_micro033.mae' in water was recognized as:
+
+ # 	            Shell             
+---	------------------------------
+1: 	alcohol                       
+2: 	Protonation of generic atom   
+3: 	Protonation of sp2-like oxygen
+
+
+Executing conformational search...
+
+Executing 2 distributed subjobs:
+---------------------------------
+
+No more than 8 cpu(s) will be used per subjob.
+No more than 10 cpu(s) will be used simultaneously.
+
+Processing the following subjobs:
+(1) jaguar run csrch.py SM24_micro033.mae -jobname SM24_micro033 -max_conf 5 -erg_window 50.208 -acc_level 1 -TPP 5
+(2) jaguar run csrch.py SM24_micro030.mae -jobname SM24_micro030 -max_conf 5 -erg_window 50.208 -acc_level 1 -TPP 5
+
+Running subjobs on hosts:
+  localhost (Max: 2)
+Number of jobs:       2
+Max retries per job:  3
+Max allowed failures: unlimited
+Run with -LOCAL:      False
+Verbosity:            normal
+
+Starting JobDJ...
+
+Keep one job on driver host: False
+JobDJ columns:
+  C: Number of completed subjobs
+  A: Number of active subjobs (e.g., submitted, running)
+  W: Number of waiting/pending subjobs
+
+C A W | Activity  JobId  JobName  JobHost
+- - - | --------- -----------------------
+0 1 1 | launched  lt14-0-5b0820f7 SM24_micro033 localhost [lt14]
+0 2 0 | launched  lt14-0-5b0820f9 SM24_micro030 localhost [lt14]
+1 1 0 | finished  lt14-0-5b0820f7 SM24_micro033 localhost [lt14]
+2 0 0 | finished  lt14-0-5b0820f9 SM24_micro030 localhost [lt14]
+
+All jobs have completed.
+
+2 of 2 job(s) succeeded; 0 job(s) failed.
+
+Timer (distribute subjobs) : 1994.27 secs (0 hrs, 33 mins, 14 secs)
+
+Setting up QM workflow for (protonated, deprotonated) pair:
+(1) (SM24_micro033, SM24_micro030)
+
+Executing Jaguar quantum-mechanical subjobs...
+
+Executing 10 distributed subjobs:
+----------------------------------
+
+No more than 8 cpu(s) will be used per subjob.
+No more than 10 cpu(s) will be used simultaneously.
+
+Processing the following subjobs:
+(1) jaguar run pka_prot.bat -jobname SM24_micro033_conf_1 SM24_micro033_conf_1.in
+(2) jaguar run pka_prot.bat -jobname SM24_micro033_conf_2 SM24_micro033_conf_2.in
+(3) jaguar run pka_prot.bat -jobname SM24_micro033_conf_3 SM24_micro033_conf_3.in
+(4) jaguar run pka_prot.bat -jobname SM24_micro033_conf_4 SM24_micro033_conf_4.in
+(5) jaguar run pka_prot.bat -jobname SM24_micro033_conf_5 SM24_micro033_conf_5.in
+(6) jaguar run pka_deprot.bat -jobname SM24_micro030_conf_1 SM24_micro030_conf_1.in
+(7) jaguar run pka_deprot.bat -jobname SM24_micro030_conf_2 SM24_micro030_conf_2.in
+(8) jaguar run pka_deprot.bat -jobname SM24_micro030_conf_3 SM24_micro030_conf_3.in
+(9) jaguar run pka_deprot.bat -jobname SM24_micro030_conf_4 SM24_micro030_conf_4.in
+(10) jaguar run pka_deprot.bat -jobname SM24_micro030_conf_5 SM24_micro030_conf_5.in
+
+Running subjobs on hosts:
+  localhost (Max: 10)
+Number of jobs:       10
+Max retries per job:  3
+Max allowed failures: unlimited
+Run with -LOCAL:      False
+Verbosity:            normal
+
+Starting JobDJ...
+
+Keep one job on driver host: False
+JobDJ columns:
+  C: Number of completed subjobs
+  A: Number of active subjobs (e.g., submitted, running)
+  W: Number of waiting/pending subjobs
+
+ C  A  W | Activity  JobId  JobName  JobHost
+-- -- -- | --------- -----------------------
+ 0  1  9 | launched  lt14-0-5b0828c4 SM24_micro033_conf_1 localhost [lt14]
+ 0  2  8 | launched  lt14-0-5b0828c6 SM24_micro033_conf_2 localhost [lt14]
+ 0  3  7 | launched  lt14-0-5b0828c9 SM24_micro033_conf_3 localhost [lt14]
+ 0  4  6 | launched  lt14-0-5b0828cc SM24_micro033_conf_4 localhost [lt14]
+ 0  5  5 | launched  lt14-0-5b0828cf SM24_micro033_conf_5 localhost [lt14]
+ 0  6  4 | launched  lt14-0-5b0828d3 SM24_micro030_conf_1 localhost [lt14]
+ 0  7  3 | launched  lt14-0-5b0828d8 SM24_micro030_conf_2 localhost [lt14]
+ 0  8  2 | launched  lt14-0-5b0828dd SM24_micro030_conf_3 localhost [lt14]
+ 0  9  1 | launched  lt14-0-5b0828e3 SM24_micro030_conf_4 localhost [lt14]
+ 0 10  0 | launched  lt14-0-5b0828e9 SM24_micro030_conf_5 localhost [lt14]
+ 1  9  0 | finished  lt14-0-5b0828cf SM24_micro033_conf_5 localhost [lt14]
+ 2  8  0 | finished  lt14-0-5b0828c9 SM24_micro033_conf_3 localhost [lt14]
+ 3  7  0 | finished  lt14-0-5b0828c6 SM24_micro033_conf_2 localhost [lt14]
+ 4  6  0 | finished  lt14-0-5b0828c4 SM24_micro033_conf_1 localhost [lt14]
+ 5  5  0 | finished  lt14-0-5b0828cc SM24_micro033_conf_4 localhost [lt14]
+ 6  4  0 | finished  lt14-0-5b0828d8 SM24_micro030_conf_2 localhost [lt14]
+ 7  3  0 | finished  lt14-0-5b0828d3 SM24_micro030_conf_1 localhost [lt14]
+ 8  2  0 | finished  lt14-0-5b0828e3 SM24_micro030_conf_4 localhost [lt14]
+ 9  1  0 | finished  lt14-0-5b0828dd SM24_micro030_conf_3 localhost [lt14]
+10  0  0 | finished  lt14-0-5b0828e9 SM24_micro030_conf_5 localhost [lt14]
+
+All jobs have completed.
+
+10 of 10 job(s) succeeded; 0 job(s) failed.
+
+Timer (distribute subjobs) : 27472.80 secs (7 hrs, 37 mins, 52 secs)
+
+Processing QM output files...
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -energy SM24_micro033_conf_1.nrg_h.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -esolv SM24_micro033_conf_1.sol_h.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -energy SM24_micro033_conf_2.nrg_h.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -esolv SM24_micro033_conf_2.sol_h.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -energy SM24_micro033_conf_3.nrg_h.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -esolv SM24_micro033_conf_3.sol_h.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -energy SM24_micro033_conf_4.nrg_h.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -esolv SM24_micro033_conf_4.sol_h.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -energy SM24_micro033_conf_5.nrg_h.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -esolv SM24_micro033_conf_5.sol_h.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -energy SM24_micro030_conf_1.nrg.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -esolv SM24_micro030_conf_1.sol.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -energy SM24_micro030_conf_2.nrg.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -esolv SM24_micro030_conf_2.sol.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -energy SM24_micro030_conf_3.nrg.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -esolv SM24_micro030_conf_3.sol.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -energy SM24_micro030_conf_4.nrg.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -esolv SM24_micro030_conf_4.sol.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -energy SM24_micro030_conf_5.nrg.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -esolv SM24_micro030_conf_5.sol.out
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar-v9.8/bin/Linux-x86_64/pka -o SM24_micro033_deprot-out.mae -j SM24_micro033.jres -n -d
+
+Executing subprocess:
+/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar-v9.8/bin/Linux-x86_64/pka -o SM24_micro033_prot-out.mae -j SM24_micro033.jres -n
+
+pKa calculation for SM24_micro033 completed.
+
+pKa workflow jag_SM24_micro033_SM24_micro030 completed.
+
+Timer (Jaguar pKa) : 29540.17 secs (8 hrs, 12 mins, 20 secs)
+Timer (jaguar_backend.py) : 29540.17 secs (8 hrs, 12 mins, 20 secs)
+Finished:   Fri May 25 18:55:17 2018
