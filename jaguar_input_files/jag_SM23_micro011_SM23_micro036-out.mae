@@ -1,0 +1,2631 @@
+{ 
+ s_m_m2io_version
+ :::
+ 2.0.0 
+} 
+
+f_m_ct { 
+ s_m_title
+ s_m_entry_id
+ s_m_entry_name
+ s_canvas_canonical_SMILES
+ i_canvas_canvasUID
+ s_m_Source_Path
+ s_m_Source_File
+ i_m_Source_File_Index
+ i_m_Molecular_charge
+ i_m_Spin_multiplicity
+ s_j_Task
+ s_j_Jaguar_input_file
+ s_j_Jaguar_restart_input_file
+ s_j_Jaguar_restart_mae_file
+ s_j_Jaguar_output_file
+ s_j_Jaguar_log_file
+ s_j_Jaguar_mae_file
+ s_j_QM_Method
+ s_j_QM_Basis
+ i_j_Number_of_canonical_orbitals
+ i_j_Geometry_convergence_category
+ r_j_Gas_Phase_Energy
+ r_j_HOMO
+ r_j_LUMO
+ r_j_pKa_water
+ s_m_subgroupid
+ b_m_subgroup_collapsed
+ i_m_ct_format
+ :::
+ "lowest energy protonated conformer" 
+  4 
+  converted.303 
+  CCOC(=O)c1ccc(cc1)Nc2cc(nc(n2)Nc3ccc(cc3)C(=O)OCC)C 
+  303
+  C:\Users\rustenba\Documents\Repos\Jaguar_Ref_pKa\jaguar_input_files 
+  sm23_micro012.mae 
+  1
+  0
+  1
+  Optimization 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro011_conf_1.dft_h.in 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro011_conf_1.dft_h.01.in 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro011_conf_1.dft_h.01.mae 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro011_conf_1.dft_h.out 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro011_conf_1.dft_h.log 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro011_conf_1.mae 
+  DFT(b3lyp) 
+  pka-geopt* 
+  511
+  1
+  -1410.85330177436
+  -0.195617312553162
+  -0.0464284212161898
+  11.71
+  SM23_micro011 
+  0
+  2
+ m_depend[16] { 
+  # First column is dependency index #
+  i_m_depend_dependency
+  s_m_depend_property
+  :::
+  1 20 i_m_Molecular_charge 
+  2 20 i_m_Spin_multiplicity 
+  3 20 s_j_Task 
+  4 20 s_j_Jaguar_input_file 
+  5 20 s_j_Jaguar_restart_input_file 
+  6 20 s_j_Jaguar_restart_mae_file 
+  7 20 s_j_Jaguar_output_file 
+  8 20 s_j_Jaguar_log_file 
+  9 20 s_j_Jaguar_mae_file 
+  10 20 s_j_QM_Method 
+  11 20 s_j_QM_Basis 
+  12 20 i_j_Number_of_canonical_orbitals 
+  13 20 i_j_Geometry_convergence_category 
+  14 20 r_j_Gas_Phase_Energy 
+  15 20 r_j_HOMO 
+  16 20 r_j_LUMO 
+  :::
+ } 
+ m_atom[55] { 
+  # First column is atom index #
+  i_m_mmod_type
+  r_m_x_coord
+  r_m_y_coord
+  r_m_z_coord
+  i_m_residue_number
+  i_m_color
+  r_m_charge1
+  r_m_charge2
+  i_m_atomic_number
+  s_m_atom_name
+  s_m_label_format
+  i_m_label_color
+  s_m_label_user_text
+  i_m_Hcount
+  r_j_pKa_water
+  :::
+  1 3 -2.089987 0.890547 6.219105 900 2 -0.18000 -0.18000 6 C1  %UA:r_j_pKa_water:  1 ""  3 <>
+  2 3 -2.249100 2.392950 6.076260 900 2 0.19000 0.19000 6 C2  %UA:r_j_pKa_water:  1 ""  2 <>
+  3 16 -3.623395 2.651293 5.727877 900 70 -0.33000 -0.33000 8 O3  %UA:r_j_pKa_water:  1 ""  0 <>
+  4 2 -3.939537 3.957510 5.524485 900 2 0.62500 0.62500 6 C4  %UA:r_j_pKa_water:  1 ""  0 <>
+  5 15 -3.120501 4.853086 5.629574 900 70 -0.43000 -0.43000 8 O5  %UA:r_j_pKa_water:  1 ""  0 <>
+  6 2 -5.362047 4.150793 5.160387 900 2 -0.11500 -0.11500 6 C6  %UA:r_j_pKa_water:  1 ""  0 <>
+  7 2 -6.277531 3.091004 5.068744 900 2 -0.11500 -0.11500 6 C7  %UA:r_j_pKa_water:  1 ""  1 <>
+  8 2 -7.595249 3.326067 4.698112 900 2 -0.11500 -0.11500 6 C8  %UA:r_j_pKa_water:  1 ""  1 <>
+  9 2 -8.042459 4.632485 4.408093 900 2 0.07880 0.07880 6 C9  %UA:r_j_pKa_water:  1 ""  0 <>
+  10 2 -7.126334 5.694073 4.539764 900 2 -0.11500 -0.11500 6 C10  %UA:r_j_pKa_water:  1 ""  1 <>
+  11 2 -5.808307 5.455077 4.896636 900 2 -0.11500 -0.11500 6 C11  %UA:r_j_pKa_water:  1 ""  1 <>
+  12 25 -9.366039 4.937653 4.096258 900 43 -0.46850 -0.46850 7 N12  %UA:r_j_pKa_water:  1 ""  0 <>
+  13 2 -10.019924 4.333842 3.157490 900 2 0.51550 0.51550 6 C13  %UA:r_j_pKa_water:  1 ""  0 <>
+  14 2 -11.425733 4.668090 2.956860 900 2 -0.11830 -0.11830 6 C14  %UA:r_j_pKa_water:  1 ""  1 <>
+  15 2 -12.137814 4.080723 1.973959 900 2 0.12250 0.12250 6 C15  %UA:r_j_pKa_water:  1 ""  0 <>
+  16 3 -13.584227 4.329207 1.667453 900 2 -0.18000 -0.18000 6 C16  %UA:r_j_pKa_water:  1 ""  3 <>
+  17 25 -11.491739 3.158293 1.149687 900 43 -0.50750 -0.50750 7 N17  %UA:r_j_pKa_water:  1 ""  1 <>
+  18 2 -10.154738 2.858729 1.358073 900 2 0.30900 0.30900 6 C18  %UA:r_j_pKa_water:  1 ""  0 <>
+  19 25 -9.441096 3.397244 2.292785 900 43 -0.48150 -0.48150 7 N19  %UA:r_j_pKa_water:  1 ""  0 <>
+  20 25 -9.645965 1.935709 0.471684 900 43 -0.48520 -0.48520 7 N20  %UA:r_j_pKa_water:  1 ""  1 <>
+  21 2 -8.358413 1.371394 0.375464 900 2 0.10020 0.10020 6 C21  %UA:r_j_pKa_water:  1 ""  0 <>
+  22 2 -7.287809 1.695849 1.222276 900 2 -0.11500 -0.11500 6 C22  %UA:r_j_pKa_water:  1 ""  1 <>
+  23 2 -6.057804 1.071877 1.034824 900 2 -0.11500 -0.11500 6 C23  %UA:r_j_pKa_water:  1 ""  1 <>
+  24 2 -5.866130 0.127510 0.019701 900 2 -0.11500 -0.11500 6 C24  %UA:r_j_pKa_water:  1 ""  0 <>
+  25 2 -6.941552 -0.188930 -0.821465 900 2 -0.11500 -0.11500 6 C25  %UA:r_j_pKa_water:  1 ""  1 <>
+  26 2 -8.171049 0.423907 -0.647351 900 2 -0.11500 -0.11500 6 C26  %UA:r_j_pKa_water:  1 ""  1 <>
+  27 2 -4.571849 -0.564013 -0.218404 900 2 0.62500 0.62500 6 C27  %UA:r_j_pKa_water:  1 ""  0 <>
+  28 15 -4.389513 -1.394088 -1.090420 900 70 -0.43000 -0.43000 8 O28  %UA:r_j_pKa_water:  1 ""  0 <>
+  29 16 -3.604647 -0.171978 0.641469 900 70 -0.33000 -0.33000 8 O29  %UA:r_j_pKa_water:  1 ""  0 <>
+  30 3 -2.317093 -0.802586 0.462285 900 2 0.19000 0.19000 6 C30  %UA:r_j_pKa_water:  1 ""  2 <>
+  31 3 -1.373041 -0.212356 1.492384 900 2 -0.18000 -0.18000 6 C31  %UA:r_j_pKa_water:  1 ""  3 <>
+  32 41 -1.055715 0.648004 6.487197 900 21 0.06000 0.06000 1 H32  %UA:r_j_pKa_water:  1 ""  0 <>
+  33 41 -2.749511 0.499000 7.000617 900 21 0.06000 0.06000 1 H33  %UA:r_j_pKa_water:  1 ""  0 <>
+  34 41 -2.331441 0.381831 5.279592 900 21 0.06000 0.06000 1 H34  %UA:r_j_pKa_water:  1 ""  0 <>
+  35 41 -1.600436 2.801814 5.294466 900 21 0.03000 0.03000 1 H35  %UA:r_j_pKa_water:  1 ""  0 <>
+  36 41 -2.011833 2.920768 7.006166 900 21 0.03000 0.03000 1 H36  %UA:r_j_pKa_water:  1 ""  0 <>
+  37 41 -5.949291 2.080227 5.287886 900 21 0.11500 0.11500 1 H37  %UA:r_j_pKa_water:  1 ""  0 <>
+  38 41 -8.297018 2.500934 4.633197 900 21 0.11500 0.11500 1 H38  %UA:r_j_pKa_water:  1 ""  0 <>
+  39 41 -7.476191 6.703551 4.345076 900 21 0.11500 0.11500 1 H39  %UA:r_j_pKa_water:  1 ""  0 <>
+  40 41 -5.098220 6.271941 4.979793 900 21 0.11500 0.11500 1 H40  %UA:r_j_pKa_water:  1 ""  0 <>
+  41 41 -14.173054 3.405241 1.745844 900 21 0.06000 0.06000 1 H41  %UA:r_j_pKa_water:  1 ""  0 <>
+  42 41 -14.001513 5.057126 2.366393 900 21 0.06000 0.06000 1 H42  %UA:r_j_pKa_water:  1 ""  0 <>
+  43 41 -13.714223 4.719406 0.649245 900 21 0.06000 0.06000 1 H43  %UA:r_j_pKa_water:  1 ""  0 <>
+  44 43 -10.285384 1.607139 -0.238660 900 21 0.41000 0.41000 1 H44  %UA:r_j_pKa_water:  1 ""  0 11.71
+  45 41 -7.423845 2.425617 2.007386 900 21 0.11500 0.11500 1 H45  %UA:r_j_pKa_water:  1 ""  0 <>
+  46 41 -5.233922 1.327123 1.691638 900 21 0.11500 0.11500 1 H46  %UA:r_j_pKa_water:  1 ""  0 <>
+  47 41 -6.792257 -0.920958 -1.608373 900 21 0.11500 0.11500 1 H47  %UA:r_j_pKa_water:  1 ""  0 <>
+  48 41 -8.999190 0.169006 -1.307136 900 21 0.11500 0.11500 1 H48  %UA:r_j_pKa_water:  1 ""  0 <>
+  49 41 -1.975247 -0.621113 -0.561783 900 21 0.03000 0.03000 1 H49  %UA:r_j_pKa_water:  1 ""  0 <>
+  50 41 -2.435077 -1.884566 0.582363 900 21 0.03000 0.03000 1 H50  %UA:r_j_pKa_water:  1 ""  0 <>
+  51 41 -0.381453 -0.666701 1.390386 900 21 0.06000 0.06000 1 H51  %UA:r_j_pKa_water:  1 ""  0 <>
+  52 41 -1.272642 0.869260 1.356444 900 21 0.06000 0.06000 1 H52  %UA:r_j_pKa_water:  1 ""  0 <>
+  53 41 -1.735214 -0.400083 2.508681 900 21 0.06000 0.06000 1 H53  %UA:r_j_pKa_water:  1 ""  0 <>
+  54 41 -11.879561 5.396727 3.616899 900 21 0.11500 0.11500 1 H54  %UA:r_j_pKa_water:  1 ""  0 <>
+  55 43 -12.029913 2.672252 0.446041 900 21 0.41000 0.41000 1 H55  %UA:r_j_pKa_water:  1 ""  0 <>
+  :::
+ } 
+ m_bond[57] { 
+  # First column is bond index #
+  i_m_from
+  i_m_to
+  i_m_order
+  :::
+  1 1 2 1
+  2 1 32 1
+  3 1 33 1
+  4 1 34 1
+  5 2 3 1
+  6 2 35 1
+  7 2 36 1
+  8 3 4 1
+  9 4 5 2
+  10 4 6 1
+  11 6 11 1
+  12 6 7 2
+  13 7 8 1
+  14 7 37 1
+  15 8 9 2
+  16 8 38 1
+  17 9 10 1
+  18 9 12 1
+  19 10 11 2
+  20 10 39 1
+  21 11 40 1
+  22 12 13 2
+  23 13 19 1
+  24 13 14 1
+  25 14 15 2
+  26 14 54 1
+  27 15 16 1
+  28 15 17 1
+  29 16 41 1
+  30 16 42 1
+  31 16 43 1
+  32 17 18 1
+  33 17 55 1
+  34 18 19 2
+  35 18 20 1
+  36 20 21 1
+  37 20 44 1
+  38 21 26 1
+  39 21 22 2
+  40 22 23 1
+  41 22 45 1
+  42 23 24 2
+  43 23 46 1
+  44 24 25 1
+  45 24 27 1
+  46 25 26 2
+  47 25 47 1
+  48 26 48 1
+  49 27 28 2
+  50 27 29 1
+  51 29 30 1
+  52 30 31 1
+  53 30 49 1
+  54 30 50 1
+  55 31 51 1
+  56 31 52 1
+  57 31 53 1
+  :::
+ } 
+} 
+
+f_m_ct { 
+ s_m_title
+ s_m_entry_id
+ s_m_entry_name
+ s_canvas_canonical_SMILES
+ i_canvas_canvasUID
+ s_m_Source_Path
+ s_m_Source_File
+ i_m_Source_File_Index
+ i_m_Molecular_charge
+ i_m_Spin_multiplicity
+ s_j_Task
+ s_j_Jaguar_input_file
+ s_j_Jaguar_restart_input_file
+ s_j_Jaguar_restart_mae_file
+ s_j_Jaguar_output_file
+ s_j_Jaguar_log_file
+ s_j_Jaguar_mae_file
+ s_j_QM_Method
+ s_j_QM_Basis
+ i_j_Number_of_canonical_orbitals
+ i_j_Geometry_convergence_category
+ r_j_Gas_Phase_Energy
+ r_j_HOMO
+ r_j_LUMO
+ r_j_pKa_water
+ s_m_subgroupid
+ b_m_subgroup_collapsed
+ i_m_ct_format
+ :::
+ "lowest energy deprotonated conformer" 
+  4 
+  converted.303 
+  CCOC(=O)c1ccc(cc1)Nc2cc(nc(n2)Nc3ccc(cc3)C(=O)OCC)C 
+  303
+  C:\Users\rustenba\Documents\Repos\Jaguar_Ref_pKa\jaguar_input_files 
+  SM23_micro011.mae 
+  1
+  -1
+  1
+  Optimization 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro036_conf_2.dft.in 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro036_conf_2.dft.01.in 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro036_conf_2.dft.01.mae 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro036_conf_2.dft.out 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro036_conf_2.dft.log 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro036_conf_2.mae 
+  DFT(b3lyp) 
+  pka-geopt* 
+  509
+  3
+  -1410.31731045142
+  -0.0693968812812471
+  0.0573168110082148
+  11.71
+  SM23_micro011 
+  0
+  2
+ m_depend[16] { 
+  # First column is dependency index #
+  i_m_depend_dependency
+  s_m_depend_property
+  :::
+  1 20 i_m_Molecular_charge 
+  2 20 i_m_Spin_multiplicity 
+  3 20 s_j_Task 
+  4 20 s_j_Jaguar_input_file 
+  5 20 s_j_Jaguar_restart_input_file 
+  6 20 s_j_Jaguar_restart_mae_file 
+  7 20 s_j_Jaguar_output_file 
+  8 20 s_j_Jaguar_log_file 
+  9 20 s_j_Jaguar_mae_file 
+  10 20 s_j_QM_Method 
+  11 20 s_j_QM_Basis 
+  12 20 i_j_Number_of_canonical_orbitals 
+  13 20 i_j_Geometry_convergence_category 
+  14 20 r_j_Gas_Phase_Energy 
+  15 20 r_j_HOMO 
+  16 20 r_j_LUMO 
+  :::
+ } 
+ m_atom[54] { 
+  # First column is atom index #
+  i_m_mmod_type
+  r_m_x_coord
+  r_m_y_coord
+  r_m_z_coord
+  i_m_residue_number
+  i_m_color
+  r_m_charge1
+  r_m_charge2
+  i_m_atomic_number
+  i_m_formal_charge
+  s_m_atom_name
+  s_m_label_format
+  i_m_label_color
+  s_m_label_user_text
+  i_m_Hcount
+  r_j_pKa_water
+  :::
+  1 3 -5.101140 -2.201895 10.716663 900 2 -0.18000 -0.18000 6 0 C1  %UA:r_j_pKa_water:  1 ""  3 <>
+  2 3 -4.133995 -1.952092 9.571872 900 2 0.19000 0.19000 6 0 C2  %UA:r_j_pKa_water:  1 ""  2 <>
+  3 16 -4.595815 -2.705868 8.445606 900 70 -0.33000 -0.33000 8 0 O3  %UA:r_j_pKa_water:  1 ""  0 <>
+  4 2 -3.817930 -2.611681 7.319411 900 2 0.62500 0.62500 6 0 C4  %UA:r_j_pKa_water:  1 ""  0 <>
+  5 15 -2.807387 -1.921252 7.306850 900 70 -0.43000 -0.43000 8 0 O5  %UA:r_j_pKa_water:  1 ""  0 <>
+  6 2 -4.331308 -3.406174 6.197480 900 2 -0.11500 -0.11500 6 0 C6  %UA:r_j_pKa_water:  1 ""  0 <>
+  7 2 -3.611207 -3.394256 4.985787 900 2 -0.11500 -0.11500 6 0 C7  %UA:r_j_pKa_water:  1 ""  1 <>
+  8 2 -4.047581 -4.127633 3.901849 900 2 -0.11500 -0.11500 6 0 C8  %UA:r_j_pKa_water:  1 ""  1 <>
+  9 2 -5.228065 -4.922346 3.946385 900 2 0.07880 0.07880 6 0 C9  %UA:r_j_pKa_water:  1 ""  0 <>
+  10 2 -5.949050 -4.922419 5.176313 900 2 -0.11500 -0.11500 6 0 C10  %UA:r_j_pKa_water:  1 ""  1 <>
+  11 2 -5.502804 -4.183836 6.262644 900 2 -0.11500 -0.11500 6 0 C11  %UA:r_j_pKa_water:  1 ""  1 <>
+  12 25 -5.510176 -5.595154 2.780500 900 43 -0.46850 -0.46850 7 0 N12  %UA:r_j_pKa_water:  1 ""  0 <>
+  13 2 -6.550401 -6.393645 2.581951 900 2 0.51550 0.51550 6 0 C13  %UA:r_j_pKa_water:  1 ""  0 <>
+  14 2 -6.604198 -7.001217 1.255857 900 2 -0.11830 -0.11830 6 0 C14  %UA:r_j_pKa_water:  1 ""  1 <>
+  15 2 -7.607862 -7.852277 0.948009 900 2 0.12250 0.12250 6 0 C15  %UA:r_j_pKa_water:  1 ""  0 <>
+  16 3 -7.781477 -8.548879 -0.370986 900 2 -0.18000 -0.18000 6 0 C16  %UA:r_j_pKa_water:  1 ""  3 <>
+  17 25 -8.553629 -8.124549 1.915948 900 43 -0.50750 -0.50750 7 0 N17  %UA:r_j_pKa_water:  1 ""  1 <>
+  18 2 -8.526816 -7.518607 3.184941 900 2 0.45650 0.45650 6 0 C18  %UA:r_j_pKa_water:  1 ""  0 <>
+  19 25 -7.531687 -6.677039 3.486331 900 43 -0.48150 -0.48150 7 0 N19  %UA:r_j_pKa_water:  1 ""  0 <>
+  20 39 -9.520401 -7.718703 4.043202 900 43 -0.58010 -0.58010 7 -1 N20  %UA:r_j_pKa_water:  2 ""  0 11.71
+  21 2 -10.365352 -8.779881 4.024311 900 2 -0.54240 -0.54240 6 0 C21  %UA:r_j_pKa_water:  1 ""  0 <>
+  22 2 -10.040980 -10.108754 3.600438 900 2 -0.11500 -0.11500 6 0 C22  %UA:r_j_pKa_water:  1 ""  1 <>
+  23 2 -10.954495 -11.142897 3.698412 900 2 -0.11500 -0.11500 6 0 C23  %UA:r_j_pKa_water:  1 ""  1 <>
+  24 2 -12.245520 -10.938872 4.219104 900 2 -0.11500 -0.11500 6 0 C24  %UA:r_j_pKa_water:  1 ""  0 <>
+  25 2 -12.579841 -9.638429 4.658067 900 2 -0.11500 -0.11500 6 0 C25  %UA:r_j_pKa_water:  1 ""  1 <>
+  26 2 -11.674416 -8.602018 4.566840 900 2 -0.11500 -0.11500 6 0 C26  %UA:r_j_pKa_water:  1 ""  1 <>
+  27 2 -13.156615 -12.081856 4.300354 900 2 0.62500 0.62500 6 0 C27  %UA:r_j_pKa_water:  1 ""  0 <>
+  28 15 -12.920164 -13.218436 3.913590 900 70 -0.43000 -0.43000 8 0 O28  %UA:r_j_pKa_water:  1 ""  0 <>
+  29 16 -14.360165 -11.766016 4.880701 900 70 -0.33000 -0.33000 8 0 O29  %UA:r_j_pKa_water:  1 ""  0 <>
+  30 3 -15.282880 -12.854447 5.004270 900 2 0.19000 0.19000 6 0 C30  %UA:r_j_pKa_water:  1 ""  2 <>
+  31 3 -16.516182 -12.328639 5.718697 900 2 -0.18000 -0.18000 6 0 C31  %UA:r_j_pKa_water:  1 ""  3 <>
+  32 41 -4.787926 -1.641209 11.605681 900 21 0.06000 0.06000 1 0 H32  %UA:r_j_pKa_water:  1 ""  0 <>
+  33 41 -6.114163 -1.885216 10.446624 900 21 0.06000 0.06000 1 0 H33  %UA:r_j_pKa_water:  1 ""  0 <>
+  34 41 -5.134389 -3.266284 10.972416 900 21 0.06000 0.06000 1 0 H34  %UA:r_j_pKa_water:  1 ""  0 <>
+  35 41 -3.114361 -2.263266 9.827634 900 21 0.03000 0.03000 1 0 H35  %UA:r_j_pKa_water:  1 ""  0 <>
+  36 41 -4.086624 -0.889075 9.306800 900 21 0.03000 0.03000 1 0 H36  %UA:r_j_pKa_water:  1 ""  0 <>
+  37 41 -2.705660 -2.796813 4.927309 900 21 0.11500 0.11500 1 0 H37  %UA:r_j_pKa_water:  1 ""  0 <>
+  38 41 -3.494196 -4.124364 2.966497 900 21 0.11500 0.11500 1 0 H38  %UA:r_j_pKa_water:  1 ""  0 <>
+  39 41 -6.852667 -5.512755 5.244354 900 21 0.11500 0.11500 1 0 H39  %UA:r_j_pKa_water:  1 ""  0 <>
+  40 41 -6.071687 -4.205216 7.187810 900 21 0.11500 0.11500 1 0 H40  %UA:r_j_pKa_water:  1 ""  0 <>
+  41 41 -7.761922 -9.640782 -0.250915 900 21 0.06000 0.06000 1 0 H41  %UA:r_j_pKa_water:  1 ""  0 <>
+  42 41 -8.743013 -8.290545 -0.836004 900 21 0.06000 0.06000 1 0 H42  %UA:r_j_pKa_water:  1 ""  0 <>
+  43 41 -6.981890 -8.265765 -1.060607 900 21 0.06000 0.06000 1 0 H43  %UA:r_j_pKa_water:  1 ""  0 <>
+  44 41 -9.035840 -10.320020 3.245667 900 21 0.11500 0.11500 1 0 H45  %UA:r_j_pKa_water:  1 ""  0 <>
+  45 41 -10.680517 -12.147245 3.386061 900 21 0.11500 0.11500 1 0 H46  %UA:r_j_pKa_water:  1 ""  0 <>
+  46 41 -13.566502 -9.457612 5.074013 900 21 0.11500 0.11500 1 0 H47  %UA:r_j_pKa_water:  1 ""  0 <>
+  47 41 -11.932675 -7.605653 4.914642 900 21 0.11500 0.11500 1 0 H48  %UA:r_j_pKa_water:  1 ""  0 <>
+  48 41 -14.810552 -13.672276 5.560411 900 21 0.03000 0.03000 1 0 H49  %UA:r_j_pKa_water:  1 ""  0 <>
+  49 41 -15.526646 -13.243379 4.008368 900 21 0.03000 0.03000 1 0 H50  %UA:r_j_pKa_water:  1 ""  0 <>
+  50 41 -17.255210 -13.130057 5.836875 900 21 0.06000 0.06000 1 0 H51  %UA:r_j_pKa_water:  1 ""  0 <>
+  51 41 -16.256668 -11.948226 6.712428 900 21 0.06000 0.06000 1 0 H52  %UA:r_j_pKa_water:  1 ""  0 <>
+  52 41 -16.977844 -11.513258 5.151567 900 21 0.06000 0.06000 1 0 H53  %UA:r_j_pKa_water:  1 ""  0 <>
+  53 41 -5.823458 -6.761477 0.544378 900 21 0.11500 0.11500 1 0 H54  %UA:r_j_pKa_water:  1 ""  0 <>
+  54 43 -9.347506 -8.709976 1.693042 900 21 0.41000 0.41000 1 0 H55  %UA:r_j_pKa_water:  1 ""  0 <>
+  :::
+ } 
+ m_bond[56] { 
+  # First column is bond index #
+  i_m_from
+  i_m_to
+  i_m_order
+  :::
+  1 1 2 1
+  2 1 32 1
+  3 1 33 1
+  4 1 34 1
+  5 2 3 1
+  6 2 35 1
+  7 2 36 1
+  8 3 4 1
+  9 4 5 2
+  10 4 6 1
+  11 6 11 1
+  12 6 7 2
+  13 7 8 1
+  14 7 37 1
+  15 8 9 2
+  16 8 38 1
+  17 9 10 1
+  18 9 12 1
+  19 10 11 2
+  20 10 39 1
+  21 11 40 1
+  22 12 13 2
+  23 13 19 1
+  24 13 14 1
+  25 14 15 2
+  26 14 53 1
+  27 15 16 1
+  28 15 17 1
+  29 16 41 1
+  30 16 42 1
+  31 16 43 1
+  32 17 18 1
+  33 17 54 1
+  34 18 19 2
+  35 18 20 1
+  36 20 21 1
+  37 21 26 1
+  38 21 22 2
+  39 22 23 1
+  40 22 44 1
+  41 23 24 2
+  42 23 45 1
+  43 24 25 1
+  44 24 27 1
+  45 25 26 2
+  46 25 46 1
+  47 26 47 1
+  48 27 28 2
+  49 27 29 1
+  50 29 30 1
+  51 30 31 1
+  52 30 48 1
+  53 30 49 1
+  54 31 50 1
+  55 31 51 1
+  56 31 52 1
+  :::
+ } 
+} 
+
+f_m_ct { 
+ s_m_title
+ s_m_entry_id
+ s_m_entry_name
+ s_canvas_canonical_SMILES
+ i_canvas_canvasUID
+ s_m_Source_Path
+ s_m_Source_File
+ i_m_Source_File_Index
+ i_m_Molecular_charge
+ i_m_Spin_multiplicity
+ s_j_Task
+ s_j_Jaguar_input_file
+ s_j_Jaguar_restart_input_file
+ s_j_Jaguar_restart_mae_file
+ s_j_Jaguar_output_file
+ s_j_Jaguar_log_file
+ s_j_Jaguar_mae_file
+ s_j_QM_Method
+ s_j_QM_Basis
+ i_j_Number_of_canonical_orbitals
+ i_j_Geometry_convergence_category
+ r_j_Gas_Phase_Energy
+ r_j_HOMO
+ r_j_LUMO
+ s_m_subgroupid
+ b_m_subgroup_collapsed
+ i_m_ct_format
+ :::
+ conf-1 
+  4 
+  converted.303 
+  CCOC(=O)c1ccc(cc1)Nc2cc(nc(n2)Nc3ccc(cc3)C(=O)OCC)C 
+  303
+  C:\Users\rustenba\Documents\Repos\Jaguar_Ref_pKa\jaguar_input_files 
+  sm23_micro012.mae 
+  1
+  0
+  1
+  Optimization 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro011_conf_1.dft_h.in 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro011_conf_1.dft_h.01.in 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro011_conf_1.dft_h.01.mae 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro011_conf_1.dft_h.out 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro011_conf_1.dft_h.log 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro011_conf_1.mae 
+  DFT(b3lyp) 
+  pka-geopt* 
+  511
+  1
+  -1410.85330177436
+  -0.195617312553162
+  -0.0464284212161898
+  "SM23_micro011->all protonated conformers" 
+  1
+  2
+ m_depend[16] { 
+  # First column is dependency index #
+  i_m_depend_dependency
+  s_m_depend_property
+  :::
+  1 20 i_m_Molecular_charge 
+  2 20 i_m_Spin_multiplicity 
+  3 20 s_j_Task 
+  4 20 s_j_Jaguar_input_file 
+  5 20 s_j_Jaguar_restart_input_file 
+  6 20 s_j_Jaguar_restart_mae_file 
+  7 20 s_j_Jaguar_output_file 
+  8 20 s_j_Jaguar_log_file 
+  9 20 s_j_Jaguar_mae_file 
+  10 20 s_j_QM_Method 
+  11 20 s_j_QM_Basis 
+  12 20 i_j_Number_of_canonical_orbitals 
+  13 20 i_j_Geometry_convergence_category 
+  14 20 r_j_Gas_Phase_Energy 
+  15 20 r_j_HOMO 
+  16 20 r_j_LUMO 
+  :::
+ } 
+ m_atom[55] { 
+  # First column is atom index #
+  i_m_mmod_type
+  r_m_x_coord
+  r_m_y_coord
+  r_m_z_coord
+  i_m_residue_number
+  i_m_color
+  r_m_charge1
+  r_m_charge2
+  i_m_atomic_number
+  s_m_atom_name
+  i_m_Hcount
+  :::
+  1 3 -2.089987 0.890547 6.219105 900 2 -0.18000 -0.18000 6 C1  3
+  2 3 -2.249100 2.392950 6.076260 900 2 0.19000 0.19000 6 C2  2
+  3 16 -3.623395 2.651293 5.727877 900 70 -0.33000 -0.33000 8 O3  0
+  4 2 -3.939537 3.957510 5.524485 900 2 0.62500 0.62500 6 C4  0
+  5 15 -3.120501 4.853086 5.629574 900 70 -0.43000 -0.43000 8 O5  0
+  6 2 -5.362047 4.150793 5.160387 900 2 -0.11500 -0.11500 6 C6  0
+  7 2 -6.277531 3.091004 5.068744 900 2 -0.11500 -0.11500 6 C7  1
+  8 2 -7.595249 3.326067 4.698112 900 2 -0.11500 -0.11500 6 C8  1
+  9 2 -8.042459 4.632485 4.408093 900 2 0.07880 0.07880 6 C9  0
+  10 2 -7.126334 5.694073 4.539764 900 2 -0.11500 -0.11500 6 C10  1
+  11 2 -5.808307 5.455077 4.896636 900 2 -0.11500 -0.11500 6 C11  1
+  12 25 -9.366039 4.937653 4.096258 900 43 -0.46850 -0.46850 7 N12  0
+  13 2 -10.019924 4.333842 3.157490 900 2 0.51550 0.51550 6 C13  0
+  14 2 -11.425733 4.668090 2.956860 900 2 -0.11830 -0.11830 6 C14  1
+  15 2 -12.137814 4.080723 1.973959 900 2 0.12250 0.12250 6 C15  0
+  16 3 -13.584227 4.329207 1.667453 900 2 -0.18000 -0.18000 6 C16  3
+  17 25 -11.491739 3.158293 1.149687 900 43 -0.50750 -0.50750 7 N17  1
+  18 2 -10.154738 2.858729 1.358073 900 2 0.30900 0.30900 6 C18  0
+  19 25 -9.441096 3.397244 2.292785 900 43 -0.48150 -0.48150 7 N19  0
+  20 25 -9.645965 1.935709 0.471684 900 43 -0.48520 -0.48520 7 N20  1
+  21 2 -8.358413 1.371394 0.375464 900 2 0.10020 0.10020 6 C21  0
+  22 2 -7.287809 1.695849 1.222276 900 2 -0.11500 -0.11500 6 C22  1
+  23 2 -6.057804 1.071877 1.034824 900 2 -0.11500 -0.11500 6 C23  1
+  24 2 -5.866130 0.127510 0.019701 900 2 -0.11500 -0.11500 6 C24  0
+  25 2 -6.941552 -0.188930 -0.821465 900 2 -0.11500 -0.11500 6 C25  1
+  26 2 -8.171049 0.423907 -0.647351 900 2 -0.11500 -0.11500 6 C26  1
+  27 2 -4.571849 -0.564013 -0.218404 900 2 0.62500 0.62500 6 C27  0
+  28 15 -4.389513 -1.394088 -1.090420 900 70 -0.43000 -0.43000 8 O28  0
+  29 16 -3.604647 -0.171978 0.641469 900 70 -0.33000 -0.33000 8 O29  0
+  30 3 -2.317093 -0.802586 0.462285 900 2 0.19000 0.19000 6 C30  2
+  31 3 -1.373041 -0.212356 1.492384 900 2 -0.18000 -0.18000 6 C31  3
+  32 41 -1.055715 0.648004 6.487197 900 21 0.06000 0.06000 1 H32  0
+  33 41 -2.749511 0.499000 7.000617 900 21 0.06000 0.06000 1 H33  0
+  34 41 -2.331441 0.381831 5.279592 900 21 0.06000 0.06000 1 H34  0
+  35 41 -1.600436 2.801814 5.294466 900 21 0.03000 0.03000 1 H35  0
+  36 41 -2.011833 2.920768 7.006166 900 21 0.03000 0.03000 1 H36  0
+  37 41 -5.949291 2.080227 5.287886 900 21 0.11500 0.11500 1 H37  0
+  38 41 -8.297018 2.500934 4.633197 900 21 0.11500 0.11500 1 H38  0
+  39 41 -7.476191 6.703551 4.345076 900 21 0.11500 0.11500 1 H39  0
+  40 41 -5.098220 6.271941 4.979793 900 21 0.11500 0.11500 1 H40  0
+  41 41 -14.173054 3.405241 1.745844 900 21 0.06000 0.06000 1 H41  0
+  42 41 -14.001513 5.057126 2.366393 900 21 0.06000 0.06000 1 H42  0
+  43 41 -13.714223 4.719406 0.649245 900 21 0.06000 0.06000 1 H43  0
+  44 43 -10.285384 1.607139 -0.238660 900 21 0.41000 0.41000 1 H44  0
+  45 41 -7.423845 2.425617 2.007386 900 21 0.11500 0.11500 1 H45  0
+  46 41 -5.233922 1.327123 1.691638 900 21 0.11500 0.11500 1 H46  0
+  47 41 -6.792257 -0.920958 -1.608373 900 21 0.11500 0.11500 1 H47  0
+  48 41 -8.999190 0.169006 -1.307136 900 21 0.11500 0.11500 1 H48  0
+  49 41 -1.975247 -0.621113 -0.561783 900 21 0.03000 0.03000 1 H49  0
+  50 41 -2.435077 -1.884566 0.582363 900 21 0.03000 0.03000 1 H50  0
+  51 41 -0.381453 -0.666701 1.390386 900 21 0.06000 0.06000 1 H51  0
+  52 41 -1.272642 0.869260 1.356444 900 21 0.06000 0.06000 1 H52  0
+  53 41 -1.735214 -0.400083 2.508681 900 21 0.06000 0.06000 1 H53  0
+  54 41 -11.879561 5.396727 3.616899 900 21 0.11500 0.11500 1 H54  0
+  55 43 -12.029913 2.672252 0.446041 900 21 0.41000 0.41000 1 H55  0
+  :::
+ } 
+ m_bond[57] { 
+  # First column is bond index #
+  i_m_from
+  i_m_to
+  i_m_order
+  :::
+  1 1 2 1
+  2 1 32 1
+  3 1 33 1
+  4 1 34 1
+  5 2 3 1
+  6 2 35 1
+  7 2 36 1
+  8 3 4 1
+  9 4 5 2
+  10 4 6 1
+  11 6 11 1
+  12 6 7 2
+  13 7 8 1
+  14 7 37 1
+  15 8 9 2
+  16 8 38 1
+  17 9 10 1
+  18 9 12 1
+  19 10 11 2
+  20 10 39 1
+  21 11 40 1
+  22 12 13 2
+  23 13 19 1
+  24 13 14 1
+  25 14 15 2
+  26 14 54 1
+  27 15 16 1
+  28 15 17 1
+  29 16 41 1
+  30 16 42 1
+  31 16 43 1
+  32 17 18 1
+  33 17 55 1
+  34 18 19 2
+  35 18 20 1
+  36 20 21 1
+  37 20 44 1
+  38 21 26 1
+  39 21 22 2
+  40 22 23 1
+  41 22 45 1
+  42 23 24 2
+  43 23 46 1
+  44 24 25 1
+  45 24 27 1
+  46 25 26 2
+  47 25 47 1
+  48 26 48 1
+  49 27 28 2
+  50 27 29 1
+  51 29 30 1
+  52 30 31 1
+  53 30 49 1
+  54 30 50 1
+  55 31 51 1
+  56 31 52 1
+  57 31 53 1
+  :::
+ } 
+} 
+
+f_m_ct { 
+ s_m_title
+ s_m_entry_id
+ s_m_entry_name
+ s_canvas_canonical_SMILES
+ i_canvas_canvasUID
+ s_m_Source_Path
+ s_m_Source_File
+ i_m_Source_File_Index
+ i_m_Molecular_charge
+ i_m_Spin_multiplicity
+ s_j_Task
+ s_j_Jaguar_input_file
+ s_j_Jaguar_restart_input_file
+ s_j_Jaguar_restart_mae_file
+ s_j_Jaguar_output_file
+ s_j_Jaguar_log_file
+ s_j_Jaguar_mae_file
+ s_j_QM_Method
+ s_j_QM_Basis
+ i_j_Number_of_canonical_orbitals
+ i_j_Geometry_convergence_category
+ r_j_Gas_Phase_Energy
+ r_j_HOMO
+ r_j_LUMO
+ s_m_subgroupid
+ b_m_subgroup_collapsed
+ i_m_ct_format
+ :::
+ conf-2 
+  4 
+  converted.303 
+  CCOC(=O)c1ccc(cc1)Nc2cc(nc(n2)Nc3ccc(cc3)C(=O)OCC)C 
+  303
+  C:\Users\rustenba\Documents\Repos\Jaguar_Ref_pKa\jaguar_input_files 
+  sm23_micro012.mae 
+  1
+  0
+  1
+  Optimization 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro011_conf_2.dft_h.in 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro011_conf_2.dft_h.01.in 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro011_conf_2.dft_h.01.mae 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro011_conf_2.dft_h.out 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro011_conf_2.dft_h.log 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro011_conf_2.mae 
+  DFT(b3lyp) 
+  pka-geopt* 
+  511
+  1
+  -1410.85322489499
+  -0.195575667346649
+  -0.0461952419730781
+  "SM23_micro011->all protonated conformers" 
+  1
+  2
+ m_depend[16] { 
+  # First column is dependency index #
+  i_m_depend_dependency
+  s_m_depend_property
+  :::
+  1 20 i_m_Molecular_charge 
+  2 20 i_m_Spin_multiplicity 
+  3 20 s_j_Task 
+  4 20 s_j_Jaguar_input_file 
+  5 20 s_j_Jaguar_restart_input_file 
+  6 20 s_j_Jaguar_restart_mae_file 
+  7 20 s_j_Jaguar_output_file 
+  8 20 s_j_Jaguar_log_file 
+  9 20 s_j_Jaguar_mae_file 
+  10 20 s_j_QM_Method 
+  11 20 s_j_QM_Basis 
+  12 20 i_j_Number_of_canonical_orbitals 
+  13 20 i_j_Geometry_convergence_category 
+  14 20 r_j_Gas_Phase_Energy 
+  15 20 r_j_HOMO 
+  16 20 r_j_LUMO 
+  :::
+ } 
+ m_atom[55] { 
+  # First column is atom index #
+  i_m_mmod_type
+  r_m_x_coord
+  r_m_y_coord
+  r_m_z_coord
+  i_m_residue_number
+  i_m_color
+  r_m_charge1
+  r_m_charge2
+  i_m_atomic_number
+  s_m_atom_name
+  i_m_Hcount
+  :::
+  1 3 -0.914490 3.770739 3.906086 900 2 -0.18000 -0.18000 6 C1  3
+  2 3 -1.767160 3.480058 5.127443 900 2 0.19000 0.19000 6 C2  2
+  3 16 -3.133729 3.779056 4.781872 900 70 -0.33000 -0.33000 8 O3  0
+  4 2 -4.050035 3.542173 5.757633 900 2 0.62500 0.62500 6 C4  0
+  5 15 -3.742615 3.105734 6.852706 900 70 -0.43000 -0.43000 8 O5  0
+  6 2 -5.431699 3.863549 5.331694 900 2 -0.11500 -0.11500 6 C6  0
+  7 2 -6.477455 3.640554 6.240895 900 2 -0.11500 -0.11500 6 C7  1
+  8 2 -7.791626 3.913003 5.890947 900 2 -0.11500 -0.11500 6 C8  1
+  9 2 -8.110423 4.395363 4.606929 900 2 0.07880 0.07880 6 C9  0
+  10 2 -7.053149 4.639993 3.705035 900 2 -0.11500 -0.11500 6 C10  1
+  11 2 -5.737168 4.379076 4.062427 900 2 -0.11500 -0.11500 6 C11  1
+  12 25 -9.439106 4.705086 4.320023 900 43 -0.46850 -0.46850 7 N12  0
+  13 2 -10.032886 4.280365 3.251786 900 2 0.51550 0.51550 6 C13  0
+  14 2 -11.391185 4.734960 2.974495 900 2 -0.11830 -0.11830 6 C14  1
+  15 2 -12.045024 4.312401 1.873257 900 2 0.12250 0.12250 6 C15  0
+  16 3 -13.429593 4.716246 1.463972 900 2 -0.18000 -0.18000 6 C16  3
+  17 25 -11.395495 3.419692 1.019638 900 43 -0.50750 -0.50750 7 N17  1
+  18 2 -10.114101 2.983178 1.316616 900 2 0.30900 0.30900 6 C18  0
+  19 25 -9.450986 3.376597 2.354884 900 43 -0.48150 -0.48150 7 N19  0
+  20 25 -9.603981 2.086753 0.403917 900 43 -0.48520 -0.48520 7 N20  1
+  21 2 -8.365823 1.414619 0.375197 900 2 0.10020 0.10020 6 C21  0
+  22 2 -8.164588 0.531253 -0.701083 900 2 -0.11500 -0.11500 6 C22  1
+  23 2 -6.980711 -0.177613 -0.817043 900 2 -0.11500 -0.11500 6 C23  1
+  24 2 -5.966006 -0.023656 0.137369 900 2 -0.11500 -0.11500 6 C24  0
+  25 2 -6.170979 0.857754 1.205098 900 2 -0.11500 -0.11500 6 C25  1
+  26 2 -7.355563 1.576968 1.335046 900 2 -0.11500 -0.11500 6 C26  1
+  27 2 -4.720197 -0.814985 -0.040520 900 2 0.62500 0.62500 6 C27  0
+  28 15 -4.523775 -1.584429 -0.963730 900 70 -0.43000 -0.43000 8 O28  0
+  29 16 -3.816389 -0.591559 0.939951 900 70 -0.33000 -0.33000 8 O29  0
+  30 3 -2.582094 -1.335044 0.832882 900 2 0.19000 0.19000 6 C30  2
+  31 3 -1.716246 -0.952328 2.017830 900 2 -0.18000 -0.18000 6 C31  3
+  32 41 -1.223031 3.150156 3.057973 900 21 0.06000 0.06000 1 H32  0
+  33 41 -0.998589 4.821777 3.610566 900 21 0.06000 0.06000 1 H33  0
+  34 41 0.137648 3.557324 4.125313 900 21 0.06000 0.06000 1 H34  0
+  35 41 -1.474641 4.092439 5.987119 900 21 0.03000 0.03000 1 H35  0
+  36 41 -1.698686 2.431442 5.435667 900 21 0.03000 0.03000 1 H36  0
+  37 41 -6.234101 3.251027 7.224494 900 21 0.11500 0.11500 1 H37  0
+  38 41 -8.600781 3.749803 6.596694 900 21 0.11500 0.11500 1 H38  0
+  39 41 -7.280435 5.041085 2.722674 900 21 0.11500 0.11500 1 H39  0
+  40 41 -4.936212 4.571567 3.356151 900 21 0.11500 0.11500 1 H40  0
+  41 41 -13.852596 5.413433 2.190214 900 21 0.06000 0.06000 1 H41  0
+  42 41 -13.426882 5.207178 0.481420 900 21 0.06000 0.06000 1 H42  0
+  43 41 -14.096167 3.845952 1.397575 900 21 0.06000 0.06000 1 H43  0
+  44 43 -10.217724 1.835918 -0.358771 900 21 0.41000 0.41000 1 H44  0
+  45 41 -8.945787 0.402668 -1.448979 900 21 0.11500 0.11500 1 H45  0
+  46 41 -6.820916 -0.860874 -1.644676 900 21 0.11500 0.11500 1 H46  0
+  47 41 -5.394057 0.986594 1.950208 900 21 0.11500 0.11500 1 H47  0
+  48 41 -7.503195 2.254309 2.163838 900 21 0.11500 0.11500 1 H48  0
+  49 41 -2.105876 -1.091678 -0.122568 900 21 0.03000 0.03000 1 H49  0
+  50 41 -2.815239 -2.404715 0.820649 900 21 0.03000 0.03000 1 H50  0
+  51 41 -0.766601 -1.496599 1.974361 900 21 0.06000 0.06000 1 H51  0
+  52 41 -1.498833 0.120890 2.013575 900 21 0.06000 0.06000 1 H52  0
+  53 41 -2.212728 -1.199575 2.961576 900 21 0.06000 0.06000 1 H53  0
+  54 41 -11.853278 5.426714 3.667655 900 21 0.11500 0.11500 1 H54  0
+  55 43 -11.873418 3.104579 0.187087 900 21 0.41000 0.41000 1 H55  0
+  :::
+ } 
+ m_bond[57] { 
+  # First column is bond index #
+  i_m_from
+  i_m_to
+  i_m_order
+  :::
+  1 1 2 1
+  2 1 32 1
+  3 1 33 1
+  4 1 34 1
+  5 2 3 1
+  6 2 35 1
+  7 2 36 1
+  8 3 4 1
+  9 4 5 2
+  10 4 6 1
+  11 6 11 1
+  12 6 7 2
+  13 7 8 1
+  14 7 37 1
+  15 8 9 2
+  16 8 38 1
+  17 9 10 1
+  18 9 12 1
+  19 10 11 2
+  20 10 39 1
+  21 11 40 1
+  22 12 13 2
+  23 13 19 1
+  24 13 14 1
+  25 14 15 2
+  26 14 54 1
+  27 15 16 1
+  28 15 17 1
+  29 16 41 1
+  30 16 42 1
+  31 16 43 1
+  32 17 18 1
+  33 17 55 1
+  34 18 19 2
+  35 18 20 1
+  36 20 21 1
+  37 20 44 1
+  38 21 26 1
+  39 21 22 2
+  40 22 23 1
+  41 22 45 1
+  42 23 24 2
+  43 23 46 1
+  44 24 25 1
+  45 24 27 1
+  46 25 26 2
+  47 25 47 1
+  48 26 48 1
+  49 27 28 2
+  50 27 29 1
+  51 29 30 1
+  52 30 31 1
+  53 30 49 1
+  54 30 50 1
+  55 31 51 1
+  56 31 52 1
+  57 31 53 1
+  :::
+ } 
+} 
+
+f_m_ct { 
+ s_m_title
+ s_m_entry_id
+ s_m_entry_name
+ s_canvas_canonical_SMILES
+ i_canvas_canvasUID
+ s_m_Source_Path
+ s_m_Source_File
+ i_m_Source_File_Index
+ i_m_Molecular_charge
+ i_m_Spin_multiplicity
+ s_j_Task
+ s_j_Jaguar_input_file
+ s_j_Jaguar_restart_input_file
+ s_j_Jaguar_restart_mae_file
+ s_j_Jaguar_output_file
+ s_j_Jaguar_log_file
+ s_j_Jaguar_mae_file
+ s_j_QM_Method
+ s_j_QM_Basis
+ i_j_Number_of_canonical_orbitals
+ i_j_Geometry_convergence_category
+ r_j_Gas_Phase_Energy
+ r_j_HOMO
+ r_j_LUMO
+ s_m_subgroupid
+ b_m_subgroup_collapsed
+ i_m_ct_format
+ :::
+ conf-3 
+  4 
+  converted.303 
+  CCOC(=O)c1ccc(cc1)Nc2cc(nc(n2)Nc3ccc(cc3)C(=O)OCC)C 
+  303
+  C:\Users\rustenba\Documents\Repos\Jaguar_Ref_pKa\jaguar_input_files 
+  sm23_micro012.mae 
+  1
+  0
+  1
+  Optimization 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro011_conf_3.dft_h.in 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro011_conf_3.dft_h.01.in 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro011_conf_3.dft_h.01.mae 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro011_conf_3.dft_h.out 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro011_conf_3.dft_h.log 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro011_conf_3.mae 
+  DFT(b3lyp) 
+  pka-geopt* 
+  511
+  3
+  -1410.85329740206
+  -0.195412555877588
+  -0.0464249754524577
+  "SM23_micro011->all protonated conformers" 
+  1
+  2
+ m_depend[16] { 
+  # First column is dependency index #
+  i_m_depend_dependency
+  s_m_depend_property
+  :::
+  1 20 i_m_Molecular_charge 
+  2 20 i_m_Spin_multiplicity 
+  3 20 s_j_Task 
+  4 20 s_j_Jaguar_input_file 
+  5 20 s_j_Jaguar_restart_input_file 
+  6 20 s_j_Jaguar_restart_mae_file 
+  7 20 s_j_Jaguar_output_file 
+  8 20 s_j_Jaguar_log_file 
+  9 20 s_j_Jaguar_mae_file 
+  10 20 s_j_QM_Method 
+  11 20 s_j_QM_Basis 
+  12 20 i_j_Number_of_canonical_orbitals 
+  13 20 i_j_Geometry_convergence_category 
+  14 20 r_j_Gas_Phase_Energy 
+  15 20 r_j_HOMO 
+  16 20 r_j_LUMO 
+  :::
+ } 
+ m_atom[55] { 
+  # First column is atom index #
+  i_m_mmod_type
+  r_m_x_coord
+  r_m_y_coord
+  r_m_z_coord
+  i_m_residue_number
+  i_m_color
+  r_m_charge1
+  r_m_charge2
+  i_m_atomic_number
+  s_m_atom_name
+  i_m_Hcount
+  :::
+  1 3 -1.979369 1.043905 6.139107 900 2 -0.18000 -0.18000 6 C1  3
+  2 3 -2.151051 2.541384 5.960924 900 2 0.19000 0.19000 6 C2  2
+  3 16 -3.534269 2.781164 5.637306 900 70 -0.33000 -0.33000 8 O3  0
+  4 2 -3.867189 4.077622 5.401183 900 2 0.62500 0.62500 6 C4  0
+  5 15 -3.054596 4.983853 5.457360 900 70 -0.43000 -0.43000 8 O5  0
+  6 2 -5.301217 4.243565 5.068040 900 2 -0.11500 -0.11500 6 C6  0
+  7 2 -6.205539 3.170385 5.035216 900 2 -0.11500 -0.11500 6 C7  1
+  8 2 -7.535935 3.377225 4.694452 900 2 -0.11500 -0.11500 6 C8  1
+  9 2 -8.008420 4.668235 4.376072 900 2 0.07880 0.07880 6 C9  0
+  10 2 -7.102203 5.744164 4.446885 900 2 -0.11500 -0.11500 6 C10  1
+  11 2 -5.771507 5.532901 4.774435 900 2 -0.11500 -0.11500 6 C11  1
+  12 25 -9.344581 4.948078 4.095248 900 43 -0.46850 -0.46850 7 N12  0
+  13 2 -10.021975 4.299758 3.203744 900 2 0.51550 0.51550 6 C13  0
+  14 2 -11.438924 4.607070 3.040752 900 2 -0.11830 -0.11830 6 C14  1
+  15 2 -12.176728 3.971896 2.107588 900 2 0.12250 0.12250 6 C15  0
+  16 3 -13.637143 4.186600 1.845060 900 2 -0.18000 -0.18000 6 C16  3
+  17 25 -11.546215 3.027356 1.296501 900 43 -0.50750 -0.50750 7 N17  1
+  18 2 -10.197629 2.756547 1.466191 900 2 0.30900 0.30900 6 C18  0
+  19 25 -9.459991 3.338673 2.354908 900 43 -0.48150 -0.48150 7 N19  0
+  20 25 -9.706205 1.808994 0.595998 900 43 -0.48520 -0.48520 7 N20  1
+  21 2 -8.407320 1.281672 0.454696 900 2 0.10020 0.10020 6 C21  0
+  22 2 -8.230902 0.335785 -0.571478 900 2 -0.11500 -0.11500 6 C22  1
+  23 2 -6.991966 -0.242997 -0.788376 900 2 -0.11500 -0.11500 6 C23  1
+  24 2 -5.896281 0.105984 0.012980 900 2 -0.11500 -0.11500 6 C24  0
+  25 2 -6.077330 1.047389 1.032965 900 2 -0.11500 -0.11500 6 C25  1
+  26 2 -7.316868 1.637811 1.262522 900 2 -0.11500 -0.11500 6 C26  1
+  27 2 -4.592990 -0.549450 -0.272531 900 2 0.62500 0.62500 6 C27  0
+  28 15 -4.418251 -1.369384 -1.155794 900 70 -0.43000 -0.43000 8 O28  0
+  29 16 -3.608522 -0.137537 0.557699 900 70 -0.33000 -0.33000 8 O29  0
+  30 3 -2.311743 -0.732782 0.330509 900 2 0.19000 0.19000 6 C30  2
+  31 3 -1.353574 -0.137388 1.344209 900 2 -0.18000 -0.18000 6 C31  3
+  32 41 -0.938062 0.813637 6.390175 900 21 0.06000 0.06000 1 H32  0
+  33 41 -2.619188 0.669327 6.944964 900 21 0.06000 0.06000 1 H33  0
+  34 41 -2.238838 0.509737 5.218785 900 21 0.06000 0.06000 1 H34  0
+  35 41 -1.522735 2.933854 5.154481 900 21 0.03000 0.03000 1 H35  0
+  36 41 -1.896830 3.094469 6.871534 900 21 0.03000 0.03000 1 H36  0
+  37 41 -5.858665 2.171180 5.277159 900 21 0.11500 0.11500 1 H37  0
+  38 41 -8.228381 2.541929 4.676714 900 21 0.11500 0.11500 1 H38  0
+  39 41 -7.470322 6.742467 4.229482 900 21 0.11500 0.11500 1 H39  0
+  40 41 -5.070430 6.360893 4.811050 900 21 0.11500 0.11500 1 H40  0
+  41 41 -14.040228 4.936183 2.529202 900 21 0.06000 0.06000 1 H41  0
+  42 41 -13.810636 4.533024 0.817527 900 21 0.06000 0.06000 1 H42  0
+  43 41 -14.207793 3.258076 1.982353 900 21 0.06000 0.06000 1 H43  0
+  44 43 -10.361081 1.458583 -0.089416 900 21 0.41000 0.41000 1 H44  0
+  45 41 -9.074622 0.056307 -1.200887 900 21 0.11500 0.11500 1 H45  0
+  46 41 -6.850225 -0.972286 -1.579211 900 21 0.11500 0.11500 1 H46  0
+  47 41 -5.237592 1.327337 1.659639 900 21 0.11500 0.11500 1 H47  0
+  48 41 -7.444663 2.367174 2.049472 900 21 0.11500 0.11500 1 H48  0
+  49 41 -2.004264 -0.524569 -0.699415 900 21 0.03000 0.03000 1 H49  0
+  50 41 -2.399854 -1.819291 0.433659 900 21 0.03000 0.03000 1 H50  0
+  51 41 -0.354352 -0.564336 1.205457 900 21 0.06000 0.06000 1 H51  0
+  52 41 -1.284202 0.948716 1.226194 900 21 0.06000 0.06000 1 H52  0
+  53 41 -1.681540 -0.353081 2.366537 900 21 0.06000 0.06000 1 H53  0
+  54 41 -11.880098 5.353880 3.688912 900 21 0.11500 0.11500 1 H54  0
+  55 43 -12.100986 2.508732 0.629969 900 21 0.41000 0.41000 1 H55  0
+  :::
+ } 
+ m_bond[57] { 
+  # First column is bond index #
+  i_m_from
+  i_m_to
+  i_m_order
+  :::
+  1 1 2 1
+  2 1 32 1
+  3 1 33 1
+  4 1 34 1
+  5 2 3 1
+  6 2 35 1
+  7 2 36 1
+  8 3 4 1
+  9 4 5 2
+  10 4 6 1
+  11 6 11 1
+  12 6 7 2
+  13 7 8 1
+  14 7 37 1
+  15 8 9 2
+  16 8 38 1
+  17 9 10 1
+  18 9 12 1
+  19 10 11 2
+  20 10 39 1
+  21 11 40 1
+  22 12 13 2
+  23 13 19 1
+  24 13 14 1
+  25 14 15 2
+  26 14 54 1
+  27 15 16 1
+  28 15 17 1
+  29 16 41 1
+  30 16 42 1
+  31 16 43 1
+  32 17 18 1
+  33 17 55 1
+  34 18 19 2
+  35 18 20 1
+  36 20 21 1
+  37 20 44 1
+  38 21 26 1
+  39 21 22 2
+  40 22 23 1
+  41 22 45 1
+  42 23 24 2
+  43 23 46 1
+  44 24 25 1
+  45 24 27 1
+  46 25 26 2
+  47 25 47 1
+  48 26 48 1
+  49 27 28 2
+  50 27 29 1
+  51 29 30 1
+  52 30 31 1
+  53 30 49 1
+  54 30 50 1
+  55 31 51 1
+  56 31 52 1
+  57 31 53 1
+  :::
+ } 
+} 
+
+f_m_ct { 
+ s_m_title
+ s_m_entry_id
+ s_m_entry_name
+ s_canvas_canonical_SMILES
+ i_canvas_canvasUID
+ s_m_Source_Path
+ s_m_Source_File
+ i_m_Source_File_Index
+ i_m_Molecular_charge
+ i_m_Spin_multiplicity
+ s_j_Task
+ s_j_Jaguar_input_file
+ s_j_Jaguar_restart_input_file
+ s_j_Jaguar_restart_mae_file
+ s_j_Jaguar_output_file
+ s_j_Jaguar_log_file
+ s_j_Jaguar_mae_file
+ s_j_QM_Method
+ s_j_QM_Basis
+ i_j_Number_of_canonical_orbitals
+ i_j_Geometry_convergence_category
+ r_j_Gas_Phase_Energy
+ r_j_HOMO
+ r_j_LUMO
+ s_m_subgroupid
+ b_m_subgroup_collapsed
+ i_m_ct_format
+ :::
+ conf-4 
+  4 
+  converted.303 
+  CCOC(=O)c1ccc(cc1)Nc2cc(nc(n2)Nc3ccc(cc3)C(=O)OCC)C 
+  303
+  C:\Users\rustenba\Documents\Repos\Jaguar_Ref_pKa\jaguar_input_files 
+  sm23_micro012.mae 
+  1
+  0
+  1
+  Optimization 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro011_conf_4.dft_h.in 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro011_conf_4.dft_h.01.in 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro011_conf_4.dft_h.01.mae 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro011_conf_4.dft_h.out 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro011_conf_4.dft_h.log 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro011_conf_4.mae 
+  DFT(b3lyp) 
+  pka-geopt* 
+  511
+  3
+  -1410.85317833362
+  -0.195805766801763
+  -0.0460247818381701
+  "SM23_micro011->all protonated conformers" 
+  1
+  2
+ m_depend[16] { 
+  # First column is dependency index #
+  i_m_depend_dependency
+  s_m_depend_property
+  :::
+  1 20 i_m_Molecular_charge 
+  2 20 i_m_Spin_multiplicity 
+  3 20 s_j_Task 
+  4 20 s_j_Jaguar_input_file 
+  5 20 s_j_Jaguar_restart_input_file 
+  6 20 s_j_Jaguar_restart_mae_file 
+  7 20 s_j_Jaguar_output_file 
+  8 20 s_j_Jaguar_log_file 
+  9 20 s_j_Jaguar_mae_file 
+  10 20 s_j_QM_Method 
+  11 20 s_j_QM_Basis 
+  12 20 i_j_Number_of_canonical_orbitals 
+  13 20 i_j_Geometry_convergence_category 
+  14 20 r_j_Gas_Phase_Energy 
+  15 20 r_j_HOMO 
+  16 20 r_j_LUMO 
+  :::
+ } 
+ m_atom[55] { 
+  # First column is atom index #
+  i_m_mmod_type
+  r_m_x_coord
+  r_m_y_coord
+  r_m_z_coord
+  i_m_residue_number
+  i_m_color
+  r_m_charge1
+  r_m_charge2
+  i_m_atomic_number
+  s_m_atom_name
+  i_m_Hcount
+  :::
+  1 3 -2.098185 0.906264 6.206790 900 2 -0.18000 -0.18000 6 C1  3
+  2 3 -2.230761 2.399863 5.972793 900 2 0.19000 0.19000 6 C2  2
+  3 16 -3.612105 2.669003 5.662535 900 70 -0.33000 -0.33000 8 O3  0
+  4 2 -3.904965 3.965111 5.376341 900 2 0.62500 0.62500 6 C4  0
+  5 15 -3.060438 4.843200 5.383591 900 70 -0.43000 -0.43000 8 O5  0
+  6 2 -5.336105 4.170606 5.053172 900 2 -0.11500 -0.11500 6 C6  0
+  7 2 -5.759021 5.464257 4.710716 900 2 -0.11500 -0.11500 6 C7  1
+  8 2 -7.083432 5.713936 4.384009 900 2 -0.11500 -0.11500 6 C8  1
+  9 2 -8.028833 4.670654 4.363634 900 2 0.07880 0.07880 6 C9  0
+  10 2 -7.603804 3.377288 4.733638 900 2 -0.11500 -0.11500 6 C10  1
+  11 2 -6.279985 3.132484 5.073023 900 2 -0.11500 -0.11500 6 C11  1
+  12 25 -9.358365 4.977818 4.076488 900 43 -0.46850 -0.46850 7 N12  0
+  13 2 -10.034477 4.331820 3.182686 900 2 0.51550 0.51550 6 C13  0
+  14 2 -11.447384 4.646566 3.001895 900 2 -0.11830 -0.11830 6 C14  1
+  15 2 -12.180932 3.998532 2.074115 900 2 0.12250 0.12250 6 C15  0
+  16 3 -13.638561 4.216047 1.798367 900 2 -0.18000 -0.18000 6 C16  3
+  17 25 -11.551014 3.032778 1.287606 900 43 -0.50750 -0.50750 7 N17  1
+  18 2 -10.202374 2.766573 1.463855 900 2 0.30900 0.30900 6 C18  0
+  19 25 -9.470149 3.359711 2.349158 900 43 -0.48150 -0.48150 7 N19  0
+  20 25 -9.702701 1.810051 0.608586 900 43 -0.48520 -0.48520 7 N20  1
+  21 2 -8.397959 1.292862 0.478777 900 2 0.10020 0.10020 6 C21  0
+  22 2 -8.215728 0.310815 -0.511677 900 2 -0.11500 -0.11500 6 C22  1
+  23 2 -6.969300 -0.255862 -0.718864 900 2 -0.11500 -0.11500 6 C23  1
+  24 2 -5.871305 0.142628 0.055780 900 2 -0.11500 -0.11500 6 C24  0
+  25 2 -6.058647 1.118226 1.041774 900 2 -0.11500 -0.11500 6 C25  1
+  26 2 -7.305848 1.695735 1.262256 900 2 -0.11500 -0.11500 6 C26  1
+  27 2 -4.558512 -0.498216 -0.219813 900 2 0.62500 0.62500 6 C27  0
+  28 15 -4.379493 -1.356273 -1.065152 900 70 -0.43000 -0.43000 8 O28  0
+  29 16 -3.570150 -0.023222 0.571173 900 70 -0.33000 -0.33000 8 O29  0
+  30 3 -2.262464 -0.595759 0.348873 900 2 0.19000 0.19000 6 C30  2
+  31 3 -1.299104 0.084874 1.302445 900 2 -0.18000 -0.18000 6 C31  3
+  32 41 -1.058850 0.656762 6.448151 900 21 0.06000 0.06000 1 H32  0
+  33 41 -2.732419 0.581738 7.038325 900 21 0.06000 0.06000 1 H33  0
+  34 41 -2.389649 0.343808 5.313258 900 21 0.06000 0.06000 1 H34  0
+  35 41 -1.605588 2.742189 5.141444 900 21 0.03000 0.03000 1 H35  0
+  36 41 -1.944185 2.980339 6.856367 900 21 0.03000 0.03000 1 H36  0
+  37 41 -5.025742 6.264667 4.707089 900 21 0.11500 0.11500 1 H37  0
+  38 41 -7.413889 6.715901 4.126283 900 21 0.11500 0.11500 1 H38  0
+  39 41 -8.328624 2.569884 4.752695 900 21 0.11500 0.11500 1 H39  0
+  40 41 -5.968754 2.131412 5.352740 900 21 0.11500 0.11500 1 H40  0
+  41 41 -13.804814 4.539020 0.761996 900 21 0.06000 0.06000 1 H41  0
+  42 41 -14.215677 3.294834 1.955138 900 21 0.06000 0.06000 1 H42  0
+  43 41 -14.040296 4.984690 2.461955 900 21 0.06000 0.06000 1 H43  0
+  44 43 -10.360396 1.420352 -0.052367 900 21 0.41000 0.41000 1 H44  0
+  45 41 -9.060670 -0.006792 -1.121068 900 21 0.11500 0.11500 1 H45  0
+  46 41 -6.823438 -1.013359 -1.481982 900 21 0.11500 0.11500 1 H46  0
+  47 41 -5.218138 1.435261 1.649384 900 21 0.11500 0.11500 1 H47  0
+  48 41 -7.439282 2.447737 2.026313 900 21 0.11500 0.11500 1 H48  0
+  49 41 -1.983808 -0.441322 -0.698576 900 21 0.03000 0.03000 1 H49  0
+  50 41 -2.317281 -1.676204 0.518287 900 21 0.03000 0.03000 1 H50  0
+  51 41 -0.291325 -0.322010 1.164881 900 21 0.06000 0.06000 1 H51  0
+  52 41 -1.263714 1.163538 1.118928 900 21 0.06000 0.06000 1 H52  0
+  53 41 -1.597533 -0.078053 2.343360 900 21 0.06000 0.06000 1 H53  0
+  54 41 -11.890346 5.405871 3.634259 900 21 0.11500 0.11500 1 H54  0
+  55 43 -12.094767 2.534588 0.597002 900 21 0.41000 0.41000 1 H55  0
+  :::
+ } 
+ m_bond[57] { 
+  # First column is bond index #
+  i_m_from
+  i_m_to
+  i_m_order
+  :::
+  1 1 2 1
+  2 1 32 1
+  3 1 33 1
+  4 1 34 1
+  5 2 3 1
+  6 2 35 1
+  7 2 36 1
+  8 3 4 1
+  9 4 5 2
+  10 4 6 1
+  11 6 11 1
+  12 6 7 2
+  13 7 8 1
+  14 7 37 1
+  15 8 9 2
+  16 8 38 1
+  17 9 10 1
+  18 9 12 1
+  19 10 11 2
+  20 10 39 1
+  21 11 40 1
+  22 12 13 2
+  23 13 19 1
+  24 13 14 1
+  25 14 15 2
+  26 14 54 1
+  27 15 16 1
+  28 15 17 1
+  29 16 41 1
+  30 16 42 1
+  31 16 43 1
+  32 17 18 1
+  33 17 55 1
+  34 18 19 2
+  35 18 20 1
+  36 20 21 1
+  37 20 44 1
+  38 21 26 1
+  39 21 22 2
+  40 22 23 1
+  41 22 45 1
+  42 23 24 2
+  43 23 46 1
+  44 24 25 1
+  45 24 27 1
+  46 25 26 2
+  47 25 47 1
+  48 26 48 1
+  49 27 28 2
+  50 27 29 1
+  51 29 30 1
+  52 30 31 1
+  53 30 49 1
+  54 30 50 1
+  55 31 51 1
+  56 31 52 1
+  57 31 53 1
+  :::
+ } 
+} 
+
+f_m_ct { 
+ s_m_title
+ s_m_entry_id
+ s_m_entry_name
+ s_canvas_canonical_SMILES
+ i_canvas_canvasUID
+ s_m_Source_Path
+ s_m_Source_File
+ i_m_Source_File_Index
+ i_m_Molecular_charge
+ i_m_Spin_multiplicity
+ s_j_Task
+ s_j_Jaguar_input_file
+ s_j_Jaguar_restart_input_file
+ s_j_Jaguar_restart_mae_file
+ s_j_Jaguar_output_file
+ s_j_Jaguar_log_file
+ s_j_Jaguar_mae_file
+ s_j_QM_Method
+ s_j_QM_Basis
+ i_j_Number_of_canonical_orbitals
+ i_j_Geometry_convergence_category
+ r_j_Gas_Phase_Energy
+ r_j_HOMO
+ r_j_LUMO
+ s_m_subgroupid
+ b_m_subgroup_collapsed
+ i_m_ct_format
+ :::
+ conf-5 
+  4 
+  converted.303 
+  CCOC(=O)c1ccc(cc1)Nc2cc(nc(n2)Nc3ccc(cc3)C(=O)OCC)C 
+  303
+  C:\Users\rustenba\Documents\Repos\Jaguar_Ref_pKa\jaguar_input_files 
+  sm23_micro012.mae 
+  1
+  0
+  1
+  Optimization 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro011_conf_5.dft_h.in 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro011_conf_5.dft_h.01.in 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro011_conf_5.dft_h.01.mae 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro011_conf_5.dft_h.out 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro011_conf_5.dft_h.log 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro011_conf_5.mae 
+  DFT(b3lyp) 
+  pka-geopt* 
+  511
+  3
+  -1410.85214328524
+  -0.197082276767916
+  -0.0464781010482772
+  "SM23_micro011->all protonated conformers" 
+  1
+  2
+ m_depend[16] { 
+  # First column is dependency index #
+  i_m_depend_dependency
+  s_m_depend_property
+  :::
+  1 20 i_m_Molecular_charge 
+  2 20 i_m_Spin_multiplicity 
+  3 20 s_j_Task 
+  4 20 s_j_Jaguar_input_file 
+  5 20 s_j_Jaguar_restart_input_file 
+  6 20 s_j_Jaguar_restart_mae_file 
+  7 20 s_j_Jaguar_output_file 
+  8 20 s_j_Jaguar_log_file 
+  9 20 s_j_Jaguar_mae_file 
+  10 20 s_j_QM_Method 
+  11 20 s_j_QM_Basis 
+  12 20 i_j_Number_of_canonical_orbitals 
+  13 20 i_j_Geometry_convergence_category 
+  14 20 r_j_Gas_Phase_Energy 
+  15 20 r_j_HOMO 
+  16 20 r_j_LUMO 
+  :::
+ } 
+ m_atom[55] { 
+  # First column is atom index #
+  i_m_mmod_type
+  r_m_x_coord
+  r_m_y_coord
+  r_m_z_coord
+  i_m_residue_number
+  i_m_color
+  r_m_charge1
+  r_m_charge2
+  i_m_atomic_number
+  s_m_atom_name
+  i_m_Hcount
+  :::
+  1 3 -1.305621 3.123330 3.304181 900 2 -0.18000 -0.18000 6 C1  3
+  2 3 -1.979563 3.205870 4.662109 900 2 0.19000 0.19000 6 C2  2
+  3 16 -3.331402 3.652004 4.441539 900 70 -0.33000 -0.33000 8 O3  0
+  4 2 -4.154932 3.614361 5.523496 900 2 0.62500 0.62500 6 C4  0
+  5 15 -3.778897 3.250596 6.622805 900 70 -0.43000 -0.43000 8 O5  0
+  6 2 -5.538420 4.023952 5.187706 900 2 -0.11500 -0.11500 6 C6  0
+  7 2 -6.544218 3.843469 6.149275 900 2 -0.11500 -0.11500 6 C7  1
+  8 2 -7.870367 4.125544 5.850174 900 2 -0.11500 -0.11500 6 C8  1
+  9 2 -8.236362 4.580526 4.569821 900 2 0.07880 0.07880 6 C9  0
+  10 2 -7.213102 4.826413 3.631205 900 2 -0.11500 -0.11500 6 C10  1
+  11 2 -5.888567 4.544149 3.931775 900 2 -0.11500 -0.11500 6 C11  1
+  12 25 -9.581541 4.832368 4.293071 900 43 -0.46850 -0.46850 7 N12  0
+  13 2 -10.157713 4.278427 3.274539 900 2 0.51550 0.51550 6 C13  0
+  14 2 -11.539930 4.620384 2.957920 900 2 -0.11830 -0.11830 6 C14  1
+  15 2 -12.165106 4.045447 1.909429 900 2 0.12250 0.12250 6 C15  0
+  16 3 -13.571109 4.321385 1.468514 900 2 -0.18000 -0.18000 6 C16  3
+  17 25 -11.466195 3.102443 1.152333 900 43 -0.50750 -0.50750 7 N17  1
+  18 2 -10.152545 2.795379 1.473004 900 2 0.30900 0.30900 6 C18  0
+  19 25 -9.522235 3.328579 2.466867 900 43 -0.48150 -0.48150 7 N19  0
+  20 25 -9.573932 1.854766 0.648986 900 43 -0.48520 -0.48520 7 N20  1
+  21 2 -8.252684 1.361525 0.619295 900 2 0.10020 0.10020 6 C21  0
+  22 2 -7.947092 0.456561 -0.413574 900 2 -0.11500 -0.11500 6 C22  1
+  23 2 -6.674884 -0.080149 -0.523873 900 2 -0.11500 -0.11500 6 C23  1
+  24 2 -5.673027 0.270811 0.392305 900 2 -0.11500 -0.11500 6 C24  0
+  25 2 -5.982859 1.169708 1.419642 900 2 -0.11500 -0.11500 6 C25  1
+  26 2 -7.257862 1.714450 1.543857 900 2 -0.11500 -0.11500 6 C26  1
+  27 2 -4.331480 -0.345107 0.218699 900 2 0.62500 0.62500 6 C27  0
+  28 15 -4.050576 -1.123178 -0.675282 900 70 -0.43000 -0.43000 8 O28  0
+  29 16 -3.448122 0.050257 1.167063 900 70 -0.33000 -0.33000 8 O29  0
+  30 3 -2.126140 -0.535181 1.089968 900 2 0.19000 0.19000 6 C30  2
+  31 3 -2.083861 -1.899058 1.763224 900 2 -0.18000 -0.18000 6 C31  3
+  32 41 -0.274520 2.770355 3.418363 900 21 0.06000 0.06000 1 H32  0
+  33 41 -1.843111 2.428362 2.649987 900 21 0.06000 0.06000 1 H33  0
+  34 41 -1.281522 4.103352 2.816090 900 21 0.06000 0.06000 1 H34  0
+  35 41 -1.473846 3.912668 5.329712 900 21 0.03000 0.03000 1 H35  0
+  36 41 -2.003278 2.236199 5.169170 900 21 0.03000 0.03000 1 H36  0
+  37 41 -6.265562 3.457327 7.124903 900 21 0.11500 0.11500 1 H37  0
+  38 41 -8.651913 3.968850 6.587720 900 21 0.11500 0.11500 1 H38  0
+  39 41 -7.477608 5.220144 2.654926 900 21 0.11500 0.11500 1 H39  0
+  40 41 -5.116564 4.711259 3.187934 900 21 0.11500 0.11500 1 H40  0
+  41 41 -14.186095 3.412659 1.507608 900 21 0.06000 0.06000 1 H41  0
+  42 41 -14.032016 5.073037 2.113190 900 21 0.06000 0.06000 1 H42  0
+  43 41 -13.597946 4.696049 0.436199 900 21 0.06000 0.06000 1 H43  0
+  44 43 -10.169583 1.469987 -0.071248 900 21 0.41000 0.41000 1 H44  0
+  45 41 -8.714819 0.176462 -1.133457 900 21 0.11500 0.11500 1 H45  0
+  46 41 -6.433988 -0.777295 -1.319609 900 21 0.11500 0.11500 1 H46  0
+  47 41 -5.220535 1.452090 2.138069 900 21 0.11500 0.11500 1 H47  0
+  48 41 -7.485108 2.405889 2.341725 900 21 0.11500 0.11500 1 H48  0
+  49 41 -1.482710 0.184466 1.601758 900 21 0.03000 0.03000 1 H49  0
+  50 41 -1.832582 -0.602846 0.039806 900 21 0.03000 0.03000 1 H50  0
+  51 41 -1.057308 -2.283982 1.758979 900 21 0.06000 0.06000 1 H51  0
+  52 41 -2.422106 -1.831217 2.802404 900 21 0.06000 0.06000 1 H52  0
+  53 41 -2.719407 -2.610667 1.229006 900 21 0.06000 0.06000 1 H53  0
+  54 41 -12.046899 5.349474 3.577645 900 21 0.11500 0.11500 1 H54  0
+  55 43 -11.893356 2.740626 0.310849 900 21 0.41000 0.41000 1 H55  0
+  :::
+ } 
+ m_bond[57] { 
+  # First column is bond index #
+  i_m_from
+  i_m_to
+  i_m_order
+  :::
+  1 1 2 1
+  2 1 32 1
+  3 1 33 1
+  4 1 34 1
+  5 2 3 1
+  6 2 35 1
+  7 2 36 1
+  8 3 4 1
+  9 4 5 2
+  10 4 6 1
+  11 6 11 1
+  12 6 7 2
+  13 7 8 1
+  14 7 37 1
+  15 8 9 2
+  16 8 38 1
+  17 9 10 1
+  18 9 12 1
+  19 10 11 2
+  20 10 39 1
+  21 11 40 1
+  22 12 13 2
+  23 13 19 1
+  24 13 14 1
+  25 14 15 2
+  26 14 54 1
+  27 15 16 1
+  28 15 17 1
+  29 16 41 1
+  30 16 42 1
+  31 16 43 1
+  32 17 18 1
+  33 17 55 1
+  34 18 19 2
+  35 18 20 1
+  36 20 21 1
+  37 20 44 1
+  38 21 26 1
+  39 21 22 2
+  40 22 23 1
+  41 22 45 1
+  42 23 24 2
+  43 23 46 1
+  44 24 25 1
+  45 24 27 1
+  46 25 26 2
+  47 25 47 1
+  48 26 48 1
+  49 27 28 2
+  50 27 29 1
+  51 29 30 1
+  52 30 31 1
+  53 30 49 1
+  54 30 50 1
+  55 31 51 1
+  56 31 52 1
+  57 31 53 1
+  :::
+ } 
+} 
+
+f_m_ct { 
+ s_m_title
+ s_m_entry_id
+ s_m_entry_name
+ s_canvas_canonical_SMILES
+ i_canvas_canvasUID
+ s_m_Source_Path
+ s_m_Source_File
+ i_m_Source_File_Index
+ i_m_Molecular_charge
+ i_m_Spin_multiplicity
+ s_j_Task
+ s_j_Jaguar_input_file
+ s_j_Jaguar_restart_input_file
+ s_j_Jaguar_restart_mae_file
+ s_j_Jaguar_output_file
+ s_j_Jaguar_log_file
+ s_j_Jaguar_mae_file
+ s_j_QM_Method
+ s_j_QM_Basis
+ i_j_Number_of_canonical_orbitals
+ i_j_Geometry_convergence_category
+ r_j_Gas_Phase_Energy
+ r_j_HOMO
+ r_j_LUMO
+ s_m_subgroupid
+ b_m_subgroup_collapsed
+ i_m_ct_format
+ :::
+ conf-1 
+  4 
+  converted.303 
+  CCOC(=O)c1ccc(cc1)Nc2cc(nc(n2)Nc3ccc(cc3)C(=O)OCC)C 
+  303
+  C:\Users\rustenba\Documents\Repos\Jaguar_Ref_pKa\jaguar_input_files 
+  SM23_micro011.mae 
+  1
+  -1
+  1
+  Optimization 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro036_conf_1.dft.in 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro036_conf_1.dft.01.in 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro036_conf_1.dft.01.mae 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro036_conf_1.dft.out 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro036_conf_1.dft.log 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro036_conf_1.mae 
+  DFT(b3lyp) 
+  pka-geopt* 
+  509
+  0
+  -1410.31665125617
+  -0.0690231277974043
+  0.0576491188413509
+  "SM23_micro011->all deprotonated conformers" 
+  1
+  2
+ m_depend[16] { 
+  # First column is dependency index #
+  i_m_depend_dependency
+  s_m_depend_property
+  :::
+  1 20 i_m_Molecular_charge 
+  2 20 i_m_Spin_multiplicity 
+  3 20 s_j_Task 
+  4 20 s_j_Jaguar_input_file 
+  5 20 s_j_Jaguar_restart_input_file 
+  6 20 s_j_Jaguar_restart_mae_file 
+  7 20 s_j_Jaguar_output_file 
+  8 20 s_j_Jaguar_log_file 
+  9 20 s_j_Jaguar_mae_file 
+  10 20 s_j_QM_Method 
+  11 20 s_j_QM_Basis 
+  12 20 i_j_Number_of_canonical_orbitals 
+  13 20 i_j_Geometry_convergence_category 
+  14 20 r_j_Gas_Phase_Energy 
+  15 20 r_j_HOMO 
+  16 20 r_j_LUMO 
+  :::
+ } 
+ m_atom[54] { 
+  # First column is atom index #
+  i_m_mmod_type
+  r_m_x_coord
+  r_m_y_coord
+  r_m_z_coord
+  i_m_residue_number
+  i_m_color
+  r_m_charge1
+  r_m_charge2
+  i_m_atomic_number
+  i_m_formal_charge
+  s_m_atom_name
+  s_m_label_format
+  i_m_label_color
+  s_m_label_user_text
+  i_m_Hcount
+  :::
+  1 3 -2.346572 0.425955 8.210326 900 2 -0.18000 -0.18000 6 0 C1  ""  1 ""  3
+  2 3 -3.058072 -0.833572 8.675801 900 2 0.19000 0.19000 6 0 C2  ""  1 ""  2
+  3 16 -3.593169 -1.477973 7.515539 900 70 -0.33000 -0.33000 8 0 O3  ""  1 ""  0
+  4 2 -4.289241 -2.638873 7.757110 900 2 0.62500 0.62500 6 0 C4  ""  1 ""  0
+  5 15 -4.422154 -3.067259 8.894564 900 70 -0.43000 -0.43000 8 0 O5  ""  1 ""  0
+  6 2 -4.818035 -3.249717 6.532665 900 2 -0.11500 -0.11500 6 0 C6  ""  1 ""  0
+  7 2 -4.618081 -2.704267 5.248124 900 2 -0.11500 -0.11500 6 0 C7  ""  1 ""  1
+  8 2 -5.147122 -3.327730 4.134960 900 2 -0.11500 -0.11500 6 0 C8  ""  1 ""  1
+  9 2 -5.910317 -4.526939 4.219434 900 2 0.07880 0.07880 6 0 C9  ""  1 ""  0
+  10 2 -6.101331 -5.067872 5.524761 900 2 -0.11500 -0.11500 6 0 C10  ""  1 ""  1
+  11 2 -5.564960 -4.438020 6.636345 900 2 -0.11500 -0.11500 6 0 C11  ""  1 ""  1
+  12 25 -6.361090 -5.007655 3.012084 900 43 -0.46850 -0.46850 7 0 N12  ""  1 ""  0
+  13 2 -7.120650 -6.083236 2.846022 900 2 0.51550 0.51550 6 0 C13  ""  1 ""  0
+  14 2 -7.459478 -6.379182 1.456904 900 2 -0.11830 -0.11830 6 0 C14  ""  1 ""  1
+  15 2 -8.245965 -7.440335 1.169639 900 2 0.12250 0.12250 6 0 C15  ""  1 ""  0
+  16 3 -8.667370 -7.861852 -0.208932 900 2 -0.18000 -0.18000 6 0 C16  ""  1 ""  3
+  17 25 -8.714089 -8.209039 2.215607 900 43 -0.50750 -0.50750 7 0 N17  ""  1 ""  1
+  18 2 -8.372255 -7.945176 3.554497 900 2 0.45650 0.45650 6 0 C18  ""  1 ""  0
+  19 25 -7.591258 -6.895418 3.834913 900 43 -0.48150 -0.48150 7 0 N19  ""  1 ""  0
+  20 39 -8.751805 -8.777927 4.514893 900 43 -0.58010 -0.58010 7 -1 N20  "%XF"  2 ""  0
+  21 2 -9.789461 -9.647317 4.425073 900 2 -0.54240 -0.54240 6 0 C21  ""  1 ""  0
+  22 2 -11.018707 -9.416256 3.728264 900 2 -0.11500 -0.11500 6 0 C22  ""  1 ""  1
+  23 2 -12.056005 -10.334130 3.755609 900 2 -0.11500 -0.11500 6 0 C23  ""  1 ""  1
+  24 2 -11.941551 -11.543011 4.466208 900 2 -0.11500 -0.11500 6 0 C24  ""  1 ""  0
+  25 2 -10.741541 -11.781558 5.172109 900 2 -0.11500 -0.11500 6 0 C25  ""  1 ""  1
+  26 2 -9.709457 -10.868678 5.160005 900 2 -0.11500 -0.11500 6 0 C26  ""  1 ""  1
+  27 2 -13.001434 -12.551684 4.527126 900 2 0.62500 0.62500 6 0 C27  ""  1 ""  0
+  28 15 -12.943862 -13.615983 5.127412 900 70 -0.43000 -0.43000 8 0 O28  ""  1 ""  0
+  29 16 -14.126101 -12.194486 3.824251 900 70 -0.33000 -0.33000 8 0 O29  ""  1 ""  0
+  30 3 -15.197744 -13.144352 3.869210 900 2 0.19000 0.19000 6 0 C30  ""  1 ""  2
+  31 3 -16.359341 -12.562260 3.082173 900 2 -0.18000 -0.18000 6 0 C31  ""  1 ""  3
+  32 41 -1.917110 0.958091 9.067679 900 21 0.06000 0.06000 1 0 H32  ""  1 ""  0
+  33 41 -1.537018 0.180961 7.514307 900 21 0.06000 0.06000 1 0 H33  ""  1 ""  0
+  34 41 -3.042900 1.099156 7.698742 900 21 0.06000 0.06000 1 0 H34  ""  1 ""  0
+  35 41 -3.870134 -0.604078 9.375710 900 21 0.03000 0.03000 1 0 H35  ""  1 ""  0
+  36 41 -2.373985 -1.516783 9.193062 900 21 0.03000 0.03000 1 0 H36  ""  1 ""  0
+  37 41 -4.044329 -1.788865 5.138701 900 21 0.11500 0.11500 1 0 H37  ""  1 ""  0
+  38 41 -4.996292 -2.913154 3.141606 900 21 0.11500 0.11500 1 0 H38  ""  1 ""  0
+  39 41 -6.676473 -5.977722 5.628530 900 21 0.11500 0.11500 1 0 H39  ""  1 ""  0
+  40 41 -5.718889 -4.861094 7.625554 900 21 0.11500 0.11500 1 0 H40  ""  1 ""  0
+  41 41 -8.330335 -8.883341 -0.433945 900 21 0.06000 0.06000 1 0 H41  ""  1 ""  0
+  42 41 -9.761120 -7.851041 -0.313104 900 21 0.06000 0.06000 1 0 H42  ""  1 ""  0
+  43 41 -8.244971 -7.189655 -0.960375 900 21 0.06000 0.06000 1 0 H43  ""  1 ""  0
+  44 41 -11.159055 -8.471813 3.209074 900 21 0.11500 0.11500 1 0 H45  ""  1 ""  0
+  45 41 -12.980645 -10.114460 3.229469 900 21 0.11500 0.11500 1 0 H46  ""  1 ""  0
+  46 41 -10.651857 -12.709240 5.730426 900 21 0.11500 0.11500 1 0 H47  ""  1 ""  0
+  47 41 -8.794124 -11.053475 5.715185 900 21 0.11500 0.11500 1 0 H48  ""  1 ""  0
+  48 41 -15.471920 -13.336696 4.912806 900 21 0.03000 0.03000 1 0 H49  ""  1 ""  0
+  49 41 -14.859724 -14.097923 3.446455 900 21 0.03000 0.03000 1 0 H50  ""  1 ""  0
+  50 41 -17.206424 -13.258542 3.088980 900 21 0.06000 0.06000 1 0 H51  ""  1 ""  0
+  51 41 -16.688583 -11.613326 3.518814 900 21 0.06000 0.06000 1 0 H52  ""  1 ""  0
+  52 41 -16.072277 -12.377533 2.041414 900 21 0.06000 0.06000 1 0 H53  ""  1 ""  0
+  53 41 -7.071451 -5.732236 0.679577 900 21 0.11500 0.11500 1 0 H54  ""  1 ""  0
+  54 43 -9.267661 -9.034080 2.027245 900 21 0.41000 0.41000 1 0 H55  ""  1 ""  0
+  :::
+ } 
+ m_bond[56] { 
+  # First column is bond index #
+  i_m_from
+  i_m_to
+  i_m_order
+  :::
+  1 1 2 1
+  2 1 32 1
+  3 1 33 1
+  4 1 34 1
+  5 2 3 1
+  6 2 35 1
+  7 2 36 1
+  8 3 4 1
+  9 4 5 2
+  10 4 6 1
+  11 6 11 1
+  12 6 7 2
+  13 7 8 1
+  14 7 37 1
+  15 8 9 2
+  16 8 38 1
+  17 9 10 1
+  18 9 12 1
+  19 10 11 2
+  20 10 39 1
+  21 11 40 1
+  22 12 13 2
+  23 13 19 1
+  24 13 14 1
+  25 14 15 2
+  26 14 53 1
+  27 15 16 1
+  28 15 17 1
+  29 16 41 1
+  30 16 42 1
+  31 16 43 1
+  32 17 18 1
+  33 17 54 1
+  34 18 19 2
+  35 18 20 1
+  36 20 21 1
+  37 21 26 1
+  38 21 22 2
+  39 22 23 1
+  40 22 44 1
+  41 23 24 2
+  42 23 45 1
+  43 24 25 1
+  44 24 27 1
+  45 25 26 2
+  46 25 46 1
+  47 26 47 1
+  48 27 28 2
+  49 27 29 1
+  50 29 30 1
+  51 30 31 1
+  52 30 48 1
+  53 30 49 1
+  54 31 50 1
+  55 31 51 1
+  56 31 52 1
+  :::
+ } 
+} 
+
+f_m_ct { 
+ s_m_title
+ s_m_entry_id
+ s_m_entry_name
+ s_canvas_canonical_SMILES
+ i_canvas_canvasUID
+ s_m_Source_Path
+ s_m_Source_File
+ i_m_Source_File_Index
+ i_m_Molecular_charge
+ i_m_Spin_multiplicity
+ s_j_Task
+ s_j_Jaguar_input_file
+ s_j_Jaguar_restart_input_file
+ s_j_Jaguar_restart_mae_file
+ s_j_Jaguar_output_file
+ s_j_Jaguar_log_file
+ s_j_Jaguar_mae_file
+ s_j_QM_Method
+ s_j_QM_Basis
+ i_j_Number_of_canonical_orbitals
+ i_j_Geometry_convergence_category
+ r_j_Gas_Phase_Energy
+ r_j_HOMO
+ r_j_LUMO
+ s_m_subgroupid
+ b_m_subgroup_collapsed
+ i_m_ct_format
+ :::
+ conf-2 
+  4 
+  converted.303 
+  CCOC(=O)c1ccc(cc1)Nc2cc(nc(n2)Nc3ccc(cc3)C(=O)OCC)C 
+  303
+  C:\Users\rustenba\Documents\Repos\Jaguar_Ref_pKa\jaguar_input_files 
+  SM23_micro011.mae 
+  1
+  -1
+  1
+  Optimization 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro036_conf_2.dft.in 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro036_conf_2.dft.01.in 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro036_conf_2.dft.01.mae 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro036_conf_2.dft.out 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro036_conf_2.dft.log 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro036_conf_2.mae 
+  DFT(b3lyp) 
+  pka-geopt* 
+  509
+  3
+  -1410.31731045142
+  -0.0693968812812471
+  0.0573168110082148
+  "SM23_micro011->all deprotonated conformers" 
+  1
+  2
+ m_depend[16] { 
+  # First column is dependency index #
+  i_m_depend_dependency
+  s_m_depend_property
+  :::
+  1 20 i_m_Molecular_charge 
+  2 20 i_m_Spin_multiplicity 
+  3 20 s_j_Task 
+  4 20 s_j_Jaguar_input_file 
+  5 20 s_j_Jaguar_restart_input_file 
+  6 20 s_j_Jaguar_restart_mae_file 
+  7 20 s_j_Jaguar_output_file 
+  8 20 s_j_Jaguar_log_file 
+  9 20 s_j_Jaguar_mae_file 
+  10 20 s_j_QM_Method 
+  11 20 s_j_QM_Basis 
+  12 20 i_j_Number_of_canonical_orbitals 
+  13 20 i_j_Geometry_convergence_category 
+  14 20 r_j_Gas_Phase_Energy 
+  15 20 r_j_HOMO 
+  16 20 r_j_LUMO 
+  :::
+ } 
+ m_atom[54] { 
+  # First column is atom index #
+  i_m_mmod_type
+  r_m_x_coord
+  r_m_y_coord
+  r_m_z_coord
+  i_m_residue_number
+  i_m_color
+  r_m_charge1
+  r_m_charge2
+  i_m_atomic_number
+  i_m_formal_charge
+  s_m_atom_name
+  s_m_label_format
+  i_m_label_color
+  s_m_label_user_text
+  i_m_Hcount
+  :::
+  1 3 -5.101140 -2.201895 10.716663 900 2 -0.18000 -0.18000 6 0 C1  ""  1 ""  3
+  2 3 -4.133995 -1.952092 9.571872 900 2 0.19000 0.19000 6 0 C2  ""  1 ""  2
+  3 16 -4.595815 -2.705868 8.445606 900 70 -0.33000 -0.33000 8 0 O3  ""  1 ""  0
+  4 2 -3.817930 -2.611681 7.319411 900 2 0.62500 0.62500 6 0 C4  ""  1 ""  0
+  5 15 -2.807387 -1.921252 7.306850 900 70 -0.43000 -0.43000 8 0 O5  ""  1 ""  0
+  6 2 -4.331308 -3.406174 6.197480 900 2 -0.11500 -0.11500 6 0 C6  ""  1 ""  0
+  7 2 -3.611207 -3.394256 4.985787 900 2 -0.11500 -0.11500 6 0 C7  ""  1 ""  1
+  8 2 -4.047581 -4.127633 3.901849 900 2 -0.11500 -0.11500 6 0 C8  ""  1 ""  1
+  9 2 -5.228065 -4.922346 3.946385 900 2 0.07880 0.07880 6 0 C9  ""  1 ""  0
+  10 2 -5.949050 -4.922419 5.176313 900 2 -0.11500 -0.11500 6 0 C10  ""  1 ""  1
+  11 2 -5.502804 -4.183836 6.262644 900 2 -0.11500 -0.11500 6 0 C11  ""  1 ""  1
+  12 25 -5.510176 -5.595154 2.780500 900 43 -0.46850 -0.46850 7 0 N12  ""  1 ""  0
+  13 2 -6.550401 -6.393645 2.581951 900 2 0.51550 0.51550 6 0 C13  ""  1 ""  0
+  14 2 -6.604198 -7.001217 1.255857 900 2 -0.11830 -0.11830 6 0 C14  ""  1 ""  1
+  15 2 -7.607862 -7.852277 0.948009 900 2 0.12250 0.12250 6 0 C15  ""  1 ""  0
+  16 3 -7.781477 -8.548879 -0.370986 900 2 -0.18000 -0.18000 6 0 C16  ""  1 ""  3
+  17 25 -8.553629 -8.124549 1.915948 900 43 -0.50750 -0.50750 7 0 N17  ""  1 ""  1
+  18 2 -8.526816 -7.518607 3.184941 900 2 0.45650 0.45650 6 0 C18  ""  1 ""  0
+  19 25 -7.531687 -6.677039 3.486331 900 43 -0.48150 -0.48150 7 0 N19  ""  1 ""  0
+  20 39 -9.520401 -7.718703 4.043202 900 43 -0.58010 -0.58010 7 -1 N20  "%XF"  2 ""  0
+  21 2 -10.365352 -8.779881 4.024311 900 2 -0.54240 -0.54240 6 0 C21  ""  1 ""  0
+  22 2 -10.040980 -10.108754 3.600438 900 2 -0.11500 -0.11500 6 0 C22  ""  1 ""  1
+  23 2 -10.954495 -11.142897 3.698412 900 2 -0.11500 -0.11500 6 0 C23  ""  1 ""  1
+  24 2 -12.245520 -10.938872 4.219104 900 2 -0.11500 -0.11500 6 0 C24  ""  1 ""  0
+  25 2 -12.579841 -9.638429 4.658067 900 2 -0.11500 -0.11500 6 0 C25  ""  1 ""  1
+  26 2 -11.674416 -8.602018 4.566840 900 2 -0.11500 -0.11500 6 0 C26  ""  1 ""  1
+  27 2 -13.156615 -12.081856 4.300354 900 2 0.62500 0.62500 6 0 C27  ""  1 ""  0
+  28 15 -12.920164 -13.218436 3.913590 900 70 -0.43000 -0.43000 8 0 O28  ""  1 ""  0
+  29 16 -14.360165 -11.766016 4.880701 900 70 -0.33000 -0.33000 8 0 O29  ""  1 ""  0
+  30 3 -15.282880 -12.854447 5.004270 900 2 0.19000 0.19000 6 0 C30  ""  1 ""  2
+  31 3 -16.516182 -12.328639 5.718697 900 2 -0.18000 -0.18000 6 0 C31  ""  1 ""  3
+  32 41 -4.787926 -1.641209 11.605681 900 21 0.06000 0.06000 1 0 H32  ""  1 ""  0
+  33 41 -6.114163 -1.885216 10.446624 900 21 0.06000 0.06000 1 0 H33  ""  1 ""  0
+  34 41 -5.134389 -3.266284 10.972416 900 21 0.06000 0.06000 1 0 H34  ""  1 ""  0
+  35 41 -3.114361 -2.263266 9.827634 900 21 0.03000 0.03000 1 0 H35  ""  1 ""  0
+  36 41 -4.086624 -0.889075 9.306800 900 21 0.03000 0.03000 1 0 H36  ""  1 ""  0
+  37 41 -2.705660 -2.796813 4.927309 900 21 0.11500 0.11500 1 0 H37  ""  1 ""  0
+  38 41 -3.494196 -4.124364 2.966497 900 21 0.11500 0.11500 1 0 H38  ""  1 ""  0
+  39 41 -6.852667 -5.512755 5.244354 900 21 0.11500 0.11500 1 0 H39  ""  1 ""  0
+  40 41 -6.071687 -4.205216 7.187810 900 21 0.11500 0.11500 1 0 H40  ""  1 ""  0
+  41 41 -7.761922 -9.640782 -0.250915 900 21 0.06000 0.06000 1 0 H41  ""  1 ""  0
+  42 41 -8.743013 -8.290545 -0.836004 900 21 0.06000 0.06000 1 0 H42  ""  1 ""  0
+  43 41 -6.981890 -8.265765 -1.060607 900 21 0.06000 0.06000 1 0 H43  ""  1 ""  0
+  44 41 -9.035840 -10.320020 3.245667 900 21 0.11500 0.11500 1 0 H45  ""  1 ""  0
+  45 41 -10.680517 -12.147245 3.386061 900 21 0.11500 0.11500 1 0 H46  ""  1 ""  0
+  46 41 -13.566502 -9.457612 5.074013 900 21 0.11500 0.11500 1 0 H47  ""  1 ""  0
+  47 41 -11.932675 -7.605653 4.914642 900 21 0.11500 0.11500 1 0 H48  ""  1 ""  0
+  48 41 -14.810552 -13.672276 5.560411 900 21 0.03000 0.03000 1 0 H49  ""  1 ""  0
+  49 41 -15.526646 -13.243379 4.008368 900 21 0.03000 0.03000 1 0 H50  ""  1 ""  0
+  50 41 -17.255210 -13.130057 5.836875 900 21 0.06000 0.06000 1 0 H51  ""  1 ""  0
+  51 41 -16.256668 -11.948226 6.712428 900 21 0.06000 0.06000 1 0 H52  ""  1 ""  0
+  52 41 -16.977844 -11.513258 5.151567 900 21 0.06000 0.06000 1 0 H53  ""  1 ""  0
+  53 41 -5.823458 -6.761477 0.544378 900 21 0.11500 0.11500 1 0 H54  ""  1 ""  0
+  54 43 -9.347506 -8.709976 1.693042 900 21 0.41000 0.41000 1 0 H55  ""  1 ""  0
+  :::
+ } 
+ m_bond[56] { 
+  # First column is bond index #
+  i_m_from
+  i_m_to
+  i_m_order
+  :::
+  1 1 2 1
+  2 1 32 1
+  3 1 33 1
+  4 1 34 1
+  5 2 3 1
+  6 2 35 1
+  7 2 36 1
+  8 3 4 1
+  9 4 5 2
+  10 4 6 1
+  11 6 11 1
+  12 6 7 2
+  13 7 8 1
+  14 7 37 1
+  15 8 9 2
+  16 8 38 1
+  17 9 10 1
+  18 9 12 1
+  19 10 11 2
+  20 10 39 1
+  21 11 40 1
+  22 12 13 2
+  23 13 19 1
+  24 13 14 1
+  25 14 15 2
+  26 14 53 1
+  27 15 16 1
+  28 15 17 1
+  29 16 41 1
+  30 16 42 1
+  31 16 43 1
+  32 17 18 1
+  33 17 54 1
+  34 18 19 2
+  35 18 20 1
+  36 20 21 1
+  37 21 26 1
+  38 21 22 2
+  39 22 23 1
+  40 22 44 1
+  41 23 24 2
+  42 23 45 1
+  43 24 25 1
+  44 24 27 1
+  45 25 26 2
+  46 25 46 1
+  47 26 47 1
+  48 27 28 2
+  49 27 29 1
+  50 29 30 1
+  51 30 31 1
+  52 30 48 1
+  53 30 49 1
+  54 31 50 1
+  55 31 51 1
+  56 31 52 1
+  :::
+ } 
+} 
+
+f_m_ct { 
+ s_m_title
+ s_m_entry_id
+ s_m_entry_name
+ s_canvas_canonical_SMILES
+ i_canvas_canvasUID
+ s_m_Source_Path
+ s_m_Source_File
+ i_m_Source_File_Index
+ i_m_Molecular_charge
+ i_m_Spin_multiplicity
+ s_j_Task
+ s_j_Jaguar_input_file
+ s_j_Jaguar_restart_input_file
+ s_j_Jaguar_restart_mae_file
+ s_j_Jaguar_output_file
+ s_j_Jaguar_log_file
+ s_j_Jaguar_mae_file
+ s_j_QM_Method
+ s_j_QM_Basis
+ i_j_Number_of_canonical_orbitals
+ i_j_Geometry_convergence_category
+ r_j_Gas_Phase_Energy
+ r_j_HOMO
+ r_j_LUMO
+ s_m_subgroupid
+ b_m_subgroup_collapsed
+ i_m_ct_format
+ :::
+ conf-3 
+  4 
+  converted.303 
+  CCOC(=O)c1ccc(cc1)Nc2cc(nc(n2)Nc3ccc(cc3)C(=O)OCC)C 
+  303
+  C:\Users\rustenba\Documents\Repos\Jaguar_Ref_pKa\jaguar_input_files 
+  SM23_micro011.mae 
+  1
+  -1
+  1
+  Optimization 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro036_conf_3.dft.in 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro036_conf_3.dft.01.in 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro036_conf_3.dft.01.mae 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro036_conf_3.dft.out 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro036_conf_3.dft.log 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro036_conf_3.mae 
+  DFT(b3lyp) 
+  pka-geopt* 
+  509
+  1
+  -1410.3166904412
+  -0.0691120250920353
+  0.0577122800871337
+  "SM23_micro011->all deprotonated conformers" 
+  1
+  2
+ m_depend[16] { 
+  # First column is dependency index #
+  i_m_depend_dependency
+  s_m_depend_property
+  :::
+  1 20 i_m_Molecular_charge 
+  2 20 i_m_Spin_multiplicity 
+  3 20 s_j_Task 
+  4 20 s_j_Jaguar_input_file 
+  5 20 s_j_Jaguar_restart_input_file 
+  6 20 s_j_Jaguar_restart_mae_file 
+  7 20 s_j_Jaguar_output_file 
+  8 20 s_j_Jaguar_log_file 
+  9 20 s_j_Jaguar_mae_file 
+  10 20 s_j_QM_Method 
+  11 20 s_j_QM_Basis 
+  12 20 i_j_Number_of_canonical_orbitals 
+  13 20 i_j_Geometry_convergence_category 
+  14 20 r_j_Gas_Phase_Energy 
+  15 20 r_j_HOMO 
+  16 20 r_j_LUMO 
+  :::
+ } 
+ m_atom[54] { 
+  # First column is atom index #
+  i_m_mmod_type
+  r_m_x_coord
+  r_m_y_coord
+  r_m_z_coord
+  i_m_residue_number
+  i_m_color
+  r_m_charge1
+  r_m_charge2
+  i_m_atomic_number
+  i_m_formal_charge
+  s_m_atom_name
+  s_m_label_format
+  i_m_label_color
+  s_m_label_user_text
+  i_m_Hcount
+  :::
+  1 3 -2.359583 0.160792 8.650788 900 2 -0.18000 -0.18000 6 0 C1  ""  1 ""  3
+  2 3 -3.193722 -1.051926 9.028629 900 2 0.19000 0.19000 6 0 C2  ""  1 ""  2
+  3 16 -3.678068 -1.634721 7.814695 900 70 -0.33000 -0.33000 8 0 O3  ""  1 ""  0
+  4 2 -4.455950 -2.757531 7.972275 900 2 0.62500 0.62500 6 0 C4  ""  1 ""  0
+  5 15 -4.699293 -3.203128 9.084628 900 70 -0.43000 -0.43000 8 0 O5  ""  1 ""  0
+  6 2 -4.922088 -3.309539 6.695604 900 2 -0.11500 -0.11500 6 0 C6  ""  1 ""  0
+  7 2 -4.599590 -2.744017 5.444917 900 2 -0.11500 -0.11500 6 0 C7  ""  1 ""  1
+  8 2 -5.070160 -3.315006 4.278823 900 2 -0.11500 -0.11500 6 0 C8  ""  1 ""  1
+  9 2 -5.890486 -4.479074 4.272719 900 2 0.07880 0.07880 6 0 C9  ""  1 ""  0
+  10 2 -6.207366 -5.039349 5.544828 900 2 -0.11500 -0.11500 6 0 C10  ""  1 ""  1
+  11 2 -5.730583 -4.461335 6.710465 900 2 -0.11500 -0.11500 6 0 C11  ""  1 ""  1
+  12 25 -6.262832 -4.912489 3.021380 900 43 -0.46850 -0.46850 7 0 N12  ""  1 ""  0
+  13 2 -7.044238 -5.954698 2.768645 900 2 0.51550 0.51550 6 0 C13  ""  1 ""  0
+  14 2 -7.285166 -6.206255 1.351006 900 2 -0.11830 -0.11830 6 0 C14  ""  1 ""  1
+  15 2 -8.081224 -7.233099 0.977761 900 2 0.12250 0.12250 6 0 C15  ""  1 ""  0
+  16 3 -8.413021 -7.604427 -0.439042 900 2 -0.18000 -0.18000 6 0 C16  ""  1 ""  3
+  17 25 -8.651951 -8.010283 1.965344 900 43 -0.50750 -0.50750 7 0 N17  ""  1 ""  1
+  18 2 -8.411474 -7.784633 3.332412 900 2 0.45650 0.45650 6 0 C18  ""  1 ""  0
+  19 25 -7.618513 -6.771195 3.697253 900 43 -0.48150 -0.48150 7 0 N19  ""  1 ""  0
+  20 39 -8.897139 -8.617289 4.244956 900 43 -0.58010 -0.58010 7 -1 N20  "%XF"  2 ""  0
+  21 2 -9.968040 -9.430490 4.070120 900 2 -0.54240 -0.54240 6 0 C21  ""  1 ""  0
+  22 2 -10.027064 -10.632551 4.839615 900 2 -0.11500 -0.11500 6 0 C22  ""  1 ""  1
+  23 2 -11.105657 -11.490237 4.783874 900 2 -0.11500 -0.11500 6 0 C23  ""  1 ""  1
+  24 2 -12.216605 -11.211567 3.956653 900 2 -0.11500 -0.11500 6 0 C24  ""  1 ""  0
+  25 2 -12.190512 -10.022674 3.204540 900 2 -0.11500 -0.11500 6 0 C25  ""  1 ""  1
+  26 2 -11.111770 -9.157793 3.252262 900 2 -0.11500 -0.11500 6 0 C26  ""  1 ""  1
+  27 2 -13.395532 -12.074488 3.861922 900 2 0.62500 0.62500 6 0 C27  ""  1 ""  0
+  28 15 -14.368847 -11.885048 3.144823 900 70 -0.43000 -0.43000 8 0 O28  ""  1 ""  0
+  29 16 -13.325549 -13.169538 4.687713 900 70 -0.33000 -0.33000 8 0 O29  ""  1 ""  0
+  30 3 -14.464981 -14.036931 4.648680 900 2 0.19000 0.19000 6 0 C30  ""  1 ""  2
+  31 3 -14.231998 -15.144698 5.661942 900 2 -0.18000 -0.18000 6 0 C31  ""  1 ""  3
+  32 41 -1.963884 0.644920 9.551755 900 21 0.06000 0.06000 1 0 H32  ""  1 ""  0
+  33 41 -1.516033 -0.130221 8.015510 900 21 0.06000 0.06000 1 0 H33  ""  1 ""  0
+  34 41 -2.962640 0.891919 8.101609 900 21 0.06000 0.06000 1 0 H34  ""  1 ""  0
+  35 41 -4.041193 -0.776785 9.667612 900 21 0.03000 0.03000 1 0 H35  ""  1 ""  0
+  36 41 -2.603834 -1.792346 9.581752 900 21 0.03000 0.03000 1 0 H36  ""  1 ""  0
+  37 41 -3.976672 -1.855501 5.404021 900 21 0.11500 0.11500 1 0 H37  ""  1 ""  0
+  38 41 -4.824299 -2.885526 3.311150 900 21 0.11500 0.11500 1 0 H38  ""  1 ""  0
+  39 41 -6.830890 -5.922169 5.580454 900 21 0.11500 0.11500 1 0 H39  ""  1 ""  0
+  40 41 -5.980640 -4.898718 7.673510 900 21 0.11500 0.11500 1 0 H40  ""  1 ""  0
+  41 41 -8.099508 -8.632837 -0.666399 900 21 0.06000 0.06000 1 0 H41  ""  1 ""  0
+  42 41 -9.494656 -7.547049 -0.623511 900 21 0.06000 0.06000 1 0 H42  ""  1 ""  0
+  43 41 -7.910095 -6.931555 -1.138551 900 21 0.06000 0.06000 1 0 H43  ""  1 ""  0
+  44 41 -9.179777 -10.845923 5.485319 900 21 0.11500 0.11500 1 0 H45  ""  1 ""  0
+  45 41 -11.106167 -12.395779 5.383319 900 21 0.11500 0.11500 1 0 H46  ""  1 ""  0
+  46 41 -13.054924 -9.786701 2.589293 900 21 0.11500 0.11500 1 0 H47  ""  1 ""  0
+  47 41 -11.157272 -8.222103 2.701479 900 21 0.11500 0.11500 1 0 H48  ""  1 ""  0
+  48 41 -14.587920 -14.435258 3.634411 900 21 0.03000 0.03000 1 0 H49  ""  1 ""  0
+  49 41 -15.369467 -13.462147 4.878360 900 21 0.03000 0.03000 1 0 H50  ""  1 ""  0
+  50 41 -15.082734 -15.836655 5.667521 900 21 0.06000 0.06000 1 0 H51  ""  1 ""  0
+  51 41 -13.326785 -15.711689 5.419546 900 21 0.06000 0.06000 1 0 H52  ""  1 ""  0
+  52 41 -14.115857 -14.731603 6.669635 900 21 0.06000 0.06000 1 0 H53  ""  1 ""  0
+  53 41 -6.820134 -5.553975 0.621855 900 21 0.11500 0.11500 1 0 H54  ""  1 ""  0
+  54 43 -9.216777 -8.810449 1.713781 900 21 0.41000 0.41000 1 0 H55  ""  1 ""  0
+  :::
+ } 
+ m_bond[56] { 
+  # First column is bond index #
+  i_m_from
+  i_m_to
+  i_m_order
+  :::
+  1 1 2 1
+  2 1 32 1
+  3 1 33 1
+  4 1 34 1
+  5 2 3 1
+  6 2 35 1
+  7 2 36 1
+  8 3 4 1
+  9 4 5 2
+  10 4 6 1
+  11 6 11 1
+  12 6 7 2
+  13 7 8 1
+  14 7 37 1
+  15 8 9 2
+  16 8 38 1
+  17 9 10 1
+  18 9 12 1
+  19 10 11 2
+  20 10 39 1
+  21 11 40 1
+  22 12 13 2
+  23 13 19 1
+  24 13 14 1
+  25 14 15 2
+  26 14 53 1
+  27 15 16 1
+  28 15 17 1
+  29 16 41 1
+  30 16 42 1
+  31 16 43 1
+  32 17 18 1
+  33 17 54 1
+  34 18 19 2
+  35 18 20 1
+  36 20 21 1
+  37 21 26 1
+  38 21 22 2
+  39 22 23 1
+  40 22 44 1
+  41 23 24 2
+  42 23 45 1
+  43 24 25 1
+  44 24 27 1
+  45 25 26 2
+  46 25 46 1
+  47 26 47 1
+  48 27 28 2
+  49 27 29 1
+  50 29 30 1
+  51 30 31 1
+  52 30 48 1
+  53 30 49 1
+  54 31 50 1
+  55 31 51 1
+  56 31 52 1
+  :::
+ } 
+} 
+
+f_m_ct { 
+ s_m_title
+ s_m_entry_id
+ s_m_entry_name
+ s_canvas_canonical_SMILES
+ i_canvas_canvasUID
+ s_m_Source_Path
+ s_m_Source_File
+ i_m_Source_File_Index
+ i_m_Molecular_charge
+ i_m_Spin_multiplicity
+ s_j_Task
+ s_j_Jaguar_input_file
+ s_j_Jaguar_restart_input_file
+ s_j_Jaguar_restart_mae_file
+ s_j_Jaguar_output_file
+ s_j_Jaguar_log_file
+ s_j_Jaguar_mae_file
+ s_j_QM_Method
+ s_j_QM_Basis
+ i_j_Number_of_canonical_orbitals
+ i_j_Geometry_convergence_category
+ r_j_Gas_Phase_Energy
+ r_j_HOMO
+ r_j_LUMO
+ s_m_subgroupid
+ b_m_subgroup_collapsed
+ i_m_ct_format
+ :::
+ conf-4 
+  4 
+  converted.303 
+  CCOC(=O)c1ccc(cc1)Nc2cc(nc(n2)Nc3ccc(cc3)C(=O)OCC)C 
+  303
+  C:\Users\rustenba\Documents\Repos\Jaguar_Ref_pKa\jaguar_input_files 
+  SM23_micro011.mae 
+  1
+  -1
+  1
+  Optimization 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro036_conf_4.dft.in 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro036_conf_4.dft.01.in 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro036_conf_4.dft.01.mae 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro036_conf_4.dft.out 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro036_conf_4.dft.log 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro036_conf_4.mae 
+  DFT(b3lyp) 
+  pka-geopt* 
+  509
+  3
+  -1410.31672144082
+  -0.0689921417754578
+  0.0576682046763478
+  "SM23_micro011->all deprotonated conformers" 
+  1
+  2
+ m_depend[16] { 
+  # First column is dependency index #
+  i_m_depend_dependency
+  s_m_depend_property
+  :::
+  1 20 i_m_Molecular_charge 
+  2 20 i_m_Spin_multiplicity 
+  3 20 s_j_Task 
+  4 20 s_j_Jaguar_input_file 
+  5 20 s_j_Jaguar_restart_input_file 
+  6 20 s_j_Jaguar_restart_mae_file 
+  7 20 s_j_Jaguar_output_file 
+  8 20 s_j_Jaguar_log_file 
+  9 20 s_j_Jaguar_mae_file 
+  10 20 s_j_QM_Method 
+  11 20 s_j_QM_Basis 
+  12 20 i_j_Number_of_canonical_orbitals 
+  13 20 i_j_Geometry_convergence_category 
+  14 20 r_j_Gas_Phase_Energy 
+  15 20 r_j_HOMO 
+  16 20 r_j_LUMO 
+  :::
+ } 
+ m_atom[54] { 
+  # First column is atom index #
+  i_m_mmod_type
+  r_m_x_coord
+  r_m_y_coord
+  r_m_z_coord
+  i_m_residue_number
+  i_m_color
+  r_m_charge1
+  r_m_charge2
+  i_m_atomic_number
+  i_m_formal_charge
+  s_m_atom_name
+  s_m_label_format
+  i_m_label_color
+  s_m_label_user_text
+  i_m_Hcount
+  :::
+  1 3 -2.302987 0.144585 8.590858 900 2 -0.18000 -0.18000 6 0 C1  ""  1 ""  3
+  2 3 -3.133513 -1.068507 8.975387 900 2 0.19000 0.19000 6 0 C2  ""  1 ""  2
+  3 16 -3.626660 -1.651936 7.765334 900 70 -0.33000 -0.33000 8 0 O3  ""  1 ""  0
+  4 2 -4.406812 -2.772184 7.929398 900 2 0.62500 0.62500 6 0 C4  ""  1 ""  0
+  5 15 -4.644023 -3.215778 9.043844 900 70 -0.43000 -0.43000 8 0 O5  ""  1 ""  0
+  6 2 -4.883583 -3.323872 6.656582 900 2 -0.11500 -0.11500 6 0 C6  ""  1 ""  0
+  7 2 -4.567694 -2.761079 5.402987 900 2 -0.11500 -0.11500 6 0 C7  ""  1 ""  1
+  8 2 -5.050145 -3.330635 4.240989 900 2 -0.11500 -0.11500 6 0 C8  ""  1 ""  1
+  9 2 -5.876605 -4.490504 4.242245 900 2 0.07880 0.07880 6 0 C9  ""  1 ""  0
+  10 2 -6.186066 -5.048553 5.517285 900 2 -0.11500 -0.11500 6 0 C10  ""  1 ""  1
+  11 2 -5.697340 -4.471942 6.678639 900 2 -0.11500 -0.11500 6 0 C11  ""  1 ""  1
+  12 25 -6.264426 -4.920087 2.994336 900 43 -0.46850 -0.46850 7 0 N12  ""  1 ""  0
+  13 2 -7.054866 -5.957128 2.748484 900 2 0.51550 0.51550 6 0 C13  ""  1 ""  0
+  14 2 -7.316917 -6.200910 1.333127 900 2 -0.11830 -0.11830 6 0 C14  ""  1 ""  1
+  15 2 -8.127201 -7.218809 0.966649 900 2 0.12250 0.12250 6 0 C15  ""  1 ""  0
+  16 3 -8.482964 -7.579954 -0.447198 900 2 -0.18000 -0.18000 6 0 C16  ""  1 ""  3
+  17 25 -8.693505 -7.993535 1.958798 900 43 -0.50750 -0.50750 7 0 N17  ""  1 ""  1
+  18 2 -8.424104 -7.782164 3.323152 900 2 0.45650 0.45650 6 0 C18  ""  1 ""  0
+  19 25 -7.618913 -6.775839 3.681343 900 43 -0.48150 -0.48150 7 0 N19  ""  1 ""  0
+  20 39 -8.897702 -8.619024 4.237966 900 43 -0.58010 -0.58010 7 -1 N20  "%XF"  2 ""  0
+  21 2 -9.969627 -9.433651 4.072427 900 2 -0.54240 -0.54240 6 0 C21  ""  1 ""  0
+  22 2 -11.128529 -9.151297 3.280053 900 2 -0.11500 -0.11500 6 0 C22  ""  1 ""  1
+  23 2 -12.206302 -10.017748 3.239391 900 2 -0.11500 -0.11500 6 0 C23  ""  1 ""  1
+  24 2 -12.215903 -11.217597 3.974486 900 2 -0.11500 -0.11500 6 0 C24  ""  1 ""  0
+  25 2 -11.089717 -11.505805 4.777020 900 2 -0.11500 -0.11500 6 0 C25  ""  1 ""  1
+  26 2 -10.011779 -10.646321 4.825546 900 2 -0.11500 -0.11500 6 0 C26  ""  1 ""  1
+  27 2 -13.394462 -12.082443 3.887515 900 2 0.62500 0.62500 6 0 C27  ""  1 ""  0
+  28 15 -14.380448 -11.884759 3.190270 900 70 -0.43000 -0.43000 8 0 O28  ""  1 ""  0
+  29 16 -13.307548 -13.189458 4.695091 900 70 -0.33000 -0.33000 8 0 O29  ""  1 ""  0
+  30 3 -14.444098 -14.060866 4.660466 900 2 0.19000 0.19000 6 0 C30  ""  1 ""  2
+  31 3 -14.183234 -15.192954 5.639506 900 2 -0.18000 -0.18000 6 0 C31  ""  1 ""  3
+  32 41 -1.900577 0.629020 9.488651 900 21 0.06000 0.06000 1 0 H32  ""  1 ""  0
+  33 41 -1.464228 -0.145912 7.949042 900 21 0.06000 0.06000 1 0 H33  ""  1 ""  0
+  34 41 -2.910775 0.875291 8.046375 900 21 0.06000 0.06000 1 0 H34  ""  1 ""  0
+  35 41 -3.976213 -0.793753 9.620717 900 21 0.03000 0.03000 1 0 H35  ""  1 ""  0
+  36 41 -2.538811 -1.808335 9.524136 900 21 0.03000 0.03000 1 0 H36  ""  1 ""  0
+  37 41 -3.941580 -1.875067 5.356406 900 21 0.11500 0.11500 1 0 H37  ""  1 ""  0
+  38 41 -4.810545 -2.902385 3.271197 900 21 0.11500 0.11500 1 0 H38  ""  1 ""  0
+  39 41 -6.812548 -5.929021 5.558161 900 21 0.11500 0.11500 1 0 H39  ""  1 ""  0
+  40 41 -5.941788 -4.907444 7.643931 900 21 0.11500 0.11500 1 0 H40  ""  1 ""  0
+  41 41 -8.181509 -8.609686 -0.684570 900 21 0.06000 0.06000 1 0 H41  ""  1 ""  0
+  42 41 -9.566573 -7.512466 -0.615586 900 21 0.06000 0.06000 1 0 H42  ""  1 ""  0
+  43 41 -7.984543 -6.907825 -1.150646 900 21 0.06000 0.06000 1 0 H43  ""  1 ""  0
+  44 41 -11.184347 -8.208715 2.742260 900 21 0.11500 0.11500 1 0 H45  ""  1 ""  0
+  45 41 -13.082340 -9.775210 2.643509 900 21 0.11500 0.11500 1 0 H46  ""  1 ""  0
+  46 41 -11.077500 -12.419833 5.363340 900 21 0.11500 0.11500 1 0 H47  ""  1 ""  0
+  47 41 -9.152327 -10.867780 5.452101 900 21 0.11500 0.11500 1 0 H48  ""  1 ""  0
+  48 41 -14.589207 -14.433555 3.639540 900 21 0.03000 0.03000 1 0 H49  ""  1 ""  0
+  49 41 -15.345245 -13.496209 4.926034 900 21 0.03000 0.03000 1 0 H50  ""  1 ""  0
+  50 41 -15.031317 -15.888106 5.648018 900 21 0.06000 0.06000 1 0 H51  ""  1 ""  0
+  51 41 -13.282328 -15.750122 5.361067 900 21 0.06000 0.06000 1 0 H52  ""  1 ""  0
+  52 41 -14.044219 -14.805029 6.654252 900 21 0.06000 0.06000 1 0 H53  ""  1 ""  0
+  53 41 -6.856525 -5.549315 0.600479 900 21 0.11500 0.11500 1 0 H54  ""  1 ""  0
+  54 43 -9.258573 -8.794751 1.711021 900 21 0.41000 0.41000 1 0 H55  ""  1 ""  0
+  :::
+ } 
+ m_bond[56] { 
+  # First column is bond index #
+  i_m_from
+  i_m_to
+  i_m_order
+  :::
+  1 1 2 1
+  2 1 32 1
+  3 1 33 1
+  4 1 34 1
+  5 2 3 1
+  6 2 35 1
+  7 2 36 1
+  8 3 4 1
+  9 4 5 2
+  10 4 6 1
+  11 6 11 1
+  12 6 7 2
+  13 7 8 1
+  14 7 37 1
+  15 8 9 2
+  16 8 38 1
+  17 9 10 1
+  18 9 12 1
+  19 10 11 2
+  20 10 39 1
+  21 11 40 1
+  22 12 13 2
+  23 13 19 1
+  24 13 14 1
+  25 14 15 2
+  26 14 53 1
+  27 15 16 1
+  28 15 17 1
+  29 16 41 1
+  30 16 42 1
+  31 16 43 1
+  32 17 18 1
+  33 17 54 1
+  34 18 19 2
+  35 18 20 1
+  36 20 21 1
+  37 21 26 1
+  38 21 22 2
+  39 22 23 1
+  40 22 44 1
+  41 23 24 2
+  42 23 45 1
+  43 24 25 1
+  44 24 27 1
+  45 25 26 2
+  46 25 46 1
+  47 26 47 1
+  48 27 28 2
+  49 27 29 1
+  50 29 30 1
+  51 30 31 1
+  52 30 48 1
+  53 30 49 1
+  54 31 50 1
+  55 31 51 1
+  56 31 52 1
+  :::
+ } 
+} 
+
+f_m_ct { 
+ s_m_title
+ s_m_entry_id
+ s_m_entry_name
+ s_canvas_canonical_SMILES
+ i_canvas_canvasUID
+ s_m_Source_Path
+ s_m_Source_File
+ i_m_Source_File_Index
+ i_m_Molecular_charge
+ i_m_Spin_multiplicity
+ s_j_Task
+ s_j_Jaguar_input_file
+ s_j_Jaguar_restart_input_file
+ s_j_Jaguar_restart_mae_file
+ s_j_Jaguar_output_file
+ s_j_Jaguar_log_file
+ s_j_Jaguar_mae_file
+ s_j_QM_Method
+ s_j_QM_Basis
+ i_j_Number_of_canonical_orbitals
+ i_j_Geometry_convergence_category
+ r_j_Gas_Phase_Energy
+ r_j_HOMO
+ r_j_LUMO
+ s_m_subgroupid
+ b_m_subgroup_collapsed
+ i_m_ct_format
+ :::
+ conf-5 
+  4 
+  converted.303 
+  CCOC(=O)c1ccc(cc1)Nc2cc(nc(n2)Nc3ccc(cc3)C(=O)OCC)C 
+  303
+  C:\Users\rustenba\Documents\Repos\Jaguar_Ref_pKa\jaguar_input_files 
+  SM23_micro011.mae 
+  1
+  -1
+  1
+  Optimization 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro036_conf_5.dft.in 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro036_conf_5.dft.01.in 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro036_conf_5.dft.01.mae 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro036_conf_5.dft.out 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro036_conf_5.dft.log 
+  /lila/data/chodera/rustenburg/SAMPL6/Jaguar_Ref_pKa/jaguar_input_files/SM23_micro036_conf_5.mae 
+  DFT(b3lyp) 
+  pka-geopt* 
+  509
+  1
+  -1410.31728822531
+  -0.0693976208746578
+  0.0574259777337185
+  "SM23_micro011->all deprotonated conformers" 
+  1
+  2
+ m_depend[16] { 
+  # First column is dependency index #
+  i_m_depend_dependency
+  s_m_depend_property
+  :::
+  1 20 i_m_Molecular_charge 
+  2 20 i_m_Spin_multiplicity 
+  3 20 s_j_Task 
+  4 20 s_j_Jaguar_input_file 
+  5 20 s_j_Jaguar_restart_input_file 
+  6 20 s_j_Jaguar_restart_mae_file 
+  7 20 s_j_Jaguar_output_file 
+  8 20 s_j_Jaguar_log_file 
+  9 20 s_j_Jaguar_mae_file 
+  10 20 s_j_QM_Method 
+  11 20 s_j_QM_Basis 
+  12 20 i_j_Number_of_canonical_orbitals 
+  13 20 i_j_Geometry_convergence_category 
+  14 20 r_j_Gas_Phase_Energy 
+  15 20 r_j_HOMO 
+  16 20 r_j_LUMO 
+  :::
+ } 
+ m_atom[54] { 
+  # First column is atom index #
+  i_m_mmod_type
+  r_m_x_coord
+  r_m_y_coord
+  r_m_z_coord
+  i_m_residue_number
+  i_m_color
+  r_m_charge1
+  r_m_charge2
+  i_m_atomic_number
+  i_m_formal_charge
+  s_m_atom_name
+  s_m_label_format
+  i_m_label_color
+  s_m_label_user_text
+  i_m_Hcount
+  :::
+  1 3 -5.932397 -1.068801 10.008822 900 2 -0.18000 -0.18000 6 0 C1  ""  1 ""  3
+  2 3 -4.718755 -1.168625 9.100306 900 2 0.19000 0.19000 6 0 C2  ""  1 ""  2
+  3 16 -5.018229 -2.135156 8.087480 900 70 -0.33000 -0.33000 8 0 O3  ""  1 ""  0
+  4 2 -4.018339 -2.356100 7.174477 900 2 0.62500 0.62500 6 0 C4  ""  1 ""  0
+  5 15 -2.955102 -1.754031 7.245089 900 70 -0.43000 -0.43000 8 0 O5  ""  1 ""  0
+  6 2 -4.376461 -3.354986 6.161119 900 2 -0.11500 -0.11500 6 0 C6  ""  1 ""  0
+  7 2 -3.427718 -3.669793 5.167497 900 2 -0.11500 -0.11500 6 0 C7  ""  1 ""  1
+  8 2 -3.714414 -4.603267 4.193060 900 2 -0.11500 -0.11500 6 0 C8  ""  1 ""  1
+  9 2 -4.961268 -5.288877 4.138637 900 2 0.07880 0.07880 6 0 C9  ""  1 ""  0
+  10 2 -5.912739 -4.958684 5.147701 900 2 -0.11500 -0.11500 6 0 C10  ""  1 ""  1
+  11 2 -5.616835 -4.019292 6.124693 900 2 -0.11500 -0.11500 6 0 C11  ""  1 ""  1
+  12 25 -5.075867 -6.188006 3.103659 900 43 -0.46850 -0.46850 7 0 N12  ""  1 ""  0
+  13 2 -6.131731 -6.953206 2.861957 900 2 0.51550 0.51550 6 0 C13  ""  1 ""  0
+  14 2 -5.994896 -7.834936 1.706646 900 2 -0.11830 -0.11830 6 0 C14  ""  1 ""  1
+  15 2 -7.003439 -8.673313 1.379466 900 2 0.12250 0.12250 6 0 C15  ""  1 ""  0
+  16 3 -6.996007 -9.631113 0.222773 900 2 -0.18000 -0.18000 6 0 C16  ""  1 ""  3
+  17 25 -8.138071 -8.668945 2.165563 900 43 -0.50750 -0.50750 7 0 N17  ""  1 ""  1
+  18 2 -8.284286 -7.810049 3.269119 900 2 0.45650 0.45650 6 0 C18  ""  1 ""  0
+  19 25 -7.286843 -6.978460 3.586665 900 43 -0.48150 -0.48150 7 0 N19  ""  1 ""  0
+  20 39 -9.431379 -7.766152 3.936698 900 43 -0.58010 -0.58010 7 -1 N20  "%XF"  2 ""  0
+  21 2 -10.352215 -8.760721 3.970375 900 2 -0.54240 -0.54240 6 0 C21  ""  1 ""  0
+  22 2 -10.081011 -10.165124 3.894773 900 2 -0.11500 -0.11500 6 0 C22  ""  1 ""  1
+  23 2 -11.089047 -11.104634 4.016038 900 2 -0.11500 -0.11500 6 0 C23  ""  1 ""  1
+  24 2 -12.429019 -10.726367 4.219232 900 2 -0.11500 -0.11500 6 0 C24  ""  1 ""  0
+  25 2 -12.715057 -9.346314 4.315430 900 2 -0.11500 -0.11500 6 0 C25  ""  1 ""  1
+  26 2 -11.716060 -8.402585 4.198284 900 2 -0.11500 -0.11500 6 0 C26  ""  1 ""  1
+  27 2 -13.442185 -11.775904 4.342081 900 2 0.62500 0.62500 6 0 C27  ""  1 ""  0
+  28 15 -13.245802 -12.979642 4.242583 900 70 -0.43000 -0.43000 8 0 O28  ""  1 ""  0
+  29 16 -14.697563 -11.280846 4.596094 900 70 -0.33000 -0.33000 8 0 O29  ""  1 ""  0
+  30 3 -15.725123 -12.267864 4.743105 900 2 0.19000 0.19000 6 0 C30  ""  1 ""  2
+  31 3 -17.015703 -11.538371 5.075399 900 2 -0.18000 -0.18000 6 0 C31  ""  1 ""  3
+  32 41 -5.750400 -0.336459 10.804621 900 21 0.06000 0.06000 1 0 H32  ""  1 ""  0
+  33 41 -6.816318 -0.754059 9.443976 900 21 0.06000 0.06000 1 0 H33  ""  1 ""  0
+  34 41 -6.151900 -2.036536 10.472226 900 21 0.06000 0.06000 1 0 H34  ""  1 ""  0
+  35 41 -3.824407 -1.481381 9.652028 900 21 0.03000 0.03000 1 0 H35  ""  1 ""  0
+  36 41 -4.484285 -0.206148 8.630322 900 21 0.03000 0.03000 1 0 H36  ""  1 ""  0
+  37 41 -2.467902 -3.161120 5.188012 900 21 0.11500 0.11500 1 0 H37  ""  1 ""  0
+  38 41 -2.986249 -4.850056 3.425010 900 21 0.11500 0.11500 1 0 H38  ""  1 ""  0
+  39 41 -6.871075 -5.459661 5.137178 900 21 0.11500 0.11500 1 0 H39  ""  1 ""  0
+  40 41 -6.361350 -3.789584 6.881598 900 21 0.11500 0.11500 1 0 H40  ""  1 ""  0
+  41 41 -7.103608 -10.669959 0.563926 900 21 0.06000 0.06000 1 0 H41  ""  1 ""  0
+  42 41 -7.826028 -9.428827 -0.468308 900 21 0.06000 0.06000 1 0 H42  ""  1 ""  0
+  43 41 -6.059408 -9.549513 -0.335085 900 21 0.06000 0.06000 1 0 H43  ""  1 ""  0
+  44 41 -9.052140 -10.500489 3.795416 900 21 0.11500 0.11500 1 0 H45  ""  1 ""  0
+  45 41 -10.857393 -12.165552 3.970025 900 21 0.11500 0.11500 1 0 H46  ""  1 ""  0
+  46 41 -13.739905 -9.028623 4.482781 900 21 0.11500 0.11500 1 0 H47  ""  1 ""  0
+  47 41 -11.939864 -7.342713 4.282420 900 21 0.11500 0.11500 1 0 H48  ""  1 ""  0
+  48 41 -15.443718 -12.973281 5.533260 900 21 0.03000 0.03000 1 0 H49  ""  1 ""  0
+  49 41 -15.814099 -12.845426 3.815178 900 21 0.03000 0.03000 1 0 H50  ""  1 ""  0
+  50 41 -17.835381 -12.256507 5.197353 900 21 0.06000 0.06000 1 0 H51  ""  1 ""  0
+  51 41 -16.912384 -10.970288 6.006076 900 21 0.06000 0.06000 1 0 H52  ""  1 ""  0
+  52 41 -17.285147 -10.838456 4.277183 900 21 0.06000 0.06000 1 0 H53  ""  1 ""  0
+  53 41 -5.075145 -7.802385 1.135456 900 21 0.11500 0.11500 1 0 H54  ""  1 ""  0
+  54 43 -8.924728 -9.254425 1.918616 900 21 0.41000 0.41000 1 0 H55  ""  1 ""  0
+  :::
+ } 
+ m_bond[56] { 
+  # First column is bond index #
+  i_m_from
+  i_m_to
+  i_m_order
+  :::
+  1 1 2 1
+  2 1 32 1
+  3 1 33 1
+  4 1 34 1
+  5 2 3 1
+  6 2 35 1
+  7 2 36 1
+  8 3 4 1
+  9 4 5 2
+  10 4 6 1
+  11 6 11 1
+  12 6 7 2
+  13 7 8 1
+  14 7 37 1
+  15 8 9 2
+  16 8 38 1
+  17 9 10 1
+  18 9 12 1
+  19 10 11 2
+  20 10 39 1
+  21 11 40 1
+  22 12 13 2
+  23 13 19 1
+  24 13 14 1
+  25 14 15 2
+  26 14 53 1
+  27 15 16 1
+  28 15 17 1
+  29 16 41 1
+  30 16 42 1
+  31 16 43 1
+  32 17 18 1
+  33 17 54 1
+  34 18 19 2
+  35 18 20 1
+  36 20 21 1
+  37 21 26 1
+  38 21 22 2
+  39 22 23 1
+  40 22 44 1
+  41 23 24 2
+  42 23 45 1
+  43 24 25 1
+  44 24 27 1
+  45 25 26 2
+  46 25 46 1
+  47 26 47 1
+  48 27 28 2
+  49 27 29 1
+  50 29 30 1
+  51 30 31 1
+  52 30 48 1
+  53 30 49 1
+  54 31 50 1
+  55 31 51 1
+  56 31 52 1
+  :::
+ } 
+} 
+
