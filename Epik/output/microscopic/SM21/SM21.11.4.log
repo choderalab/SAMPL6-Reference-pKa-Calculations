@@ -1,0 +1,39 @@
+--------------------------------------------------------------------------------
+JobId          : lt21-0-5b0d9ba7
+Name           : SM21.11.4
+Program        : LigPrep
+MMshareExec    : /data/chodera/schrodinger/schrodinger2017-4-advanced/mmshare-v4.0/bin/Linux-x86_64
+Host           : lt21.hpc.private
+Dir            : /lila/data/chodera/rustenburg/SAMPL6/SAMPL6-Reference-calculations/Epik/output/microscopic/SM21
+HostEntry      : localhost
+JobHost        : lt21.hpc.private
+JobDir         : /data/chodera/schrodinger/tmpdir/rustenburg/SM21.11.4
+JobMMshareExec : /data/chodera/schrodinger/schrodinger2017-4-advanced/mmshare-v4.0/bin/Linux-x86_64
+Commandline    : /data/chodera/schrodinger/schrodinger2017-4-advanced/ligprep -ismi SM21.smi -omae SM21.11.4.mae -WAIT -i 1 -s 1 -nt -m 1
+StartTime      : 2018-05-29-14:27:51
+--------------------------------------------------------------------------------
+LigPrep (version 44011). Copyright Schrodinger, LLC. All rights reserved.
+
+LigPrep command:
+$SCHRODINGER/ligprep -i 1 -s 1 -nt -m 1 -ismi SM21.smi -omae SM21.11.4.mae
+
+Processing steps:
+$DO/smiconvert_in.pyc -orig_file_index 0 -orig_file SM21.smi -max_atom 200 SM21.smi
+$DO/htreat.pyc -t All-None -a all -s -l 200 <infile.mae> <outfile.mae>
+$DO/desalter.pyc <infile.mae> <outfile.mae>
+$DO/neutralizer.pyc -m 200 <infile.mae> <outfile.mae>
+$DO/guard.pyc <infile.mae> <outfile.mae>
+$DO/stereoizer.pyc -label_specified_chiralities -n 1 <infile.mae> <outfile.mae>
+$DO/cgx.pyc -optimize -ffld 14 -epsilon 10.0 <infile.mae> <outfile.mae>
+$DO/filterstereo.pyc -max_stereo 1 <infile.mae> <outfile.mae>
+
+DO=$SCHRODINGER/run -FROM macromodel ../../lib/Linux-x86_64/python_packages/ligprep3/
+
+# counts of output and dropped structures after processing steps
+# index  htreat  desalt  neutra   guard  stereo    cgx   filter  title
+       1   1/0     1/0     1/0     1/0     1/0     1/0     1/0   'SM21'
+
+# of processed structures in "SM21.11.4.mae" : 1
+# of dropped structures in "SM21.11.4-dropped.smi" : 0
+
+backend run time: 0 hours 0 minutes 1.280 seconds

@@ -1,0 +1,39 @@
+--------------------------------------------------------------------------------
+JobId          : lt21-2-5b0d9afb
+Name           : SM19.7.6
+Program        : LigPrep
+MMshareExec    : /data/chodera/schrodinger/schrodinger2017-4-advanced/mmshare-v4.0/bin/Linux-x86_64
+Host           : lt21.hpc.private
+Dir            : /lila/data/chodera/rustenburg/SAMPL6/SAMPL6-Reference-calculations/Epik/output/microscopic/SM19
+HostEntry      : localhost
+JobHost        : lt21.hpc.private
+JobDir         : /data/chodera/schrodinger/tmpdir/rustenburg/SM19.7.6
+JobMMshareExec : /data/chodera/schrodinger/schrodinger2017-4-advanced/mmshare-v4.0/bin/Linux-x86_64
+Commandline    : /data/chodera/schrodinger/schrodinger2017-4-advanced/ligprep -ismi SM19.smi -omae SM19.7.6.mae -WAIT -i 1 -s 1 -nt -m 1
+StartTime      : 2018-05-29-14:25:00
+--------------------------------------------------------------------------------
+LigPrep (version 44011). Copyright Schrodinger, LLC. All rights reserved.
+
+LigPrep command:
+$SCHRODINGER/ligprep -i 1 -s 1 -nt -m 1 -ismi SM19.smi -omae SM19.7.6.mae
+
+Processing steps:
+$DO/smiconvert_in.pyc -orig_file_index 0 -orig_file SM19.smi -max_atom 200 SM19.smi
+$DO/htreat.pyc -t All-None -a all -s -l 200 <infile.mae> <outfile.mae>
+$DO/desalter.pyc <infile.mae> <outfile.mae>
+$DO/neutralizer.pyc -m 200 <infile.mae> <outfile.mae>
+$DO/guard.pyc <infile.mae> <outfile.mae>
+$DO/stereoizer.pyc -label_specified_chiralities -n 1 <infile.mae> <outfile.mae>
+$DO/cgx.pyc -optimize -ffld 14 -epsilon 10.0 <infile.mae> <outfile.mae>
+$DO/filterstereo.pyc -max_stereo 1 <infile.mae> <outfile.mae>
+
+DO=$SCHRODINGER/run -FROM macromodel ../../lib/Linux-x86_64/python_packages/ligprep3/
+
+# counts of output and dropped structures after processing steps
+# index  htreat  desalt  neutra   guard  stereo    cgx   filter  title
+       1   1/0     1/0     1/0     1/0     1/0     1/0     1/0   'SM19'
+
+# of processed structures in "SM19.7.6.mae" : 1
+# of dropped structures in "SM19.7.6-dropped.smi" : 0
+
+backend run time: 0 hours 0 minutes 1.150 seconds
