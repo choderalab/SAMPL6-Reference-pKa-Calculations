@@ -1,18 +1,18 @@
 Command:    jaguar run pka.py -jobname jag_SM03_micro021_SM03_micro001 -PARALLEL 10 -WAIT -n -csrch -prot SM03_micro021.in -deprot SM03_micro001.in
 Release:    2017-4
 Exec:       /data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar-v9.8/bin/Linux-x86_64
-Host:       ls02
-JobId:      ls02-0-5b081e3a
+Host:       ls12
+JobId:      ls12-0-5b0d672f
 JobDir:     /lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM03_micro021_SM03_micro001
-Date:       Fri May 25 10:31:25 2018
+Date:       Tue May 29 10:44:02 2018
 
 Contents of /lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM03_micro021_SM03_micro001:
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM03_micro021_SM03_micro001/ls12-0-5b0d672f.mpinodes
 /lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM03_micro021_SM03_micro001/jag_SM03_micro021_SM03_micro001.recover
 /lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM03_micro021_SM03_micro001/jag_SM03_micro021_SM03_micro001.log
-/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM03_micro021_SM03_micro001/ls02-0-5b081e3a.recover
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM03_micro021_SM03_micro001/ls12-0-5b0d672f.recover
 /lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM03_micro021_SM03_micro001/SM03_micro001.in
-/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM03_micro021_SM03_micro001/ls02-0-5b081e3a
-/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM03_micro021_SM03_micro001/ls02-0-5b081e3a.mpinodes
+/lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM03_micro021_SM03_micro001/ls12-0-5b0d672f
 /lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM03_micro021_SM03_micro001/SM03_micro021.in
 /lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM03_micro021_SM03_micro001/SM03_micro001.mae
 /lila/data/chodera/schrodinger/tmpdir/rustenburg/jag_SM03_micro021_SM03_micro001/SM03_micro021.mae
@@ -75,16 +75,16 @@ JobDJ columns:
 
 C A W | Activity  JobId  JobName  JobHost
 - - - | --------- -----------------------
-0 1 1 | launched  ls02-0-5b081e42 SM03_micro021 localhost [ls02]
-0 2 0 | launched  ls02-0-5b081e45 SM03_micro001 localhost [ls02]
-1 1 0 | finished  ls02-0-5b081e42 SM03_micro021 localhost [ls02]
-2 0 0 | finished  ls02-0-5b081e45 SM03_micro001 localhost [ls02]
+0 1 1 | launched  ls12-0-5b0d6738 SM03_micro021 localhost [ls12]
+0 2 0 | launched  ls12-0-5b0d673a SM03_micro001 localhost [ls12]
+1 1 0 | finished  ls12-0-5b0d6738 SM03_micro021 localhost [ls12]
+2 0 0 | finished  ls12-0-5b0d673a SM03_micro001 localhost [ls12]
 
 All jobs have completed.
 
 2 of 2 job(s) succeeded; 0 job(s) failed.
 
-Timer (distribute subjobs) : 3616.23 secs (1 hrs, 00 mins, 16 secs)
+Timer (distribute subjobs) : 614.07 secs (0 hrs, 10 mins, 14 secs)
 
 Setting up QM workflow for (protonated, deprotonated) pair:
 (1) (SM03_micro021, SM03_micro001)
@@ -123,14 +123,14 @@ JobDJ columns:
 
 C A W | Activity  JobId  JobName  JobHost
 - - - | --------- -----------------------
-0 1 5 | launched  ls02-0-5b082c67 SM03_micro021_conf localhost [ls02]
-0 2 4 | launched  ls02-0-5b082c6b SM03_micro001_conf_1 localhost [ls02]
-0 3 3 | launched  ls02-0-5b082c70 SM03_micro001_conf_2 localhost [ls02]
-0 4 2 | launched  ls02-0-5b082c76 SM03_micro001_conf_3 localhost [ls02]
-0 5 1 | launched  ls02-0-5b082c7d SM03_micro001_conf_4 localhost [ls02]
-0 6 0 | launched  ls02-0-5b082c85 SM03_micro001_conf_5 localhost [ls02]
-Subjob 'SM03_micro021_conf' died (died) [jobid ls02-0-5b082c67]
-1 5 0 | died      ls02-0-5b082c67 SM03_micro021_conf localhost [ls02]
+0 1 5 | launched  ls12-0-5b0d699e SM03_micro021_conf localhost [ls12]
+0 2 4 | launched  ls12-0-5b0d69a0 SM03_micro001_conf_1 localhost [ls12]
+0 3 3 | launched  ls12-0-5b0d69a3 SM03_micro001_conf_2 localhost [ls12]
+0 4 2 | launched  ls12-1-5b0d69a5 SM03_micro001_conf_3 localhost [ls12]
+0 5 1 | launched  ls12-1-5b0d69a7 SM03_micro001_conf_4 localhost [ls12]
+0 6 0 | launched  ls12-0-5b0d69aa SM03_micro001_conf_5 localhost [ls12]
+Subjob 'SM03_micro021_conf' died (died) [jobid ls12-0-5b0d699e]
+1 5 0 | died      ls12-0-5b0d699e SM03_micro021_conf localhost [ls12]
 ERROR: Subjob 'SM03_micro021_conf' has failed.
 
 Last 20 lines of 'SM03_micro021_conf.log':
@@ -146,48 +146,25 @@ Last 20 lines of 'SM03_micro021_conf.log':
   --------------------------------------------------------------------------
   Error: jaguar died in program pre
   
-  Job SM03_micro021_conf.dft_h halted prematurely on ls02 at Fri May 25 11:32:15 2018
-  Timer (jaguar_backend.py) : 12.68 secs
-  Finished:   Fri May 25 11:32:15 2018
+  Job SM03_micro021_conf.dft_h halted prematurely on ls12 at Tue May 29 10:54:34 2018
+  Timer (jaguar_backend.py) : 6.01 secs
+  Finished:   Tue May 29 10:54:34 2018
   
   
   Done. 
-  Fri, 25 May 2018 11:32:23
-  Timer (jaguar_backend.py) : 27.94 secs
-  Finished:   Fri May 25 11:32:23 2018
+  Tue, 29 May 2018 10:54:39
+  Timer (jaguar_backend.py) : 15.24 secs
+  Finished:   Tue May 29 10:54:39 2018
 
 
 Last 20 lines of 'SM03_micro021_conf.recover':
 
   Name: 'SM03_micro021_conf'
-  JobId: 'ls02-0-5b082c67'
+  JobId: 'ls12-0-5b0d699e'
   Commandline: '/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar run pka_prot.bat -jobname SM03_micro021_conf SM03_micro021_conf.in -TPP 2 -HOST localhost'
   BackendCmdline: 'run batscript.py -jobname SM03_micro021_conf -TPP 2 SM03_micro021_conf.in -script pka_prot.bat'
   Outfiles:
 
 
 No job control errors were found.
-1 5 0 | died      ls02-0-5b082c67 SM03_micro021_conf localhost [ls02]
-2 4 0 | finished  ls02-0-5b082c70 SM03_micro001_conf_2 localhost [ls02]
-3 3 0 | finished  ls02-0-5b082c76 SM03_micro001_conf_3 localhost [ls02]
-4 2 0 | finished  ls02-0-5b082c6b SM03_micro001_conf_1 localhost [ls02]
-5 1 0 | finished  ls02-0-5b082c7d SM03_micro001_conf_4 localhost [ls02]
-6 0 0 | finished  ls02-0-5b082c85 SM03_micro001_conf_5 localhost [ls02]
-
-All jobs have completed.
-
-5 of 6 job(s) succeeded; 1 job(s) failed.
-
-Timer (distribute subjobs) : 7691.56 secs (2 hrs, 08 mins, 11 secs)
-
-Processing QM output files...
-
-Executing subprocess:
-/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -energy SM03_micro021_conf.nrg_h.out
-
-  Results command failed: "/data/chodera/schrodinger/schrodinger2017-4-advanced/jaguar results -energy SM03_micro021_conf.nrg_h.out"
-
-An error has occurred.  Information about the error has been written to 
-/home/rustenburg/.schrodinger/exceptions/error20180525-133959.txt 
-
-Please contact help@schrodinger.com for assistance. Include error20180525-133959.txt and a description of what you were doing when the error occurred.
+1 5 0 | died      ls12-0-5b0d699e SM03_micro021_conf localhost [ls12]
