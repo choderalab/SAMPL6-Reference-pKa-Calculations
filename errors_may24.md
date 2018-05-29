@@ -30,7 +30,7 @@ Error: prot/deprot structures appear to be reversed:
 jag_SM23_micro020_SM23_micro036                                       
 Error: no labile pKa hydrogen was discovered in pair:                 
 
-36 had one hydrogen too many, apparently this wasnt removed right.
+SM23_micro036 had one hydrogen too many, apparently this wasnt removed right.
 
 24                                                                    
 jag_SM24_micro030_SM24_micro009                                       
